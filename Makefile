@@ -2,9 +2,9 @@ NAME = uls
 
 LIB = ./libmx/libmx.a
 
-INC = ./inc/header.h
+INC = ./inc/uls.h
 
-HEAD = header.h
+HEAD = uls.h
 
 SRCS = ./src/main.c \
 
