@@ -1,32 +1,19 @@
-#include "../inc/libmx.h"
-
-static int only_delim(const char *str, char c) {
-    int i = 0;
-
-    while (str[i] == c && str[i] != '\0')
-        i++;
-    if (i == mx_strlen(str))
-        return 1;
-    return 0;
-}
-
+#include "libmx.h"
 int mx_count_words(const char *str, char c) {
-    int i = 0;
-    int r = 1;
-
-    if (!str)
-        return -1;
-    if (only_delim(str, c))
-        return 0;
-    while (str[i] == c)
-        i++;
-    while (str[i] != '\0') {
-        while (str[i] == c && str[i] != '\0') {
-            i++;
-            if (str[i] != c && str[i] != '\0')
-                r++;
+    if(!str) return -1;
+    int count = 0;
+    while(*str != '\0') {
+        if(*str == c) {                 
+            while(*str == c && *str != '\0') 
+                str++;
+            }
+        if (*str != c && *str != '\0') 
+            count++;
+            while(*str != c && *str != '\0') {
+                str++;
         }
-        i++;
     }
-    return r;
+    return count;
 }
+
+

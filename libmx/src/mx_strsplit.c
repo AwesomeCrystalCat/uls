@@ -1,41 +1,33 @@
-#include "../inc/libmx.h"
-
-static int malloc_word(const char *s, char c) {
-    int i = 0;
-
-    while (s[i] != '\0') {
-        if (s[i] == c)
-            break;
-        else
-            i++;
-    }
-    return i;
-}
-
-static char **if_null() {
-    char **res = (char **)malloc(sizeof(char *) * (1));
-
-    res[0] = NULL;
-    return res;
-}
+#include "libmx.h"
 
 char **mx_strsplit(const char *s, char c) {
-    if (s) {
-        int i = 0;
-        int n = mx_count_words(s, c);
-        char **res = (char **) malloc(sizeof(char *) * (n + 1));
-
-        for (int x = 0; x < n && s[i] != '\0'; x++) {
-            for (; s[i] == c && s[i] != '\0'; i++);
-            while (s[i] != c && s[i] != '\0') {
-                res[x] = mx_strnew(malloc_word(&s[i], c));
-                for (int j = 0; s[i] != c && s[i] != '\0'; j++, i++) {
-                    res[x][j] = s[i];
-                }
-            }
-        }
-        res[n] = NULL;
-        return res;
-    }
-    return if_null();
+    if(!s) return NULL;
+    int len = mx_strlen(s);
+    if (len == 0) 
+        return NULL;
+    char *start = (char *)s;
+    char *finish = (char *)s +(len - 1);
+    while(*start == c)
+        start++;
+    while(finish > start && *finish == c)
+        finish--;
+    if(start == finish) return NULL;
+    char *str = start; // first word
+    int count = mx_count_words(s, c); //how mach words
+    char **arr = (char **) malloc(sizeof(char*) * (count + 1)); //for y;
+    int i = 0;
+    while(str <= finish) {
+        arr[i] = mx_strndup(str, mx_len_to_delim(str, c)); //for x;
+        while(*str && *str != c) // skip (before the next word)
+            str++;
+        while(*str && *str == c) 
+            str++;
+        i++;
+    } 
+    arr[i] = NULL;
+    return (arr);
 }
+
+
+
+

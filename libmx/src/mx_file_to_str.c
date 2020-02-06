@@ -1,29 +1,21 @@
-#include "../inc/libmx.h"
-
-static int malloc_file(const char *file) {
-    int fp = open(file, O_RDONLY);
-    char c;
-    int i = 0;
-
-    while (read(fp,&c,1))
-        i++;
-    close(fp);
-    return i;
-}
+#include "libmx.h"
 
 char *mx_file_to_str(const char *file) {
-    int fp = open(file, O_RDONLY);
-    char c;
-    int i = 0;
-
-    if (read(fp, (void *)0, 0) < 0)
-        return NULL;
-    if (fp == -1)
-        return NULL;
-    char *s = mx_strnew(malloc_file(file));
-    while (read(fp, &c, 1))
-        s[i++] = c;
-    s[i] = '\0';
-    close(fp);
-    return s;
+    int fd = open(file, O_RDONLY);
+    if(fd < 0) return NULL;
+    char buf[1024];
+    int res;
+    char *old_s = NULL;
+    char *new_s = NULL;
+    while ((res = read(fd, buf, 1024)) > 0) {
+        buf[res] = '\0';
+        old_s = new_s;
+        new_s = mx_strjoin(new_s, buf);
+        mx_strdel(&old_s);
+    }
+    close (fd);
+    return new_s;
 }
+
+
+

@@ -1,8 +1,6 @@
 #ifndef ULS
 #define ULS
 
-#include "libmx/inc/libmx.h"
-
 #include "libmx.h"
 #include <sys/types.h>
 #include <dirent.h>
