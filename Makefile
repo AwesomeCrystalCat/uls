@@ -2,17 +2,19 @@ NAME = uls
 
 LIB = ./libmx/libmx.a
 
-INC = ./inc/header.h
+INC = ./inc/uls.h
 
-HEAD = header.h
-
-SRCS = ./src/main.c \
+HEAD = uls.h
 
 SRCOUT = main.c \
+	mx_parse_args.c \
+	mx_print_error.c \
+	mx_read_flags.c \
+	mx_uls.c \
 
-OBJS = ./obj/main.o \
+SRCS = $(addprefix ./src/, $(SRCOUT))
 
-OBJOUT = main.o \
+OBJOUT = $(SRCOUT:%.c=%.o)
 
 CFLAG = -std=c11 -Wall -Wextra -Wpedantic -Werror
 

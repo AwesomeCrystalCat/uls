@@ -1,0 +1,4 @@
+/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir
+/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/mx.dir

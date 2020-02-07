@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/uls.h
+libmx.h
+../inc/libmx.h
+sys/types.h
+-
+dirent.h
+-
+string.h
+-
+sys/stat.h
+-
+unistd.h
+-
+
+../libmx/inc/libmx.h
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+fcntl.h
+-
+malloc/malloc.h
+-
+
+/Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c
+uls.h
+/Users/admin/Desktop/clion_proj/uls_1/src/uls.h
+
