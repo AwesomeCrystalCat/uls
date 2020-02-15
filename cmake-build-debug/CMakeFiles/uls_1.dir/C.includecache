@@ -19,6 +19,8 @@ sys/stat.h
 -
 unistd.h
 -
+sys/ioctl.h
+-
 
 ../libmx/inc/libmx.h
 unistd.h
@@ -34,7 +36,7 @@ fcntl.h
 malloc/malloc.h
 -
 
-/Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c
+/Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c
 uls.h
 /Users/admin/Desktop/clion_proj/uls_1/src/uls.h
 

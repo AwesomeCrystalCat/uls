@@ -1,5 +1,5 @@
-#ifndef ULS
-#define ULS
+#ifndef ULS_H
+#define ULS_H
 
 #include "libmx.h"
 #include <sys/types.h>
@@ -7,43 +7,26 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <sys/ioctl.h>
 
 typedef struct s_total {
-    char *argv_to_str;
-    int len_argv;
-    int *flg;
-
+    char *all_flags;
+    int *arr_for_switch;
+    int *priority;
+    int num_of_flags; // в массиве входящих данных колличество аргументов с '-'
+    int num_of_err;
+    int num_of_files;
+    int num_of_directs;
 } t_total;
 
-typedef enum e_fl {
-    R,
-    a,
-    A,
-    G,
-    h,
-    dog,
-    e,
-    T,
-    one,
-    C,
-    r, //revers;
-    t, //time;
-    u, //user;
-    c,
-    S //size (bytes);
-} e_flags;
+typedef struct s_arr_data {
+    char ** files;
+    char ** directs;
+    char ** errors;
+} t_data;
 
-typedef enum e_err {
-    illegal_option,
-    no_such_file_or_directory //с большой буквы!!!
-    //empty directory ???? это в поток ошибок?
-
-} e_errors;
-
-void mx_uls(char name[]);
-void mx_read_flags(t_total *tot, char ** argv);
-void mx_print_error(t_total *tot, e_errors err);
-
+void mx_print_err(char *str);
+void mx_swich_flags(int argc, char **argv, t_total *tot);
 
 #endif
 

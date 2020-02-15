@@ -70,31 +70,31 @@ CMakeFiles/uls_1.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/main.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/Desktop/clion_proj/uls_1/src/main.c -o CMakeFiles/uls_1.dir/src/main.c.s
 
-CMakeFiles/uls_1.dir/src/mx_print_error.c.o: CMakeFiles/uls_1.dir/flags.make
-CMakeFiles/uls_1.dir/src/mx_print_error.c.o: ../src/mx_print_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uls_1.dir/src/mx_print_error.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_error.c.o   -c /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_error.c
+CMakeFiles/uls_1.dir/src/mx_print_err.c.o: CMakeFiles/uls_1.dir/flags.make
+CMakeFiles/uls_1.dir/src/mx_print_err.c.o: ../src/mx_print_err.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uls_1.dir/src/mx_print_err.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_err.c.o   -c /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_err.c
 
-CMakeFiles/uls_1.dir/src/mx_print_error.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_error.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_error.c > CMakeFiles/uls_1.dir/src/mx_print_error.c.i
+CMakeFiles/uls_1.dir/src/mx_print_err.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_err.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_err.c > CMakeFiles/uls_1.dir/src/mx_print_err.c.i
 
-CMakeFiles/uls_1.dir/src/mx_print_error.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_error.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_error.c -o CMakeFiles/uls_1.dir/src/mx_print_error.c.s
+CMakeFiles/uls_1.dir/src/mx_print_err.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_err.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_err.c -o CMakeFiles/uls_1.dir/src/mx_print_err.c.s
 
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.o: CMakeFiles/uls_1.dir/flags.make
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.o: ../src/mx_read_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/uls_1.dir/src/mx_read_flags.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_read_flags.c.o   -c /Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: CMakeFiles/uls_1.dir/flags.make
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: ../src/mx_switch_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o   -c /Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c
 
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_read_flags.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c > CMakeFiles/uls_1.dir/src/mx_read_flags.c.i
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c > CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i
 
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_read_flags.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c -o CMakeFiles/uls_1.dir/src/mx_read_flags.c.s
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c -o CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s
 
 CMakeFiles/uls_1.dir/src/mx_uls.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_uls.c.o: ../src/mx_uls.c
@@ -112,16 +112,16 @@ CMakeFiles/uls_1.dir/src/mx_uls.c.s: cmake_force
 # Object files for target uls_1
 uls_1_OBJECTS = \
 "CMakeFiles/uls_1.dir/src/main.c.o" \
-"CMakeFiles/uls_1.dir/src/mx_print_error.c.o" \
-"CMakeFiles/uls_1.dir/src/mx_read_flags.c.o" \
+"CMakeFiles/uls_1.dir/src/mx_print_err.c.o" \
+"CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o" \
 "CMakeFiles/uls_1.dir/src/mx_uls.c.o"
 
 # External object files for target uls_1
 uls_1_EXTERNAL_OBJECTS =
 
 uls_1: CMakeFiles/uls_1.dir/src/main.c.o
-uls_1: CMakeFiles/uls_1.dir/src/mx_print_error.c.o
-uls_1: CMakeFiles/uls_1.dir/src/mx_read_flags.c.o
+uls_1: CMakeFiles/uls_1.dir/src/mx_print_err.c.o
+uls_1: CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o
 uls_1: CMakeFiles/uls_1.dir/src/mx_uls.c.o
 uls_1: CMakeFiles/uls_1.dir/build.make
 uls_1: libmx.a

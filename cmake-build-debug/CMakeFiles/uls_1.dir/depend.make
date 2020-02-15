@@ -5,13 +5,13 @@ CMakeFiles/uls_1.dir/src/main.c.o: ../inc/uls.h
 CMakeFiles/uls_1.dir/src/main.c.o: ../libmx/inc/libmx.h
 CMakeFiles/uls_1.dir/src/main.c.o: ../src/main.c
 
-CMakeFiles/uls_1.dir/src/mx_print_error.c.o: ../inc/uls.h
-CMakeFiles/uls_1.dir/src/mx_print_error.c.o: ../libmx/inc/libmx.h
-CMakeFiles/uls_1.dir/src/mx_print_error.c.o: ../src/mx_print_error.c
+CMakeFiles/uls_1.dir/src/mx_print_err.c.o: ../inc/uls.h
+CMakeFiles/uls_1.dir/src/mx_print_err.c.o: ../libmx/inc/libmx.h
+CMakeFiles/uls_1.dir/src/mx_print_err.c.o: ../src/mx_print_err.c
 
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.o: ../inc/uls.h
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.o: ../libmx/inc/libmx.h
-CMakeFiles/uls_1.dir/src/mx_read_flags.c.o: ../src/mx_read_flags.c
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: ../inc/uls.h
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: ../libmx/inc/libmx.h
+CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: ../src/mx_switch_flags.c
 
 CMakeFiles/uls_1.dir/src/mx_uls.c.o: ../inc/uls.h
 CMakeFiles/uls_1.dir/src/mx_uls.c.o: ../libmx/inc/libmx.h

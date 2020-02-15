@@ -5,14 +5,21 @@ LIB = ./libmx/libmx.a
 INC = ./inc/uls.h
 
 HEAD = uls.h
+<<<<<<< HEAD
 
 SRCS = ./src/main.c \
+=======
+>>>>>>> fe2e4b2900d5b50c3aa32d615152f86c8fa2f0a2
 
 SRCOUT = main.c \
+	mx_parse_args.c \
+	mx_print_error.c \
+	mx_read_flags.c \
+	mx_uls.c \
 
-OBJS = ./obj/main.o \
+SRCS = $(addprefix ./src/, $(SRCOUT))
 
-OBJOUT = main.o \
+OBJOUT = $(SRCOUT:%.c=%.o)
 
 CFLAG = -std=c11 -Wall -Wextra -Wpedantic -Werror
 

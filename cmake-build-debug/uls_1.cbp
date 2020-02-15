@@ -304,10 +304,10 @@
 		<Unit filename="/Users/admin/Desktop/clion_proj/uls_1/src/main.c">
 			<Option target="uls_1"/>
 		</Unit>
-		<Unit filename="/Users/admin/Desktop/clion_proj/uls_1/src/mx_print_error.c">
+		<Unit filename="/Users/admin/Desktop/clion_proj/uls_1/src/mx_print_err.c">
 			<Option target="uls_1"/>
 		</Unit>
-		<Unit filename="/Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c">
+		<Unit filename="/Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c">
 			<Option target="uls_1"/>
 		</Unit>
 		<Unit filename="/Users/admin/Desktop/clion_proj/uls_1/src/mx_uls.c">
