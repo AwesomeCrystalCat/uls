@@ -36,19 +36,20 @@ typedef enum e_flags {
    a,       //8
    c,       //9
    e,       //10
-   g,       //11
-   i,       //12
-   l,       //13
-   m,       //14
-   n,       //15
-   o,       //16
-   p,       //17
-   r,       //18
-   s,       //19
-   t,       //20
-   u,       //21
-   x,       //22
-   one      //23
+   f,       //11
+   g,       //12
+   i,       //13
+   l,       //14
+   m,       //15
+   n,       //16
+   o,       //17
+   p,       //18
+   r,       //19
+   s,       //20
+   t,       //21
+   u,       //22
+   x,       //23
+   one      //24
 } e_flg;
 
 typedef struct s_total {
@@ -101,6 +102,7 @@ typedef struct s_arr_data {
 #include <time.h>
 #include <sys/ioctl.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int main(int argc, char **argv);
 void mx_parse_args(int n, char **str, t_data *data);
@@ -130,6 +132,8 @@ void mx_print_files(t_data *data);
 void mx_print_dirs(t_data *data);
 void mx_print_colored(const char *name);
 void mx_output_l(t_elem **arr, int num);
+void mx_errors_arr(t_total *tot, t_data *data, int argc, char **argv);
+void mx_print_errors(t_data *data);
 
 void mx_quicksort(t_elem **arr, int left, int right);
 int mx_strcmp(const char *s1, const char *s2);

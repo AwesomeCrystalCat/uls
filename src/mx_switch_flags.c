@@ -29,13 +29,11 @@ static void my_switch(char **argv, int i, t_total *tot, e_flg *fl) {
             if (argv[i][j] == tot->all_flags[k]) {
                 fl[k] = 1;
                 test = true;
-                if( (fl[o] || fl[g] || fl[n]) == 1)
-                    fl[l] = 1;
             }
         }
 
-    if (test == false)
-        illegal_fl(tot, i, j, argv);
+        if (test == false)
+            illegal_fl(tot, i, j, argv);
     }
 }
 
@@ -48,7 +46,7 @@ static void illegal_fl(t_total *tot, int i, int j, char **argv) {
     mx_print_err(illegal_flag);
     free(illegal_flag);
     mx_print_err("\n");
-    mx_print_err("usage uls [-");
+    mx_print_err("usage: uls [-");
     mx_print_err(tot->all_flags);
     mx_print_err("] [file ...]");
     mx_print_err("\n");

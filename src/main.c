@@ -35,8 +35,8 @@ int main (int argc, char **argv) {
     t_total *tot = mx_read_data(argc, argv, data);
   
     mx_parse_args(argc, argv, data); //collect data on input if it's
-    if (data->directs[0] == NULL && data->files[0] == NULL) //classic output
-        mx_dir_parse(0, ".");
+    if (data->directs[0] == NULL && data->files[0] == NULL) //classic output and !data->errors
+        mx_dir_parse(1, ".");
     else {
         mx_print_files(data);
         if (data->files[0] != NULL)

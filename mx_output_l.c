@@ -13,6 +13,6 @@ for (int i = 0; i < num; i++) {
         printf("%s ", arr[i]->size);
         printf("%s ", arr[i]->ctime);
         printf("%s\n", arr[i]->name);
-        mx_print_colored(arr[i]->name);
+        // mx_print_colored(arr[i]->name);
     }
 }

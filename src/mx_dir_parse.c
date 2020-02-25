@@ -26,7 +26,7 @@ void mx_dir_parse(int flag, const char *dir) {
     // }
     // printf("\n");
     // if (flag)
-        // printf("%s:\n", dir);
+        printf("%s:\n", dir);
     mx_output_l(dir_args, ptr->count);
     printf("\n");
     if (flag) {
