@@ -5,14 +5,14 @@ CMakeFiles/uls_1.dir/src/main.c.o
  ../inc/uls.h
  ../libmx/inc/libmx.h
  /Users/admin/Desktop/clion_proj/uls_1/src/main.c
-CMakeFiles/uls_1.dir/src/mx_print_err.c.o
+CMakeFiles/uls_1.dir/src/mx_print_error.c.o
  ../inc/uls.h
  ../libmx/inc/libmx.h
- /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_err.c
-CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o
+ /Users/admin/Desktop/clion_proj/uls_1/src/mx_print_error.c
+CMakeFiles/uls_1.dir/src/mx_read_flags.c.o
  ../inc/uls.h
  ../libmx/inc/libmx.h
- /Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c
+ /Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c
 CMakeFiles/uls_1.dir/src/mx_uls.c.o
  ../inc/uls.h
  ../libmx/inc/libmx.h

@@ -1702,59 +1702,59 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/mx_print_err.o: src/mx_print_err.c.o
+src/mx_print_error.o: src/mx_print_error.c.o
 
-.PHONY : src/mx_print_err.o
-
-# target to build an object file
-src/mx_print_err.c.o:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_print_err.c.o
-.PHONY : src/mx_print_err.c.o
-
-src/mx_print_err.i: src/mx_print_err.c.i
-
-.PHONY : src/mx_print_err.i
-
-# target to preprocess a source file
-src/mx_print_err.c.i:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_print_err.c.i
-.PHONY : src/mx_print_err.c.i
-
-src/mx_print_err.s: src/mx_print_err.c.s
-
-.PHONY : src/mx_print_err.s
-
-# target to generate assembly for a file
-src/mx_print_err.c.s:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_print_err.c.s
-.PHONY : src/mx_print_err.c.s
-
-src/mx_switch_flags.o: src/mx_switch_flags.c.o
-
-.PHONY : src/mx_switch_flags.o
+.PHONY : src/mx_print_error.o
 
 # target to build an object file
-src/mx_switch_flags.c.o:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o
-.PHONY : src/mx_switch_flags.c.o
+src/mx_print_error.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_print_error.c.o
+.PHONY : src/mx_print_error.c.o
 
-src/mx_switch_flags.i: src/mx_switch_flags.c.i
+src/mx_print_error.i: src/mx_print_error.c.i
 
-.PHONY : src/mx_switch_flags.i
+.PHONY : src/mx_print_error.i
 
 # target to preprocess a source file
-src/mx_switch_flags.c.i:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i
-.PHONY : src/mx_switch_flags.c.i
+src/mx_print_error.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_print_error.c.i
+.PHONY : src/mx_print_error.c.i
 
-src/mx_switch_flags.s: src/mx_switch_flags.c.s
+src/mx_print_error.s: src/mx_print_error.c.s
 
-.PHONY : src/mx_switch_flags.s
+.PHONY : src/mx_print_error.s
 
 # target to generate assembly for a file
-src/mx_switch_flags.c.s:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s
-.PHONY : src/mx_switch_flags.c.s
+src/mx_print_error.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_print_error.c.s
+.PHONY : src/mx_print_error.c.s
+
+src/mx_read_flags.o: src/mx_read_flags.c.o
+
+.PHONY : src/mx_read_flags.o
+
+# target to build an object file
+src/mx_read_flags.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_flags.c.o
+.PHONY : src/mx_read_flags.c.o
+
+src/mx_read_flags.i: src/mx_read_flags.c.i
+
+.PHONY : src/mx_read_flags.i
+
+# target to preprocess a source file
+src/mx_read_flags.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_flags.c.i
+.PHONY : src/mx_read_flags.c.i
+
+src/mx_read_flags.s: src/mx_read_flags.c.s
+
+.PHONY : src/mx_read_flags.s
+
+# target to generate assembly for a file
+src/mx_read_flags.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_flags.c.s
+.PHONY : src/mx_read_flags.c.s
 
 src/mx_uls.o: src/mx_uls.c.o
 
@@ -1967,12 +1967,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mx_print_err.o"
-	@echo "... src/mx_print_err.i"
-	@echo "... src/mx_print_err.s"
-	@echo "... src/mx_switch_flags.o"
-	@echo "... src/mx_switch_flags.i"
-	@echo "... src/mx_switch_flags.s"
+	@echo "... src/mx_print_error.o"
+	@echo "... src/mx_print_error.i"
+	@echo "... src/mx_print_error.s"
+	@echo "... src/mx_read_flags.o"
+	@echo "... src/mx_read_flags.i"
+	@echo "... src/mx_read_flags.s"
 	@echo "... src/mx_uls.o"
 	@echo "... src/mx_uls.i"
 	@echo "... src/mx_uls.s"

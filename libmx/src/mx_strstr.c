@@ -1,18 +1,17 @@
 #include "libmx.h"
 
 char *mx_strstr(const char *haystack, const char *needle) {
-    if (!needle || !haystack) return NULL;
-    char *ndl = !needle ? NULL : (char *)needle;
-    char *str = (char *) haystack;
-    size_t len = mx_strlen(needle);
-    while(*str != '\0') {
-        if (*str  == *ndl) {
-            if (mx_strncmp(str, ndl, len) == 0)
-            return (str);
+    char *tail = NULL;
+    int len;
+
+    if (haystack && needle) {
+        len = mx_strlen(haystack);
+        tail = (char *)&haystack[0];
+        for (int i = 0; i < len; i++) {
+            if (mx_strncmp(tail, needle) == 1)
+                return tail;
+            tail++;
         }
-        str++;
     }
-    return NULL;
+    return 0;
 }
-
-

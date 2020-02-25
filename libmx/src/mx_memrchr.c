@@ -1,19 +1,19 @@
 #include "libmx.h"
 
 void *mx_memrchr(const void *s, int c, size_t n) {
-    const unsigned char *str = s;
-    str += n;
+    char *str = NULL;
+    int len;
 
-    while(*str != c && n > 0) {
-        str--;
-        n--;
+    if (s) {
+        str = (char *) s;
+        len = mx_strlen(str) - 1;
+        while (len >= 0 && n != 0) {
+            if (str[len] == c)
+                return &str[len];
+            n--;
+            len--;
+        }
+        return NULL;
     }
-    if(*str == c) 
-    return ((void*)(str));
-        
-    
-    return  NULL;
+    return NULL;
 }
-
-
-

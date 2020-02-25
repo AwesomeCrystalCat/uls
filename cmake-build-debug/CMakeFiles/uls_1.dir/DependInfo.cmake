@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/admin/Desktop/clion_proj/uls_1/src/main.c" "/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir/src/main.c.o"
-  "/Users/admin/Desktop/clion_proj/uls_1/src/mx_print_err.c" "/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir/src/mx_print_err.c.o"
-  "/Users/admin/Desktop/clion_proj/uls_1/src/mx_switch_flags.c" "/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o"
+  "/Users/admin/Desktop/clion_proj/uls_1/src/mx_print_error.c" "/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir/src/mx_print_error.c.o"
+  "/Users/admin/Desktop/clion_proj/uls_1/src/mx_read_flags.c" "/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir/src/mx_read_flags.c.o"
   "/Users/admin/Desktop/clion_proj/uls_1/src/mx_uls.c" "/Users/admin/Desktop/clion_proj/uls_1/cmake-build-debug/CMakeFiles/uls_1.dir/src/mx_uls.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

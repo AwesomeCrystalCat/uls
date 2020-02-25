@@ -1,23 +1,22 @@
 #include "libmx.h"
 
- void *mx_memmem(const void *big, size_t big_len, const void *little, size_t little_len) {
- if (big_len - little_len < 0 || !big || !little || !little_len || !big_len)
-     return NULL;
+void *mx_memmem(const void *big, size_t big_len,
+const void *little, size_t little_len) {
+    char *haystack = NULL;
+    char *needle = NULL;
+    unsigned int i = 0;
 
- unsigned char * str = (unsigned char *) big;
- unsigned char * ndl = (unsigned char *) little;
- size_t i = 0;
-    while (i < big_len) {
-        if ((big_len - i) > 0 && *str == *ndl) {
-            if (mx_memcmp(str, ndl, little_len) == 0)
-                return ((void*) str);
+    if (big && little) { 
+        haystack = (char *) big;
+        needle = (char *) little;
+        while (i < big_len) {
+            if (mx_memcmp(needle, haystack, little_len) == 0
+                && big_len >= little_len
+                && little_len <= mx_findlen(needle))
+                return haystack;
+            haystack = haystack + 1;
+            i++;
         }
-        
-        i++;
-        str++;
-
     }
-return NULL;
+    return NULL;
 }
-
-
