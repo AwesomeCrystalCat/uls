@@ -1,0 +1,236 @@
+ [1m[36mcmake-build-debug[0m
+ [0mCMakeLists.txt[0m
+ [0mheader.h[0m
+ [1m[36minc[0m
+ [0mitoa.c[0m
+ [1m[36mlibmx[0m
+ [0mlibmx.a[0m
+ [0mmain.c[0m
+ [0mMakefile[0m
+ [0mmx_data_init.c[0m
+ [0mmx_dir_parse.c[0m
+ [0mmx_errors_array.c[0m
+ [0mmx_files_count.c[0m
+ [0mmx_find_name_len.c[0m
+ [0mmx_get_real_cols.c[0m
+ [0mmx_getstats.c[0m
+ [0mmx_get_win_size.c[0m
+ [0mmx_output_l.c[0m
+ [0mmx_parse_args.c[0m
+ [0mmx_printchar.c[0m
+ [0mmx_print_colored.c[0m
+ [0mmx_print_dirs.c[0m
+ [0mmx_print_err.c[0m
+ [0mmx_print_error.c[0m
+ [0mmx_print_errors.c[0m
+ [0mmx_print_files.c[0m
+ [0mmx_printstr.c[0m
+ [0mmx_prior_all.c[0m
+ [0mmx_quick_cmp_sort.c[0m
+ [0mmx_quick_elem_sort.c[0m
+ [0mmx_quicksort.c[0m
+ [0mmx_read_data.c[0m
+ [0mmx_read_dir.c[0m
+ [0mmx_read_flags.c[0m
+ [0mmx_set_bsize.c[0m
+ [0mmx_setgrp.c[0m
+ [0mmx_set_mode.c[0m
+ [0mmx_set_stats.c[0m
+ [0mmx_set_time.c[0m
+ [0mmx_setuser.c[0m
+ [0mmx_strcmp.c[0m
+ [0mmx_strcpy.c[0m
+ [0mmx_strdup.c[0m
+ [0mmx_strjoin.c[0m
+ [0mmx_strlen.c[0m
+ [0mmx_strncpy.c[0m
+ [0mmx_strndup.c[0m
+ [0mmx_strnew.c[0m
+ [0mmx_switch_flags.c[0m
+ [0mmx_uls.c[0m
+ [1m[36mobj[0m
+ [0moutput[0m
+ [1m[36msrc[0m
+ [1m[36mtest_empty[0m
+4 3203496 drwxr-xr-x 3 selmarinel selmarinel 4096 Feb 10 21:10 cmake-build-debug
+4 3191860 -rw-r--r-- 1 selmarinel selmarinel 992 Feb 10 21:10 CMakeLists.txt
+4 3191902 -rw-r--r-- 1 selmarinel selmarinel 209 Feb 10 21:10 header.h
+4 3203503 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 25 17:05 inc
+4 3149414 -rw-rw-r-- 1 selmarinel selmarinel 713 Feb 25 21:37 itoa.c
+4 3203504 drwxr-xr-x 5 selmarinel selmarinel 4096 Feb 25 21:37 libmx
+8 3191940 -rw-r--r-- 1 selmarinel selmarinel 81978 Feb 25 21:37 libmx.a
+8 3148473 -rw-r--r-- 1 selmarinel selmarinel 1297 Feb 25 21:37 main.c
+8 3149776 -rw-r--r-- 1 selmarinel selmarinel 1332 Feb 25 20:10 Makefile
+4 3147317 -rw-r--r-- 1 selmarinel selmarinel 264 Feb 25 21:37 mx_data_init.c
+8 3171396 -rw-rw-r-- 1 selmarinel selmarinel 1703 Feb 25 21:37 mx_dir_parse.c
+4 3204915 -rw-r--r-- 1 selmarinel selmarinel 355 Feb 25 21:37 mx_errors_array.c
+4 3147312 -rw-rw-r-- 1 selmarinel selmarinel 735 Feb 25 21:37 mx_files_count.c
+4 3192344 -rw-rw-r-- 1 selmarinel selmarinel 335 Feb 25 21:37 mx_find_name_len.c
+8 3170523 -rw-rw-r-- 1 selmarinel selmarinel 1134 Feb 25 21:37 mx_get_real_cols.c
+8 3151066 -rw-rw-r-- 1 selmarinel selmarinel 1919 Feb 25 21:37 mx_getstats.c
+4 3191953 -rw-rw-r-- 1 selmarinel selmarinel 235 Feb 25 21:37 mx_get_win_size.c
+4 3187947 -rw-rw-r-- 1 selmarinel selmarinel 535 Feb 25 21:37 mx_output_l.c
+4 3148481 -rw-r--r-- 1 selmarinel selmarinel 583 Feb 25 21:37 mx_parse_args.c
+4 3204218 -rw-r--r-- 1 selmarinel selmarinel 69 Feb 25 21:37 mx_printchar.c
+8 3153694 -rw-rw-r-- 1 selmarinel selmarinel 1679 Feb 25 21:37 mx_print_colored.c
+4 3201728 -rw-rw-r-- 1 selmarinel selmarinel 193 Feb 25 21:37 mx_print_dirs.c
+4 3149607 -rw-r--r-- 1 selmarinel selmarinel 86 Feb 25 21:37 mx_print_err.c
+4 3148490 -rw-r--r-- 1 selmarinel selmarinel 141 Feb 21 05:00 mx_print_error.c
+4 3204913 -rw-r--r-- 1 selmarinel selmarinel 459 Feb 25 21:37 mx_print_errors.c
+4 3170872 -rw-rw-r-- 1 selmarinel selmarinel 381 Feb 25 21:37 mx_print_files.c
+4 3201820 -rw-r--r-- 1 selmarinel selmarinel 189 Feb 25 21:37 mx_printstr.c
+8 3148576 -rw-r--r-- 1 selmarinel selmarinel 2494 Feb 25 21:37 mx_prior_all.c
+4 3148986 -rw-rw-r-- 1 selmarinel selmarinel 719 Feb 25 21:37 mx_quick_cmp_sort.c
+4 3171263 -rw-rw-r-- 1 selmarinel selmarinel 760 Feb 25 21:37 mx_quick_elem_sort.c
+8 3149656 -rw-r--r-- 1 selmarinel selmarinel 1027 Feb 25 21:37 mx_quicksort.c
+4 3168351 -rw-r--r-- 1 selmarinel selmarinel 427 Feb 25 21:37 mx_read_data.c
+4 3182641 -rw-rw-r-- 1 selmarinel selmarinel 753 Feb 25 21:37 mx_read_dir.c
+4 3148967 -rw-r--r-- 1 selmarinel selmarinel 287 Feb 25 21:37 mx_read_flags.c
+4 3149378 -rw-rw-r-- 1 selmarinel selmarinel 380 Feb 25 21:37 mx_set_bsize.c
+4 3149375 -rw-rw-r-- 1 selmarinel selmarinel 317 Feb 25 21:37 mx_setgrp.c
+8 3148987 -rw-rw-r-- 1 selmarinel selmarinel 1865 Feb 25 21:37 mx_set_mode.c
+4 3160280 -rw-rw-r-- 1 selmarinel selmarinel 197 Feb 25 21:37 mx_set_stats.c
+4 3148491 -rw-rw-r-- 1 selmarinel selmarinel 497 Feb 25 21:37 mx_set_time.c
+4 3149004 -rw-rw-r-- 1 selmarinel selmarinel 302 Feb 25 21:37 mx_setuser.c
+4 3149381 -rw-r--r-- 1 selmarinel selmarinel 228 Feb 25 21:37 mx_strcmp.c
+4 3149385 -rw-r--r-- 1 selmarinel selmarinel 190 Feb 25 21:37 mx_strcpy.c
+4 3149399 -rw-r--r-- 1 selmarinel selmarinel 109 Feb 25 21:37 mx_strdup.c
+4 3149406 -rw-r--r-- 1 selmarinel selmarinel 536 Feb 25 21:37 mx_strjoin.c
+4 3149408 -rw-r--r-- 1 selmarinel selmarinel 135 Feb 25 21:37 mx_strlen.c
+4 3149409 -rw-r--r-- 1 selmarinel selmarinel 224 Feb 25 21:37 mx_strncpy.c
+4 3149410 -rw-r--r-- 1 selmarinel selmarinel 210 Feb 25 21:37 mx_strndup.c
+4 3149380 -rw-r--r-- 1 selmarinel selmarinel 243 Feb 25 21:37 mx_strnew.c
+8 3181254 -rw-r--r-- 1 selmarinel selmarinel 1385 Feb 25 21:37 mx_switch_flags.c
+4 3148976 -rw-r--r-- 1 selmarinel selmarinel 425 Feb 25 21:37 mx_uls.c
+4 3211266 drwxrwxr-x 2 selmarinel selmarinel 4096 Feb 25 21:37 obj
+0 3147005 -rw-rw-r-- 1 selmarinel selmarinel 0 Feb 25 21:37 output
+4 3203507 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 25 17:02 src
+4 3212047 drwxrwxr-x 2 selmarinel selmarinel 4096 Feb 25 01:51 test_empty
+4 32 [1m[36mtest_uls1[0m
+ [0mtgs.txt[0m
+ [0mtmp.c[0m
+ [0muls[0m
+ [0muls.h[0m
+03508 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 10 21:10 test_uls1
+0 3160214 -rw-rw-r-- 1 selmarinel selmarinel 0 Jan  1 08:42 tgs.txt
+8 3164011 -rw-rw-r-- 1 selmarinel selmarinel 4122 Feb 21 20:21 tmp.c
+8 3168866 -rwxrwxr-x 1 selmarinel selmarinel 29200 Feb 25 21:37 uls
+8 3149426 -rw-r--r-- 1 selmarinel selmarinel 3970 Feb 25 21:37 uls.h
+4 3203496 drwxr-xr-x 3 selmarinel selmarinel 4096 Feb 10 21:10 cmake-build-debug
+4 3191860 -rw-r--r-- 1 selmarinel selmarinel 992 Feb 10 21:10 CMakeLists.txt
+4 3191902 -rw-r--r-- 1 selmarinel selmarinel 209 Feb 10 21:10 header.h
+4 3203503 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 25 17:05 inc
+4 3149414 -rw-rw-r-- 1 selmarinel selmarinel 713 Feb 25 21:42 itoa.c
+4 3203504 drwxr-xr-x 5 selmarinel selmarinel 4096 Feb 25 21:42 libmx
+8 3191940 -rw-r--r-- 1 selmarinel selmarinel 81978 Feb 25 21:42 libmx.a
+8 3148473 -rw-r--r-- 1 selmarinel selmarinel 1297 Feb 25 21:42 main.c
+8 3149776 -rw-r--r-- 1 selmarinel selmarinel 1332 Feb 25 21:41 Makefile
+4 3147317 -rw-r--r-- 1 selmarinel selmarinel 264 Feb 25 21:42 mx_data_init.c
+8 3171396 -rw-rw-r-- 1 selmarinel selmarinel 1703 Feb 25 21:42 mx_dir_parse.c
+4 3204915 -rw-r--r-- 1 selmarinel selmarinel 355 Feb 25 21:42 mx_errors_array.c
+4 3147312 -rw-rw-r-- 1 selmarinel selmarinel 735 Feb 25 21:42 mx_files_count.c
+4 3192344 -rw-rw-r-- 1 selmarinel selmarinel 335 Feb 25 21:42 mx_find_name_len.c
+8 3170523 -rw-rw-r-- 1 selmarinel selmarinel 1134 Feb 25 21:42 mx_get_real_cols.c
+8 3151066 -rw-rw-r-- 1 selmarinel selmarinel 1919 Feb 25 21:42 mx_getstats.c
+4 3191953 -rw-rw-r-- 1 selmarinel selmarinel 235 Feb 25 21:42 mx_get_win_size.c
+4 3187947 -rw-rw-r-- 1 selmarinel selmarinel 584 Feb 25 21:42 mx_output_l.c
+4 3148481 -rw-r--r-- 1 selmarinel selmarinel 583 Feb 25 21:42 mx_parse_args.c
+4 3204218 -rw-r--r-- 1 selmarinel selmarinel 69 Feb 25 21:42 mx_printchar.c
+8 3153694 -rw-rw-r-- 1 selmarinel selmarinel 1679 Feb 25 21:42 mx_print_colored.c
+4 3201728 -rw-rw-r-- 1 selmarinel selmarinel 193 Feb 25 21:42 mx_print_dirs.c
+4 3149607 -rw-r--r-- 1 selmarinel selmarinel 86 Feb 25 21:42 mx_print_err.c
+4 3148490 -rw-r--r-- 1 selmarinel selmarinel 141 Feb 21 05:00 mx_print_error.c
+4 3204913 -rw-r--r-- 1 selmarinel selmarinel 459 Feb 25 21:42 mx_print_errors.c
+4 3170872 -rw-rw-r-- 1 selmarinel selmarinel 381 Feb 25 21:42 mx_print_files.c
+4 3201820 -rw-r--r-- 1 selmarinel selmarinel 189 Feb 25 21:42 mx_printstr.c
+8 3148576 -rw-r--r-- 1 selmarinel selmarinel 2494 Feb 25 21:42 mx_prior_all.c
+4 3148986 -rw-rw-r-- 1 selmarinel selmarinel 719 Feb 25 21:42 mx_quick_cmp_sort.c
+4 3171263 -rw-rw-r-- 1 selmarinel selmarinel 760 Feb 25 21:42 mx_quick_elem_sort.c
+8 3149656 -rw-r--r-- 1 selmarinel selmarinel 1027 Feb 25 21:42 mx_quicksort.c
+4 3168351 -rw-r--r-- 1 selmarinel selmarinel 427 Feb 25 21:42 mx_read_data.c
+4 3182641 -rw-rw-r-- 1 selmarinel selmarinel 753 Feb 25 21:42 mx_read_dir.c
+4 3148967 -rw-r--r-- 1 selmarinel selmarinel 287 Feb 25 21:42 mx_read_flags.c
+4 3149378 -rw-rw-r-- 1 selmarinel selmarinel 380 Feb 25 21:42 mx_set_bsize.c
+4 3149375 -rw-rw-r-- 1 selmarinel selmarinel 317 Feb 25 21:42 mx_setgrp.c
+8 3148987 -rw-rw-r-- 1 selmarinel selmarinel 1865 Feb 25 21:42 mx_set_mode.c
+4 3160280 -rw-rw-r-- 1 selmarinel selmarinel 197 Feb 25 21:42 mx_set_stats.c
+4 3148491 -rw-rw-r-- 1 selmarinel selmarinel 497 Feb 25 21:42 mx_set_time.c
+4 3149004 -rw-rw-r-- 1 selmarinel selmarinel 302 Feb 25 21:42 mx_setuser.c
+4 3149381 -rw-r--r-- 1 selmarinel selmarinel 228 Feb 25 21:42 mx_strcmp.c
+4 3149385 -rw-r--r-- 1 selmarinel selmarinel 190 Feb 25 21:42 mx_strcpy.c
+4 3149399 -rw-r--r-- 1 selmarinel selmarinel 109 Feb 25 21:42 mx_strdup.c
+4 3149406 -rw-r--r-- 1 selmarinel selmarinel 536 Feb 25 21:42 mx_strjoin.c
+4 3149408 -rw-r--r-- 1 selmarinel selmarinel 135 Feb 25 21:42 mx_strlen.c
+4 3149409 -rw-r--r-- 1 selmarinel selmarinel 224 Feb 25 21:42 mx_strncpy.c
+4 3149410 -rw-r--r-- 1 selmarinel selmarinel 210 Feb 25 21:42 mx_strndup.c
+4 3149380 -rw-r--r-- 1 selmarinel selmarinel 243 Feb 25 21:42 mx_strnew.c
+8 3181254 -rw-r--r-- 1 selmarinel selmarinel 1385 Feb 25 21:42 mx_switch_flags.c
+4 3148976 -rw-r--r-- 1 selmarinel selmarinel 425 Feb 25 21:42 mx_uls.c
+4 3211266 drwxrwxr-x 2 selmarinel selmarinel 4096 Feb 25 21:42 obj
+8 3147005 -rw-rw-r-- 1 selmarinel selmarinel 5769 Feb 25 21:37 output
+4 3203507 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 25 17:02 src
+4 3212047 drwxrwxr-x 2 selmarinel selmarinel 4096 Feb 25 01:51 test_empty
+4 3203508 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 10 21:10 test_uls1
+0 3160214 -rw-rw-r-- 1 selmarinel selmarinel 0 Jan  1 08:42 tgs.txt
+8 3164011 -rw-rw-r-- 1 selmarinel selmarinel 4122 Feb 21 20:21 tmp.c
+8 3168866 -rwxrwxr-x 1 selmarinel selmarinel 29248 Feb 25 21:42 uls
+8 3149426 -rw-r--r-- 1 selmarinel selmarinel 3970 Feb 25 21:42 uls.h
+4 3203496 drwxr-xr-x 3 selmarinel selmarinel 4096 Feb 10 21:10 cmake-build-debug
+4 3191860 -rw-r--r-- 1 selmarinel selmarinel 992 Feb 10 21:10 CMakeLists.txt
+4 3191902 -rw-r--r-- 1 selmarinel selmarinel 209 Feb 10 21:10 header.h
+4 3203503 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 25 17:05 inc
+4 3149414 -rw-rw-r-- 1 selmarinel selmarinel 713 Feb 25 21:45 itoa.c
+4 3203504 drwxr-xr-x 5 selmarinel selmarinel 4096 Feb 25 21:45 libmx
+8 3191940 -rw-r--r-- 1 selmarinel selmarinel 81978 Feb 25 21:45 libmx.a
+8 3148473 -rw-r--r-- 1 selmarinel selmarinel 1297 Feb 25 21:45 main.c
+8 3149776 -rw-r--r-- 1 selmarinel selmarinel 1332 Feb 25 21:41 Makefile
+4 3147317 -rw-r--r-- 1 selmarinel selmarinel 264 Feb 25 21:45 mx_data_init.c
+8 3171396 -rw-rw-r-- 1 selmarinel selmarinel 1703 Feb 25 21:45 mx_dir_parse.c
+4 3204915 -rw-r--r-- 1 selmarinel selmarinel 355 Feb 25 21:45 mx_errors_array.c
+4 3147312 -rw-rw-r-- 1 selmarinel selmarinel 735 Feb 25 21:45 mx_files_count.c
+4 3192344 -rw-rw-r-- 1 selmarinel selmarinel 335 Feb 25 21:45 mx_find_name_len.c
+8 3170523 -rw-rw-r-- 1 selmarinel selmarinel 1134 Feb 25 21:45 mx_get_real_cols.c
+8 3151066 -rw-rw-r-- 1 selmarinel selmarinel 1919 Feb 25 21:45 mx_getstats.c
+4 3191953 -rw-rw-r-- 1 selmarinel selmarinel 235 Feb 25 21:45 mx_get_win_size.c
+4 3187947 -rw-rw-r-- 1 selmarinel selmarinel 629 Feb 25 21:45 mx_output_l.c
+4 3148481 -rw-r--r-- 1 selmarinel selmarinel 583 Feb 25 21:45 mx_parse_args.c
+4 3204218 -rw-r--r-- 1 selmarinel selmarinel 69 Feb 25 21:45 mx_printchar.c
+8 3153694 -rw-rw-r-- 1 selmarinel selmarinel 1679 Feb 25 21:45 mx_print_colored.c
+4 3201728 -rw-rw-r-- 1 selmarinel selmarinel 193 Feb 25 21:45 mx_print_dirs.c
+4 3149607 -rw-r--r-- 1 selmarinel selmarinel 86 Feb 25 21:45 mx_print_err.c
+4 3148490 -rw-r--r-- 1 selmarinel selmarinel 141 Feb 21 05:00 mx_print_error.c
+4 3204913 -rw-r--r-- 1 selmarinel selmarinel 459 Feb 25 21:45 mx_print_errors.c
+4 3170872 -rw-rw-r-- 1 selmarinel selmarinel 381 Feb 25 21:45 mx_print_files.c
+4 3201820 -rw-r--r-- 1 selmarinel selmarinel 189 Feb 25 21:45 mx_printstr.c
+8 3148576 -rw-r--r-- 1 selmarinel selmarinel 2494 Feb 25 21:45 mx_prior_all.c
+4 3148986 -rw-rw-r-- 1 selmarinel selmarinel 719 Feb 25 21:45 mx_quick_cmp_sort.c
+4 3171263 -rw-rw-r-- 1 selmarinel selmarinel 760 Feb 25 21:45 mx_quick_elem_sort.c
+8 3149656 -rw-r--r-- 1 selmarinel selmarinel 1027 Feb 25 21:45 mx_quicksort.c
+4 3168351 -rw-r--r-- 1 selmarinel selmarinel 427 Feb 25 21:45 mx_read_data.c
+4 3182641 -rw-rw-r-- 1 selmarinel selmarinel 753 Feb 25 21:45 mx_read_dir.c
+4 3148967 -rw-r--r-- 1 selmarinel selmarinel 287 Feb 25 21:45 mx_read_flags.c
+4 3149378 -rw-rw-r-- 1 selmarinel selmarinel 380 Feb 25 21:45 mx_set_bsize.c
+4 3149375 -rw-rw-r-- 1 selmarinel selmarinel 317 Feb 25 21:45 mx_setgrp.c
+8 3148987 -rw-rw-r-- 1 selmarinel selmarinel 1865 Feb 25 21:45 mx_set_mode.c
+4 3160280 -rw-rw-r-- 1 selmarinel selmarinel 197 Feb 25 21:45 mx_set_stats.c
+4 3148491 -rw-rw-r-- 1 selmarinel selmarinel 497 Feb 25 21:45 mx_set_time.c
+4 3149004 -rw-rw-r-- 1 selmarinel selmarinel 302 Feb 25 21:45 mx_setuser.c
+4 3149381 -rw-r--r-- 1 selmarinel selmarinel 228 Feb 25 21:45 mx_strcmp.c
+4 3149385 -rw-r--r-- 1 selmarinel selmarinel 190 Feb 25 21:45 mx_strcpy.c
+4 3149399 -rw-r--r-- 1 selmarinel selmarinel 109 Feb 25 21:45 mx_strdup.c
+4 3149406 -rw-r--r-- 1 selmarinel selmarinel 536 Feb 25 21:45 mx_strjoin.c
+4 3149408 -rw-r--r-- 1 selmarinel selmarinel 135 Feb 25 21:45 mx_strlen.c
+4 3149409 -rw-r--r-- 1 selmarinel selmarinel 224 Feb 25 21:45 mx_strncpy.c
+4 3149410 -rw-r--r-- 1 selmarinel selmarinel 210 Feb 25 21:45 mx_strndup.c
+4 3149380 -rw-r--r-- 1 selmarinel selmarinel 243 Feb 25 21:45 mx_strnew.c
+8 3181254 -rw-r--r-- 1 selmarinel selmarinel 1385 Feb 25 21:45 mx_switch_flags.c
+4 3148976 -rw-r--r-- 1 selmarinel selmarinel 425 Feb 25 21:45 mx_uls.c
+4 3211266 drwxrwxr-x 2 selmarinel selmarinel 4096 Feb 25 21:45 obj
+8 3147005 -rw-rw-r-- 1 selmarinel selmarinel 10211 Feb 25 21:43 output
+4 3203507 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 25 17:02 src
+4 3212047 drwxrwxr-x 2 selmarinel selmarinel 4096 Feb 25 01:51 test_empty
+4 3203508 drwxr-xr-x 2 selmarinel selmarinel 4096 Feb 10 21:10 test_uls1
+0 3160214 -rw-rw-r-- 1 selmarinel selmarinel 0 Jan  1 08:42 tgs.txt
+8 3164011 -rw-rw-r-- 1 selmarinel selmarinel 4122 Feb 21 20:21 tmp.c
+8 3168866 -rwxrwxr-x 1 selmarinel selmarinel 29248 Feb 25 21:45 uls
+8 3149426 -rw-r--r-- 1 selmarinel selmarinel 3970 Feb 25 21:45 uls.h

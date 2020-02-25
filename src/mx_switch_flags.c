@@ -14,7 +14,7 @@ void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl) {
             break;
         }
         tot->count_dash++;
-        my_switch(argv, i,tot, fl);
+        my_switch(argv, i, tot, fl);
     }
 
 }

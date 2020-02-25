@@ -1,18 +1,26 @@
 #include "uls.h"
 #include <stdio.h>
 
-void mx_output_l(t_elem **arr, int num) {
-for (int i = 0; i < num; i++) {
+void mx_output_l(t_elem **arr, int num, e_flg *flag) {
+for (int k = 0; k < num; k++) {
         // printf("%s\n", arr[i]->path);
-        printf("%s ", arr[i]->bsize);
-        printf("%s ", arr[i]->inode);
-        printf("%s ", arr[i]->mode);
-        printf("%s ", arr[i]->link);
-        printf("%s ", arr[i]->uid);
-        printf("%s ", arr[i]->gid);
-        printf("%s ", arr[i]->size);
-        printf("%s ", arr[i]->ctime);
-        printf("%s\n", arr[i]->name);
-        // mx_print_colored(arr[i]->name);
+        if (flag[s])
+            printf("%s ", arr[k]->bsize);
+        if (flag[i])
+            printf("%s ", arr[k]->inode);
+        printf("%s ", arr[k]->mode);
+        printf("%s ", arr[k]->link);
+        printf("%s ", arr[k]->uid);
+        printf("%s ", arr[k]->gid);
+        printf("%s ", arr[k]->size);
+        printf("%s ", arr[k]->ctime);
+        if (isatty(1) == 1) {
+            if (flag[g_big])
+                mx_print_colored(arr[k]->name);
+            else
+                printf("%s\n", arr[k]->name);
+        }
+        else
+            printf("%s\n", arr[k]->name);
     }
 }

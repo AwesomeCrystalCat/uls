@@ -21,15 +21,15 @@ int find_longest_in_the_row(t_all *ptr, t_elem **dir_args, int cols, int cur) {
 }
 
 void mx_get_real_cols(t_all *ptr, t_elem **dir_args) {
-    int limit = MX_TERM;
-    int cols = ptr->lines + 1;
+    int limit = MX_TERM + MX_TAB;
+    int cols = ptr->lines;
     int longest = 0;
     int cur = 0;
     int real_mf_cols = 0;
 
     while (limit > 0) {
         longest = find_longest_in_the_row(ptr, dir_args, cols, cur);
-        limit = limit - (longest + MX_TAB);       
+        limit = limit - (longest + MX_TAB);
         real_mf_cols++;
         if (cur + get_high(ptr, cols) < ptr->count)
             cur += get_high(ptr, cols);
@@ -40,5 +40,8 @@ void mx_get_real_cols(t_all *ptr, t_elem **dir_args) {
             cols++;
         }
     }
-    ptr->lines = get_high(ptr, cols - 1);
+    if (limit == 0)
+        ptr->lines = get_high(ptr, cols);
+    else
+        ptr->lines = get_high(ptr, cols - 1);
 }

@@ -5,5 +5,6 @@ t_data *mx_data_init(int argc) {
     data->errors = malloc(sizeof(argc));
     data->directs = malloc(sizeof(argc));
     data->files = malloc(sizeof(argc));
+    data->errors[0] = NULL;
     return data;
 }

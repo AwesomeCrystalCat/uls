@@ -32,16 +32,17 @@
 
 int main (int argc, char **argv) {
     t_data *data = mx_data_init(argc);
-    t_total *tot = mx_read_data(argc, argv, data);
+    e_flg *flag = malloc(24 * sizeof(int));
+    t_total *tot = mx_read_data(argc, argv, data, flag);
   
     mx_parse_args(argc, argv, data); //collect data on input if it's
-    if (data->directs[0] == NULL && data->files[0] == NULL) //classic output and !data->errors
-        mx_dir_parse(1, ".");
+    if (data->directs[0] == NULL && data->files[0] == NULL && data->errors[0] == NULL) //classic output and !data->errors
+        mx_dir_parse(flag, ".");
     else {
-        mx_print_files(data);
+        mx_print_files(data, flag);
         if (data->files[0] != NULL)
             write(1, "\n", 1);
-        mx_print_dirs(data);
+        mx_print_dirs(data, flag);
     }
     return 0;
 }

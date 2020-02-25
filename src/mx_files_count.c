@@ -1,16 +1,16 @@
 #include "uls.h"
 #include "stdio.h"
 
-int mx_files_count(const char *name, int flag_a, int flag_A) {
+int mx_files_count(const char *name, e_flg *flag) {
     int count = 0;
     struct dirent *myfile;
     DIR *mydir;
 
     mydir = opendir(name);
         while((myfile = readdir(mydir)) != NULL) {
-            if (flag_a)
+            if (flag[a])
                 count++;
-            else if (flag_A) {
+            else if (flag[a_big]) {
                 if (!(strcmp(myfile->d_name, ".") == 0 || strcmp(myfile->d_name, "..") == 0))
                 count++;
             }
@@ -20,6 +20,5 @@ int mx_files_count(const char *name, int flag_a, int flag_A) {
             }
         }
     closedir(mydir);
-    // printf("next folder - %d\n", count);
     return count;
 }
