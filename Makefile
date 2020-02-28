@@ -52,6 +52,13 @@ SRCOUT = main.c \
 	mx_cols_and_rows.c \
 	mx_get_bsize_num.c \
 	mx_get_inode_num.c \
+	mx_sorting.c \
+	mx_quick_rev_elem_sort.c \
+	mx_quick_size_sort.c \
+	mx_quick_rev_size_sort.c \
+	mx_get_path.c \
+	mx_quick_time_sort.c \
+	mx_quick_rev_time_sort.c \
 	itoa.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))

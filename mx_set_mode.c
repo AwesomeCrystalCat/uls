@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static char getChar(int mode, int is_exec, int is_id) {
+static char get_sticky(int mode, int is_exec, int is_id) {
     if (mode & is_exec) {
         if (mode & is_id)
             return 's';
@@ -17,9 +17,9 @@ static char getChar(int mode, int is_exec, int is_id) {
 
 static char set_access_mode(int mode, int user_type) {
     if (user_type == 1)
-        return getChar(mode, MX_IXUSR, MX_ISUID);
+        return get_sticky(mode, MX_IXUSR, MX_ISUID);
     else if (user_type == 2)
-        return getChar(mode, MX_IXGRP, MX_ISGID);
+        return get_sticky(mode, MX_IXGRP, MX_ISGID);
     else {
         if (mode & MX_IXOTH) {
             if (mode & MX_ISVTX)

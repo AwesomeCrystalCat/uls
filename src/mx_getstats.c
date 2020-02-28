@@ -1,18 +1,4 @@
 #include "uls.h"
-#include <stdio.h>
-
-const char *getpath(const char *file, const char *dir) {  //still need to change this stuff;
-    const char *path = malloc(sizeof(char *));
-
-    if (!mx_strcmp(dir, "."))
-        path = file;
-    else {
-        path = mx_strjoin(path, dir);
-        path = mx_strjoin(path,"/");
-        path = mx_strjoin(path,file);
-    }
-    return path;
-}
 
 static int count_slashes(const char *file) {
     int slash = 0;
@@ -45,9 +31,8 @@ char *mx_rename(const char *file) {
 t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) { //collect all stat of a file;
     t_elem *ptr = malloc(sizeof(t_elem));
     struct stat buff;
-    time_t unix_time = time(0);
 
-    ptr->path = getpath(file, dir);
+    ptr->path = mx_get_path(file, dir);
     lstat(ptr->path, &buff);
     ptr->numeric = buff.st_mode;
     ptr->mode = mx_set_mode(&buff);
@@ -63,8 +48,9 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) { //collect 
     ptr->link = mx_itoa(buff.st_nlink);
     ptr->uid = mx_setuser(&buff, flag);
     ptr->gid = mx_setgrp(&buff, flag);
+    ptr->size_i = buff.st_size;
     ptr->size = mx_itoa(buff.st_size);
     ptr->bsize = mx_set_bsize(&buff, ptr->mode);
-    ptr->atime = mx_set_time(&buff, ptr, flag, unix_time);
+    mx_set_time(&buff, ptr, flag);
     return ptr;
 }

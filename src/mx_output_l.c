@@ -22,7 +22,7 @@ for (int k = 0; k < num; k++) {
         write(1, " ", 1);
         write(1, arr[k]->size, mx_strlen(arr[k]->size));
         write(1, " ", 1);
-        write(1, arr[k]->ctime, mx_strlen(arr[k]->ctime));
+        write(1, arr[k]->r_time, mx_strlen(arr[k]->r_time));
         write(1, " ", 1);
         if (isatty(1) == 1) {
             if (flag[g_big])

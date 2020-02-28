@@ -91,11 +91,11 @@ typedef struct s_elem {
     char* link;
     char* uid;
     char* gid;
+    unsigned int size_i;
     char* size;
     char* bsize;
-    char* atime;
-    char *ctime;
-    char *mtime;
+    int u_time;
+    char* r_time;
 } t_elem;
 
 typedef struct s_arr_data {
@@ -134,7 +134,7 @@ char *mx_set_mode(struct stat *buff);
 char *mx_setuser(struct stat *buff, e_flg *flag);
 char *mx_setgrp(struct stat *buff, e_flg *flag);
 char *mx_set_bsize(struct stat *buff, const char *str);
-char* mx_set_time(struct stat *buff, t_elem *ptr, e_flg *flag, time_t time);
+void mx_set_time(struct stat *buff, t_elem *ptr, e_flg *flag);
 t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag);
 int mx_files_count(const char *name, e_flg *flag);
 void mx_set_stats(t_all *ptr, t_elem **arr);
@@ -157,6 +157,13 @@ void mx_output_m(t_elem **arr, int num, e_flg *flag);
 void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag);
 int mx_get_bsize_num(t_all *ptr, t_elem **arr);
 int mx_get_inode_num(t_all *ptr, t_elem **arr);
+void mx_sorting(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_quick_rev_elem_sort(t_elem **ptr, int left, int right);
+void mx_quick_size_sort(t_elem **arr, int left, int right);
+void mx_quick_rev_size_sort(t_elem **arr, int left, int right);
+const char *mx_get_path(const char *file, const char *dir);
+void mx_quick_time_sort(t_elem **arr, int left, int right);
+void mx_quick_rev_time_sort(t_elem **arr, int left, int right);
 
 void mx_quicksort(t_elem **arr, int left, int right);
 int mx_strcmp(const char *s1, const char *s2);

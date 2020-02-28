@@ -35,7 +35,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     int all = 0;
 
     mx_read_dir(dir_args, dir, flag);
-    mx_quick_elem_sort(dir_args, 0, ptr->count - 1);
+    mx_sorting(dir_args, ptr, flag);
     mx_cols_and_rows(dir_args, ptr, flag);
     spaces = empty_spaces(ptr, dir_args);
     if (flag[r_big]) {
