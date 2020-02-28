@@ -38,6 +38,7 @@ SRCOUT = main.c \
 	mx_output_1.c \
 	mx_print_errors.c \
 	mx_errors_array.c \
+	mx_output_m.c \
 	mx_strnew.c \
 	mx_strcmp.c \
 	mx_strcpy.c \
@@ -48,6 +49,9 @@ SRCOUT = main.c \
 	mx_strndup.c \
 	mx_printstr.c \
 	mx_printchar.c \
+	mx_cols_and_rows.c \
+	mx_get_bsize_num.c \
+	mx_get_inode_num.c \
 	itoa.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))

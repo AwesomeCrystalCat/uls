@@ -12,13 +12,13 @@ void mx_output_1(t_elem **arr, int num, e_flg *flag) {
         }
         if (isatty(1) == 1) {
             if (flag[g_big])
-                mx_print_colored(arr[k]->name);
+                mx_print_colored(arr[k]->name, arr[k]->path);
             else {
                 mx_printstr(arr[k]->name);
-                write(1, "\n", 1);
             }
         }
         else if (isatty(1) != 1)
             mx_printstr(arr[k]->name);
+        write(1, "\n", 1);
     }
 }

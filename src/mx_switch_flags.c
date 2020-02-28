@@ -5,18 +5,19 @@ static void illegal_fl(t_total *tot, int i, int j, char **argv);
 
 void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl) {
     tot->count_dash = 0;
-
     for (int i = 1; i < argc; i++) {
-        if (argv[i][0] != '-' || !argv[i][1]) // нет флагов
-            break;
-        if (argv[i][1] == '-' && !argv[i][2]) {  // "--"
+        struct stat buffer;
+        if (lstat(argv[i], &buffer) == -1) {
+            if (argv[i][0] != '-' || !argv[i][1])
+                break;
+            if (argv[i][1] == '-' && !argv[i][2]) {
+                tot->count_dash++;
+                break;
+            }
             tot->count_dash++;
-            break;
+            my_switch(argv, i, tot, fl);
         }
-        tot->count_dash++;
-        my_switch(argv, i, tot, fl);
     }
-
 }
 
 
