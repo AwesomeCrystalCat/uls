@@ -36,7 +36,9 @@ int main (int argc, char **argv) {
     for (int j = 0; j < 24; j++)
         flag[j] = 0;
     t_total *tot = mx_read_data(argc, argv, data, flag);
+
     mx_parse_args(argc, argv, data);
+    printf("here\n");
     if (data->directs[0] == NULL && data->files[0] == NULL && data->errors[0] == NULL)
         mx_dir_parse(flag, ".");
     else {
