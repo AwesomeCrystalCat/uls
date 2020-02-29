@@ -1,8 +1,7 @@
 #ifndef ULS_H
 #define ULS_H
 
-#define MX_TAB 2
-#define MX_TERM 182
+#define MX_TAB 8
 
 #define MX_IFMT 0170000
 #define MX_ISUID 0004000
@@ -164,18 +163,6 @@ void mx_quick_rev_size_sort(t_elem **arr, int left, int right);
 const char *mx_get_path(const char *file, const char *dir);
 void mx_quick_time_sort(t_elem **arr, int left, int right);
 void mx_quick_rev_time_sort(t_elem **arr, int left, int right);
-
-void mx_quicksort(t_elem **arr, int left, int right);
-int mx_strcmp(const char *s1, const char *s2);
-char *mx_strcpy(char *dst, const char *src);
-char *mx_strdup(const char *str);
-char *mx_strjoin(const char *s1, const char *s2);
-int mx_strlen(const char *s);
-char *mx_strnew(const int size);
-char *mx_itoa(int number);
-char *mx_strncpy(char *dst, const char *src, int len);
-char *mx_strndup(const char *s1, size_t n);
-void mx_printstr(const char *s);
-void mx_printchar(char c);
+void mx_printer(t_elem **dir_args, t_all *ptr, e_flg *flag);
 
 #endif

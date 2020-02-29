@@ -23,7 +23,6 @@ void mx_find_name_len(t_elem **arr, t_all *ptr, e_flg *flag) {
                 res += ptr->bsize_n + 1;
         }
     }
-    ptr->line_len = mx_get_win_size();
     ptr->name_len = res;
     ptr->lines = ptr->line_len / ptr->name_len;
 }

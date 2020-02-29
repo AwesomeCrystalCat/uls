@@ -23,7 +23,7 @@ int find_longest_in_the_row(t_all *ptr, t_elem **dir_args, int height, int cur) 
 }
 
 void mx_get_real_cols(t_all *ptr, t_elem **dir_args, e_flg *flag) {
-    int limit = MX_TERM + MX_TAB;
+    int limit = ptr->line_len + MX_TAB;
     int height = ptr->count / ptr->lines;
     int longest = 0;
     int cur = 0;
@@ -37,7 +37,7 @@ void mx_get_real_cols(t_all *ptr, t_elem **dir_args, e_flg *flag) {
         if (cur + height < ptr->count)
             cur += height;
         else if (limit > 0) {
-            limit = MX_TERM + MX_TAB;
+            limit = ptr->line_len + MX_TAB;
             cur = 0;
             height--;
         }

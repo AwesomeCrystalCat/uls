@@ -2,7 +2,6 @@
 
 void print_spaces(int num) {
     for (int i = 0; i < num; i++) {
-        // printf("%d\n", num);
         write(1, " ", 1);
     }
 }
@@ -19,25 +18,28 @@ int *empty_spaces(t_all *ptr, t_elem **dir_args) {
             if (mx_strlen(dir_args[cur]->name) > spaces[i])
                 spaces[i] = mx_strlen(dir_args[cur]->name);
         }
-        // printf("%d\n", spaces[i]);
     }
     return spaces;
 }
 
 void mx_dir_parse(e_flg *flag, const char *dir) {
+    int *spaces = 0;
+    int cur = 0;
+    int all = 0;
+
     t_all *ptr = malloc(sizeof(t_all));
     ptr->count = mx_files_count(dir, flag);
     
     if (ptr->count) {
-    t_elem **dir_args = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);
-    int *spaces = 0;
-    int cur = 0;
-    int all = 0;
+        t_elem **dir_args = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);
 
     mx_read_dir(dir_args, dir, flag);
     mx_sorting(dir_args, ptr, flag);
     mx_cols_and_rows(dir_args, ptr, flag);
     spaces = empty_spaces(ptr, dir_args);
+    write(1, dir, mx_strlen(dir));
+    write(1, ":", 1);
+    write(1, "\n", 1);
     if (flag[r_big]) {
         write(1, dir, mx_strlen(dir));
         write(1, ":\ntotal:", 2);
@@ -67,12 +69,14 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
                 if (isatty(1) == 1) {
                     if (flag[g_big])
                         mx_print_colored(dir_args[j]->name, dir_args[j]->path);
-                    else
+                    else {
                         write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
+                    }
                 }
-                else
+                else {
                     write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
                 // write(1, "\n", 1);
+                }
                 print_spaces(spaces[j/ptr->lines] - mx_strlen(dir_args[j]->name));
         }
         all += ptr->cols;

@@ -11,9 +11,7 @@ SRCOUT = main.c \
 	mx_data_init.c \
 	mx_read_data.c \
 	mx_read_flags.c \
-	mx_uls.c \
 	mx_quick_cmp_sort.c \
-	mx_quicksort.c \
 	mx_set_mode.c \
 	mx_setuser.c \
 	mx_setgrp.c \
@@ -39,16 +37,6 @@ SRCOUT = main.c \
 	mx_print_errors.c \
 	mx_errors_array.c \
 	mx_output_m.c \
-	mx_strnew.c \
-	mx_strcmp.c \
-	mx_strcpy.c \
-	mx_strdup.c \
-	mx_strjoin.c \
-	mx_strlen.c \
-	mx_strncpy.c \
-	mx_strndup.c \
-	mx_printstr.c \
-	mx_printchar.c \
 	mx_cols_and_rows.c \
 	mx_get_bsize_num.c \
 	mx_get_inode_num.c \
@@ -59,6 +47,7 @@ SRCOUT = main.c \
 	mx_get_path.c \
 	mx_quick_time_sort.c \
 	mx_quick_rev_time_sort.c \
+	mx_printer.c \
 	itoa.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))
