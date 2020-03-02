@@ -37,52 +37,52 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
         mx_output_1(dir_args, ptr, flag);
     else if (flag[x])
         mx_output_x(dir_args, ptr, flag);
-    else {
-        for (int k = 0; k < ptr->lines; k++) {
-            for (int j = 0; j < ptr->count; j++) {
-                cur = ptr->name_len;
-                if (j % ptr->lines == k) {
-                    if (flag[i]) {
-                        // print_spaces(ptr->inode_n - mx_strlen(dir_args[j]->inode));
-                        write(1, dir_args[j]->inode, mx_strlen(dir_args[j]->inode));
-                        write(1, " ", 1);
-                        // cur -= ptr->inode_n + 1;
-                    }
-                    if (flag[s]) {
-                        // print_spaces(ptr->bsize_n - mx_strlen(dir_args[j]->bsize));
-                        write(1, dir_args[j]->bsize, mx_strlen(dir_args[j]->bsize));
-                        write(1, " ", 1);
-                        // cur -= ptr->bsize_n + 1;
-                    }
-                    if (isatty(1) == 1) {
-                        if (flag[g_big])
-                            mx_print_colored(dir_args[j]->name, dir_args[j]->path);
-                        else {
-                            write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
-                        }
-                    }
-                    else {
-                        write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
-                        write(1, "\n", 1);
-                    }
-                    cur -= mx_strlen(dir_args[j]->name);
-                    // print_spaces(cur);
-                }
-                // all += ptr->cols;
-            }
-            if (k + 1 != ptr->lines)
-                write(1, "\n", 1);
-        }
-    }
+    // else {
+    //     for (int k = 0; k < ptr->lines; k++) {
+    //         for (int j = 0; j < ptr->count; j++) {
+    //             cur = ptr->name_len;
+    //             if (j % ptr->lines == k) {
+    //                 if (flag[i]) {
+    //                     // print_spaces(ptr->inode_n - mx_strlen(dir_args[j]->inode));
+    //                     write(1, dir_args[j]->inode, mx_strlen(dir_args[j]->inode));
+    //                     write(1, "    ", 1);
+    //                     // cur -= ptr->inode_n + 1;
+    //                 }
+    //                 if (flag[s]) {
+    //                     // print_spaces(ptr->bsize_n - mx_strlen(dir_args[j]->bsize));
+    //                     write(1, dir_args[j]->bsize, mx_strlen(dir_args[j]->bsize));
+    //                     write(1, "    ", 1);
+    //                     // cur -= ptr->bsize_n + 1;
+    //                 }
+    //                 if (isatty(1) == 1) {
+    //                     if (flag[g_big])
+    //                         mx_print_colored(dir_args[j]->name, dir_args[j]->path);
+    //                     else {
+    //                         write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
+    //                         write(1, "    ", 4);
+    //                     }
+    //                 }
+    //                 else {
+    //                     write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
+    //                     write(1, "    ", 4);
+    //                     write(1, "\n", 1);
+    //                 }
+    //                 // cur -= mx_strlen(dir_args[j]->name);
+    //                 // print_spaces(cur);
+    //             }
+    //             // all += ptr->cols;
+    //         }
+    //         if (k + 1 != ptr->lines)
+    //             write(1, "\n", 1);
+    //     }
+    //     write(1, "\n", 1);
+    // }
     write(1, "\n", 1);
     if (flag[r_big]) {
-        struct stat buff;
-        printf("%d\n", lstat("/Applications/Dashboard.app", &buff));
         for (int i = 0; i < ptr->count; i++) {
             if (dir_args[i]->mode[0] == 'd') {
-                // printf("%s\n", dir_args[i]->path);
-                if (lstat(dir_args[i]->path, &buff) == 0) {
-                    printf("%s\n", dir_args[i]->path);
+                printf("%s\n", dir_args[i]->path);
+                if (dir_args[i]->mode[1] != '-') {
                     if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0))
                         mx_dir_parse(flag, dir_args[i]->path);
                 }
