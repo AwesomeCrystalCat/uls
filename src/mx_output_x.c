@@ -38,7 +38,7 @@ void mx_output_x(t_elem **dir_args, t_all *ptr, e_flg *flag) {
             }
             cur -= mx_strlen(dir_args[j]->name);
             print_space(cur);
-            if ((j + 1) % ptr->cols == 0)
+            if ((j + 1) % ptr->cols == 0 && j + 1 != ptr->count)
                 write(1, "\n", 1);
         }
         if (limit + ptr->cols < ptr->count)

@@ -16,9 +16,9 @@ void mx_quick_rev_elem_sort(t_elem **ptr, int left, int right) {
         i = left;
         j = right;
         while (i < j) {
-            while (strcmp(ptr[i]->s_name, ptr[pivot]->s_name) > 0 && i < right)
+            while (strcmp(ptr[i]->name, ptr[pivot]->name) > 0 && i < right)
                 i++;
-            while (strcmp(ptr[j]->s_name, ptr[pivot]->s_name) < 0)
+            while (strcmp(ptr[j]->name, ptr[pivot]->name) < 0)
                 j--;
             if (i < j)
                 swap_elems(ptr[i], ptr[j]);

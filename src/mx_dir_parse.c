@@ -37,11 +37,10 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     mx_sorting(dir_args, ptr, flag);
     mx_cols_and_rows(dir_args, ptr, flag);
     //spaces = empty_spaces(ptr, dir_args);
-    
-    if (flag[r_big]) {
-        write(1, dir, mx_strlen(dir));
-        write(1, ":", 1);
-        write(1, "\n", 1);
+    // write(1, dir, mx_strlen(dir));
+    // write(1, ":", 1);
+    // write(1, "\n", 1);
+    if (flag[r_big]) { 
         write(1, dir, mx_strlen(dir));
         write(1, ":\ntotal:", 2);
         // write(1, dir, mx_strlen(dir));//GET LSTAT FOR THE DIRECTORY 
