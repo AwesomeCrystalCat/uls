@@ -13,11 +13,13 @@ void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag) {
     }
     if (total_len > ptr->line_len) {
         mx_find_name_len(dir_args, ptr, flag);
-        mx_get_real_cols(ptr, dir_args, flag);
+        //mx_get_real_cols(ptr, dir_args, flag);
     }
     else
         ptr->lines = 1;
-    ptr->cols = ptr->count / ptr->lines;
-    if (ptr->count % ptr->lines > 0)
-        ptr->cols++;
+    // printf("line_len = %d\n", ptr->line_len);
+    // printf("name_len = %d\n", ptr->name_len);
+    // printf("count = %d\n", ptr->count);
+    // printf("cols = %d\n", ptr->cols);
+    // printf("lines = %d\n", ptr->lines);
 }

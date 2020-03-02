@@ -148,11 +148,11 @@ void mx_get_real_cols(t_all *ptr, t_elem **dir_args, e_flg *flag);
 void mx_print_files(t_data *data, e_flg *flag);
 void mx_print_dirs(t_data *data, e_flg *flag);
 void mx_print_colored(const char *name, const char *path);
-void mx_output_l(t_elem **arr, int num, e_flg *flag);
-void mx_output_1(t_elem **arr, int num, e_flg *flag);
+void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_errors_arr(t_total *tot, t_data *data, int argc, char **argv);
 void mx_print_errors(t_data *data);
-void mx_output_m(t_elem **arr, int num, e_flg *flag);
+void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag);
 int mx_get_bsize_num(t_all *ptr, t_elem **arr);
 int mx_get_inode_num(t_all *ptr, t_elem **arr);
@@ -164,5 +164,6 @@ const char *mx_get_path(const char *file, const char *dir);
 void mx_quick_time_sort(t_elem **arr, int left, int right);
 void mx_quick_rev_time_sort(t_elem **arr, int left, int right);
 void mx_printer(t_elem **dir_args, t_all *ptr, e_flg *flag);
+void mx_output_x(t_elem **arr, t_all *ptr, e_flg *flag);
 
 #endif

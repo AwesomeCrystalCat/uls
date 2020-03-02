@@ -34,6 +34,7 @@ SRCOUT = main.c \
 	mx_print_colored.c \
 	mx_output_l.c \
 	mx_output_1.c \
+	mx_output_x.c \
 	mx_print_errors.c \
 	mx_errors_array.c \
 	mx_output_m.c \

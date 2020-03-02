@@ -4,9 +4,7 @@ void mx_parse_args(int n, char **str, t_data *data) {
     struct stat buff;
 
     if (n > 1) {
-        printf("here it's\n");
         for (int i = 1; i < n; i++) {
-            printf("and here it's\n");
             if (!(str[i][0] == '-')) {
                 if (lstat(str[i], &buff) == 0) {
                     if ((buff.st_mode & S_IFMT) == S_IFDIR)

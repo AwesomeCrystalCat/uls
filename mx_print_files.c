@@ -27,7 +27,7 @@ void mx_print_files(t_data *data, e_flg *flag) {
     if (isatty(1) == 1) {
         for (int i = 0; data->files[i] != NULL; i++) {
             if (flag[l])
-                mx_output_l(arr, data->fcount, flag);
+                mx_output_l(arr, ptr, flag);
             else if (flag[g_big]) {
                 mx_print_colored(arr[i]->name, arr[i]->path);
                 mx_printstr("        ");

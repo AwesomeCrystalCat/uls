@@ -6,24 +6,24 @@ void print_spaces(int num) {
     }
 }
 
-int *empty_spaces(t_all *ptr, t_elem **dir_args) {
-    int *spaces = (int *)malloc(sizeof(int) * ptr->cols - 1);
-    int height = ptr->lines;
-    int i = 0;
+// int *empty_spaces(t_all *ptr, t_elem **dir_args) {
+//     int *spaces = (int *)malloc(sizeof(int) * ptr->cols - 1);
+//     int height = ptr->lines;
+//     int i = 0;
 
-    for (int cur = 0; cur < ptr->count; i++) {
-        spaces[i] = 0;
-        int bottom = cur + height;
-        for (; cur < bottom && cur < ptr->count; cur++) {
-            if (mx_strlen(dir_args[cur]->name) > spaces[i])
-                spaces[i] = mx_strlen(dir_args[cur]->name);
-        }
-    }
-    return spaces;
-}
+//     for (int cur = 0; cur < ptr->count; i++) {
+//         spaces[i] = 0;
+//         int bottom = cur + height;
+//         for (; cur < bottom && cur < ptr->count; cur++) {
+//             if (mx_strlen(dir_args[cur]->name) > spaces[i])
+//                 spaces[i] = mx_strlen(dir_args[cur]->name);
+//         }
+//     }
+//     return spaces;
+// }
 
 void mx_dir_parse(e_flg *flag, const char *dir) {
-    int *spaces = 0;
+    //int *spaces = 0;
     int cur = 0;
     int all = 0;
 
@@ -36,53 +36,60 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     mx_read_dir(dir_args, dir, flag);
     mx_sorting(dir_args, ptr, flag);
     mx_cols_and_rows(dir_args, ptr, flag);
-    spaces = empty_spaces(ptr, dir_args);
-    write(1, dir, mx_strlen(dir));
-    write(1, ":", 1);
-    write(1, "\n", 1);
+    //spaces = empty_spaces(ptr, dir_args);
+    
     if (flag[r_big]) {
+        write(1, dir, mx_strlen(dir));
+        write(1, ":", 1);
+        write(1, "\n", 1);
         write(1, dir, mx_strlen(dir));
         write(1, ":\ntotal:", 2);
         // write(1, dir, mx_strlen(dir));//GET LSTAT FOR THE DIRECTORY 
     }
     if (flag[l])
-        mx_output_l(dir_args, ptr->count, flag);
+        mx_output_l(dir_args, ptr, flag);
     else if (flag[m])
-        mx_output_m(dir_args, ptr->count, flag);
+        mx_output_m(dir_args, ptr, flag);
     else if (flag[one])
-        mx_output_1(dir_args, ptr->count, flag); 
+        mx_output_1(dir_args, ptr, flag);
+    else if (flag[x])
+        mx_output_x(dir_args, ptr, flag);
     else {
-    for (int k = 0; k < ptr->lines; k++) {
-        cur = 0;
-        for (int j = 0; j < ptr->count; j++, cur++) {
-            if (j % ptr->lines == k) {
-                if (j / ptr->lines != 0)
-                        write(1, "  ", 2);
-                if (flag[i]) {
-                    write(1, dir_args[j]->inode, mx_strlen(dir_args[j]->inode));
-                    write(1, " ", 1);
-                }
-                if (flag[s]) {
-                    write(1, dir_args[j]->bsize, mx_strlen(dir_args[j]->bsize));
-                    write(1, " ", 1);
-                }
-                if (isatty(1) == 1) {
-                    if (flag[g_big])
-                        mx_print_colored(dir_args[j]->name, dir_args[j]->path);
+        for (int k = 0; k < ptr->lines; k++) {
+            for (int j = 0; j < ptr->count; j++) {
+                cur = ptr->name_len;
+                if (j % ptr->lines == k) {
+                    if (flag[i]) {
+                        print_spaces(ptr->inode_n - mx_strlen(dir_args[j]->inode));
+                        write(1, dir_args[j]->inode, mx_strlen(dir_args[j]->inode));
+                        write(1, " ", 1);
+                        cur -= ptr->inode_n + 1;
+                    }
+                    if (flag[s]) {
+                        print_spaces(ptr->bsize_n - mx_strlen(dir_args[j]->bsize));
+                        write(1, dir_args[j]->bsize, mx_strlen(dir_args[j]->bsize));
+                        write(1, " ", 1);
+                        cur -= ptr->bsize_n + 1;
+                    }
+                    if (isatty(1) == 1) {
+                        if (flag[g_big])
+                            mx_print_colored(dir_args[j]->name, dir_args[j]->path);
+                        else {
+                            write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
+                        }
+                    }
                     else {
                         write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
+                        write(1, "\n", 1);
                     }
+                    cur -= mx_strlen(dir_args[j]->name);
+                    print_spaces(cur);
                 }
-                else {
-                    write(1, dir_args[j]->name, mx_strlen(dir_args[j]->name));
-                // write(1, "\n", 1);
-                }
-                print_spaces(spaces[j/ptr->lines] - mx_strlen(dir_args[j]->name));
+                all += ptr->cols;
+            }
+            if (k + 1 != ptr->lines)
+                write(1, "\n", 1);
         }
-        all += ptr->cols;
-    }
-    write(1, "\n", 1);
-    }
     }
     write(1, "\n", 1);
     if (flag[r_big]) {
