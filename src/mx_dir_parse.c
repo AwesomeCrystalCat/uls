@@ -6,24 +6,7 @@ void print_spaces(int num) {
     }
 }
 
-// int *empty_spaces(t_all *ptr, t_elem **dir_args) {
-//     int *spaces = (int *)malloc(sizeof(int) * ptr->cols - 1);
-//     int height = ptr->lines;
-//     int i = 0;
-
-//     for (int cur = 0; cur < ptr->count; i++) {
-//         spaces[i] = 0;
-//         int bottom = cur + height;
-//         for (; cur < bottom && cur < ptr->count; cur++) {
-//             if (mx_strlen(dir_args[cur]->name) > spaces[i])
-//                 spaces[i] = mx_strlen(dir_args[cur]->name);
-//         }
-//     }
-//     return spaces;
-// }
-
 void mx_dir_parse(e_flg *flag, const char *dir) {
-    //int *spaces = 0;
     int cur = 0;
     int all = 0;
 
@@ -36,13 +19,14 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     mx_read_dir(dir_args, dir, flag);
     mx_sorting(dir_args, ptr, flag);
     mx_cols_and_rows(dir_args, ptr, flag);
-    //spaces = empty_spaces(ptr, dir_args);
     // write(1, dir, mx_strlen(dir));
     // write(1, ":", 1);
     // write(1, "\n", 1);
-    if (flag[r_big]) { 
-        write(1, dir, mx_strlen(dir));
-        write(1, ":\ntotal:", 2);
+    if (flag[r_big]) {
+        if (mx_strcmp(dir, "/") && mx_strcmp(dir, ".")) {
+            write(1, dir, mx_strlen(dir));
+            write(1, ":\ntotal:\n", 2);
+        }
         // write(1, dir, mx_strlen(dir));//GET LSTAT FOR THE DIRECTORY 
     }
     if (flag[l])
@@ -59,16 +43,16 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
                 cur = ptr->name_len;
                 if (j % ptr->lines == k) {
                     if (flag[i]) {
-                        print_spaces(ptr->inode_n - mx_strlen(dir_args[j]->inode));
+                        // print_spaces(ptr->inode_n - mx_strlen(dir_args[j]->inode));
                         write(1, dir_args[j]->inode, mx_strlen(dir_args[j]->inode));
                         write(1, " ", 1);
-                        cur -= ptr->inode_n + 1;
+                        // cur -= ptr->inode_n + 1;
                     }
                     if (flag[s]) {
-                        print_spaces(ptr->bsize_n - mx_strlen(dir_args[j]->bsize));
+                        // print_spaces(ptr->bsize_n - mx_strlen(dir_args[j]->bsize));
                         write(1, dir_args[j]->bsize, mx_strlen(dir_args[j]->bsize));
                         write(1, " ", 1);
-                        cur -= ptr->bsize_n + 1;
+                        // cur -= ptr->bsize_n + 1;
                     }
                     if (isatty(1) == 1) {
                         if (flag[g_big])
@@ -82,9 +66,9 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
                         write(1, "\n", 1);
                     }
                     cur -= mx_strlen(dir_args[j]->name);
-                    print_spaces(cur);
+                    // print_spaces(cur);
                 }
-                all += ptr->cols;
+                // all += ptr->cols;
             }
             if (k + 1 != ptr->lines)
                 write(1, "\n", 1);
@@ -92,10 +76,21 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     }
     write(1, "\n", 1);
     if (flag[r_big]) {
+        struct stat buff;
+        printf("%d\n", lstat("/Applications/Dashboard.app", &buff));
         for (int i = 0; i < ptr->count; i++) {
             if (dir_args[i]->mode[0] == 'd') {
-                if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0))
-                    mx_dir_parse(flag, dir_args[i]->path);
+                // printf("%s\n", dir_args[i]->path);
+                if (lstat(dir_args[i]->path, &buff) == 0) {
+                    printf("%s\n", dir_args[i]->path);
+                    if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0))
+                        mx_dir_parse(flag, dir_args[i]->path);
+                }
+                else {
+                    write(1, "ls: ", 4);
+                    write(1, dir_args[i]->name, mx_strlen(dir_args[i]->name));
+                    write(1, ": Permission denied\n", 20);
+                }
             }
         }
     }

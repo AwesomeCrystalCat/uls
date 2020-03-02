@@ -42,8 +42,8 @@ int main (int argc, char **argv) {
         mx_dir_parse(flag, ".");
     else {
         mx_print_files(data, flag);
-        write(1, "\n", 1);
-        write(1, "\n", 1);
+        if (data->files[0] != NULL)
+            write(1, "\n", 1);
         mx_print_dirs(data, flag);
     }
     return 0;

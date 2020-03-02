@@ -5,10 +5,14 @@ const char *mx_get_path(const char *file, const char *dir) {  //still need to ch
 
     if (!mx_strcmp(dir, "."))
         path = file;
+    else if (!mx_strcmp(dir, "/")) {
+        path = mx_strjoin(path, "/");
+        path = mx_strjoin(path, file);
+    }
     else {
         path = mx_strjoin(path, dir);
         path = mx_strjoin(path,"/");
-        path = mx_strjoin(path,file);
+        path = mx_strjoin(path, file);
     }
     return path;
 }
