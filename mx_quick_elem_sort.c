@@ -16,7 +16,7 @@ void mx_quick_elem_sort(t_elem **ptr, int left, int right) {
         i = left;
         j = right;
         while (i < j) {
-            printf("%s -> %s, %d\n", ptr[i]->name, ptr[pivot]->name, pivot);
+            // printf("%s -> %s, %d\n", ptr[i]->name, ptr[pivot]->name, pivot);
             while (strcmp(ptr[i]->name, ptr[pivot]->name) < 0 && i < right)
                 i++;
             while (strcmp(ptr[j]->name, ptr[pivot]->name) > 0)
