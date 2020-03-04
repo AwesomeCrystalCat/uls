@@ -6,11 +6,11 @@ static int find_all_len(t_all *ptr, t_elem **dir_args, int cur, e_flg *flag) {
 
     res += mx_strlen(dir_args[cur]->name) + MX_TAB;
     if (flag[i] && flag[s])
-        res += ptr->inode_n + ptr->bsize_n - 1;
+        res += ptr->inode_n + ptr->bsize_n - 3;
     else if (flag[i])
         res += ptr->inode_n - 6;
     else if (flag[s])
-        res += ptr->bsize_n - 2;
+        res += ptr->bsize_n - 5;
     return res;
 }
 
@@ -25,8 +25,4 @@ void mx_find_name_len(t_elem **arr, t_all *ptr, e_flg *flag) {
     // printf("bsize_n = %d\n", ptr->bsize_n);
     // printf("res = %d\n", res);
     ptr->name_len = res;
-    ptr->cols = ptr->line_len / ptr->name_len;
-    ptr->lines = ptr->count / ptr->cols;
-    if (ptr->count % ptr->cols > 0)
-        ptr->lines++;
 }

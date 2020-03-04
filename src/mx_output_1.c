@@ -8,14 +8,14 @@ void print_s(int num) {
 
 void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag) {
     for (int k = 0; k < ptr->count; k++) {
-        if (flag[s]) {
-            print_s(ptr->bsize_n - mx_strlen(arr[k]->bsize));
-            mx_printstr(arr[k]->bsize);
-            write(1, " ", 1);
-        }
         if (flag[i]) {
             print_s(ptr->inode_n - mx_strlen(arr[k]->inode));
             mx_printstr(arr[k]->inode);
+            write(1, " ", 1);
+        }
+        if (flag[s]) {
+            print_s(ptr->bsize_n - mx_strlen(arr[k]->bsize));
+            mx_printstr(arr[k]->bsize);
             write(1, " ", 1);
         }
         if (isatty(1) == 1) {
