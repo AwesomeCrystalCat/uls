@@ -50,7 +50,8 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) { //collect 
     ptr->gid = mx_setgrp(&buff, flag);
     ptr->size_i = buff.st_size;
     ptr->size = mx_itoa(buff.st_size);
-    ptr->bsize = mx_set_bsize(&buff, ptr->mode);
+    //ptr->bsize = mx_set_bsize(&buff, ptr->mode);
+    ptr->bsize = mx_itoa(buff.st_blocks);
     mx_set_time(&buff, ptr, flag);
     return ptr;
 }

@@ -26,7 +26,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     mx_read_dir(dir_args, dir, flag);
     mx_sorting(dir_args, ptr, flag);
     mx_cols_and_rows(dir_args, ptr, flag);
-    printf("%d, %d, %d, %d\n", ptr->lines, ptr->cols, ptr->count, ptr->name_len);
+    //printf("%d, %d, %d, %d\n", ptr->lines, ptr->cols, ptr->count, ptr->name_len);
     // write(1, dir, mx_strlen(dir));
     // write(1, ":", 1);
     // write(1, "\n", 1);
@@ -99,24 +99,25 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     if (flag[r_big]) {
         for (int i = 0; i < ptr->count; i++) {
             if (dir_args[i]->mode[0] == 'd') {
-                if (dir_args[i]->mode[1] != '-' && dir_args[i]->mode[4] != '-' && dir_args[i]->mode[7] != '-') {
-                    if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0)) {
-                        printf("%s\n", dir_args[i]->path);
+                if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0)) {
+                    if (dir_args[i]->mode[1] != '-' && dir_args[i]->mode[4] != '-' && dir_args[i]->mode[7] != '-') {
+                        //printf("%s\n", dir_args[i]->path);
                         mx_dir_parse(flag, dir_args[i]->path);
                         free(dir_args[i]);
                         // free(ptr);
                     }
-                }
                 else {
                     write(1, "ls: ", 4);
                     write(1, dir_args[i]->name, mx_strlen(dir_args[i]->name));
                     write(1, ": Permission denied\n", 20);
+                }
                 }
             }
             else {
                 free(dir_args[i]);
                 // free(ptr);
             }
+            
         }
         free(dir_args);
         free(ptr);
