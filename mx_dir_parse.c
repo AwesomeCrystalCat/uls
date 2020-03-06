@@ -51,7 +51,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
                 print_spaces(ptr->bsize_n - mx_strlen(dir_args[j]->bsize));
                 write(1, dir_args[j]->bsize, mx_strlen(dir_args[j]->bsize));
                 write(1, " ", 1);
-                cur -= ptr->bsize_n - 1;
+                cur -= ptr->bsize_n + 1;
             }
             if (flag[g_big])
                 mx_print_colored(dir_args[j]->name, dir_args[j]->path);
