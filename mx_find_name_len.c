@@ -6,7 +6,7 @@ static int find_all_len(t_all *ptr, t_elem **dir_args, int cur, e_flg *flag) {
 
     res += mx_strlen(dir_args[cur]->name) + MX_TAB;
     if (flag[i] && flag[s])
-        res += ptr->inode_n + ptr->bsize_n - 3;
+        res += ptr->inode_n + ptr->bsize_n - 5;
     else if (flag[i])
         res += ptr->inode_n - 6;
     else if (flag[s])

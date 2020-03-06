@@ -28,7 +28,6 @@ SRCOUT = main.c \
 	mx_print_err.c \
 	mx_prior_all.c \
 	mx_switch_flags.c \
-	mx_get_real_cols.c \
 	mx_print_files.c \
 	mx_print_dirs.c \
 	mx_print_colored.c \

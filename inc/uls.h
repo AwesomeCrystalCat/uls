@@ -144,7 +144,6 @@ void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl);
 void mx_prior_all(t_total *tot, e_flg *fl, char **argv);
 int mx_get_win_size();
 void mx_dir_parse(e_flg *flag, const char *dir);
-void mx_get_real_cols(t_all *ptr, t_elem **dir_args, e_flg *flag);
 void mx_print_files(t_data *data, e_flg *flag);
 void mx_print_dirs(t_data *data, e_flg *flag);
 void mx_print_colored(const char *name, const char *path);
