@@ -68,7 +68,5 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) { //collect 
     ptr->b = buff.st_blocks;
     ptr->bsize = mx_itoa(buff.st_blocks);
     mx_set_time(&buff, ptr, flag);
-    if (ptr->mode[0] -> 'l')
-        ptr->link_to = 
     return ptr;
 }

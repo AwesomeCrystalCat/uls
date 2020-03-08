@@ -7,7 +7,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     // printf("%s\n", dir);
     ptr->count = mx_files_count(dir, flag);
     
-    if (flag[r_big] || flag[l] || flag[s]) {
+    if (flag[r_big] || flag[l] || flag[s] || flag[g_big]) {
         if (flag[r_big]) {
             write(1, dir, mx_strlen(dir));
             write(1, ":\n", 2);

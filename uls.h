@@ -21,7 +21,7 @@
 # define MX_CHR_COL "\x1b[34;43m"
 # define MX_DIR_COL "\x1b[1m\x1b[36m"
 # define MX_BLK_COL "\x1b[34;46m"
-# define MX_REG_COL "\x1b[0m"
+# define MX_REG_COL "\x1b[37;2m"
 # define MX_LNK_COL "\x1b[35m"
 # define MX_SOCK_COL "\x1b[32m"
 # define MX_WHT_COL "\x1b[31m"
@@ -77,7 +77,7 @@ typedef struct s_total {
     int count_dash;
     int size_all_fl;
     e_flg *flags;
-} t_total;
+}               t_total;
 
 typedef struct s_elem {
     const char *name;
@@ -94,6 +94,7 @@ typedef struct s_elem {
     char* bsize;
     int u_time;
     char* r_time;
+    char* link_to;
 }               t_elem;
 
 typedef struct s_arr_data {
