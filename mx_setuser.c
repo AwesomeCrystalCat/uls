@@ -4,7 +4,7 @@ char *mx_setuser(struct stat *buff, e_flg *flag) {
     struct passwd* pass = getpwuid(buff->st_uid);
     char *usr = NULL;
 
-    if (pass == NULL || flag[o]) {
+    if (pass == NULL || flag[n]) {
         usr = mx_strdup(mx_itoa(buff->st_uid));
     } 
     else {

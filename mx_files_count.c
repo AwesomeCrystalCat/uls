@@ -6,8 +6,10 @@ int mx_files_count(const char *name, e_flg *flag) {
     struct dirent *myfile;
     DIR *mydir;
 
+    // printf("REMEMBER MY ... - %s\n", name);
     mydir = opendir(name);
         while((myfile = readdir(mydir)) != NULL) {
+            // printf("files in dev - %s\n", myfile->d_name);
             if (flag[a])
                 count++;
             else if (flag[a_big]) {
@@ -20,5 +22,6 @@ int mx_files_count(const char *name, e_flg *flag) {
             }
         }
     closedir(mydir);
+    // printf("count here - %d\n", count);
     return count;
 }

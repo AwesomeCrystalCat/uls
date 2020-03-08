@@ -80,22 +80,21 @@ typedef struct s_total {
 } t_total;
 
 typedef struct s_elem {
-    const char *path;
     const char *name;
-    char *s_name;
+    const char *path;
     char* inode;
-    int numeric;
     char* mode;
-    char acl;
+    const void *acl;
     char* link;
     char* uid;
     char* gid;
     unsigned int size_i;
     char* size;
+    int b;
     char* bsize;
     int u_time;
     char* r_time;
-} t_elem;
+}               t_elem;
 
 typedef struct s_arr_data {
     char **files;
@@ -148,10 +147,10 @@ void mx_print_files(t_data *data, e_flg *flag);
 void mx_print_dirs(t_data *data, e_flg *flag);
 void mx_print_colored(const char *name, const char *path);
 void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag);
-void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
 void mx_errors_arr(t_total *tot, t_data *data, int argc, char **argv);
 void mx_print_errors(t_data *data);
-void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit);
 void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag);
 void mx_get_bsize_num(t_all *ptr, t_elem **arr, e_flg *flag);
 void mx_get_inode_num(t_all *ptr, t_elem **arr, e_flg *flag);
@@ -163,6 +162,12 @@ const char *mx_get_path(const char *file, const char *dir);
 void mx_quick_time_sort(t_elem **arr, int left, int right);
 void mx_quick_rev_time_sort(t_elem **arr, int left, int right);
 void mx_printer(t_elem **dir_args, t_all *ptr, e_flg *flag);
-void mx_output_x(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_output_x(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
+void mx_output_c(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
+void mx_print_spaces(int num);
+int mx_print_is(t_elem **dir_args, t_all *ptr, e_flg *flag, int j);
+void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur);
+const char *mx_print_total(t_elem **arr, t_all *ptr);
 
 #endif

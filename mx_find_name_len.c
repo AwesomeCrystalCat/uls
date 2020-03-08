@@ -21,8 +21,5 @@ void mx_find_name_len(t_elem **arr, t_all *ptr, e_flg *flag) {
             res = find_all_len(ptr, arr, j, flag);
         }
     }
-    // printf("inode_n = %d\n", ptr->inode_n);
-    // printf("bsize_n = %d\n", ptr->bsize_n);
-    // printf("res = %d\n", res);
     ptr->name_len = res;
 }

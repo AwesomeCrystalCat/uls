@@ -4,7 +4,7 @@ const char *mx_get_path(const char *file, const char *dir) {  //still need to ch
     const char *path = malloc(sizeof(char *));
 
     if (!mx_strcmp(dir, "."))
-        path = file;
+        path = mx_strdup(file);
     else if (!mx_strcmp(dir, "/")) {
         path = mx_strjoin(path, "/");
         path = mx_strjoin(path, file);

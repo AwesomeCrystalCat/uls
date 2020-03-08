@@ -11,8 +11,6 @@ void mx_uls(char name[]) {
     else {
         while((direntp = readdir(dir_ptr)) != NULL) {
             write(1, direntp->d_name, strlen(direntp->d_name));
-            write(1, "\n", 2);
-        }
         closedir(dir_ptr);
     }
 }
