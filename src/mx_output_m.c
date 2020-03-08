@@ -31,7 +31,7 @@ static int kostul_m_s(t_elem **arr, t_all *ptr, int k, int limit) {
 
 static void output_m_file(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
     for (int k = 0; k < ptr->count; k++) {
-        if (find_all(ptr, arr, k, flag) + limit + 2 > 92) {
+        if (find_all(ptr, arr, k, flag) + limit + 2 > 81) {
             write(1, "\n", 1);
             limit = 0;
         }
@@ -43,7 +43,10 @@ static void output_m_file(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
             mx_printstr(arr[k]->name);
         if (k + 1 != ptr->count)
             write(1, ", ", 2);
-        limit += mx_strlen(arr[k]->name) + 2;  
+        if (k + 2 != ptr->count)
+            limit += mx_strlen(arr[k]->name) + 2;
+        else
+            limit += mx_strlen(arr[k]->name);
     }
 }
 
@@ -51,18 +54,21 @@ void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
     if (isatty(1) == 1) {
         for (int k = 0; k < ptr->count; k++) {
             if (find_all(ptr, arr, k, flag) + limit + 2 > ptr->line_len) {
-                write(1, "\n", 1);
-                limit = 0;
+            write(1, "\n", 1);
+            limit = 0;
             }
             flag[i] == 1 ? limit = kostul_m_i(arr, ptr, k, limit) : limit;
             flag[s] == 1 ? limit = kostul_m_s(arr, ptr, k, limit) : limit;
-            if (flag[g_big])
+            if (flag[g_big] && isatty(1) == 1)
                 mx_print_colored(arr[k]->name, arr[k]->path); 
             else
                 mx_printstr(arr[k]->name);
             if (k + 1 != ptr->count)
                 write(1, ", ", 2);
-            limit += mx_strlen(arr[k]->name) + 2;  
+            if (k + 2 != ptr->count)
+                limit += mx_strlen(arr[k]->name) + 2;
+            else
+                limit += mx_strlen(arr[k]->name); 
         }
     }
     else

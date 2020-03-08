@@ -170,5 +170,6 @@ int mx_print_is(t_elem **dir_args, t_all *ptr, e_flg *flag, int j);
 void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur);
 const char *mx_print_total(t_elem **arr, t_all *ptr);
+void mx_print_link(t_elem **arr, t_all *ptr, int j);
 
 #endif

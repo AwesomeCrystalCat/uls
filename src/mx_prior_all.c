@@ -5,24 +5,42 @@ static void get_prior_1(int i, int j, char **argv, e_flg *fl);
 static void prior_1(e_flg *fl, int *value);
 static void prior_2(e_flg *fl, int *value);
 
+static void get_prior_3(int i, int j, char **argv, e_flg *fl) {
+    switch (argv[i][j]) {
+        case 'o':
+            if (fl[g] == 1)
+                prior_1(fl, (int[]) {0, 0, 1, 0, 0, 1, 0, 1});
+            else
+                prior_1(fl, (int[]) {0, 0, 1, 0, 0, 0, 0, 1});
+            break;
+        case 'g':
+            if (fl[o] == 1)
+                prior_1(fl, (int[]) {0, 0, 1, 0, 0, 1, 0, 1});
+            else
+                prior_1(fl, (int[]) {0, 0, 1, 0, 0, 1, 0, 0});
+            break;
+    }
+}
+
 void mx_prior_all(t_total *tot, e_flg *fl, char **argv) {
     for (int i = 1; i <= tot->count_dash; i++)
         for (int j = 1; j < mx_strlen(argv[i]); j++) {
             get_prior_1(i, j, argv, fl);
             get_prior_2(i, j, argv, fl);
+            get_prior_3(i, j, argv, fl);
             switch (argv[i][j]) {
                 case 'm':
                     prior_1(fl, (int[]) {0, 0, 0, 0, 1, 0, 0, 0});
                     break;
-                case 'g':
-                    prior_1(fl, (int[]) {0, 0, 1, 0, 0, 1, 0, 0});
-                    break;
+                // case 'g':
+                //     prior_1(fl, (int[]) {0, 0, 1, 0, 0, 1, 0, 0});
+                //     break;
                 case 'n':
                     prior_1(fl, (int[]) {0, 0, 1, 0, 0, 0, 1, 0});
                     break;
-                case 'o':
-                    prior_1(fl, (int[]) {0, 0, 1, 0, 0, 0, 0, 1});
-                    break;
+                // case 'o':
+                //     prior_1(fl, (int[]) {0, 0, 1, 0, 0, 0, 0, 1});
+                //     break;
             }
         }
 }

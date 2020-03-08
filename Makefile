@@ -55,6 +55,7 @@ SRCOUT = main.c \
 	mx_output_file.c \
 	mx_output_file_x.c \
 	mx_print_total.c \
+	mx_print_link.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))
 
