@@ -20,6 +20,7 @@ int main (int argc, char **argv) {
         mx_dir_parse(flag, ".");
     }
     else {
+        printf("HERE\n");
         mx_print_files(data, flag);
         if (data->files[0] != NULL)
             write(1, "\n", 1);

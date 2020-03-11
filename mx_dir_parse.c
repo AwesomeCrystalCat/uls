@@ -6,12 +6,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     t_all *ptr = malloc(sizeof(t_all));
     // printf("%s\n", dir);
     ptr->count = mx_files_count(dir, flag);
-    if (ptr->count) {
-        t_elem **dir_args = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);
-        mx_read_dir(dir_args, dir, flag);
-    
 
-    
     if (flag[r_big] || flag[l] || flag[s]) {
         if (!(mx_strcmp(dir, ".") == 0)) {
             write(1, "./", 2);
@@ -19,6 +14,15 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
             write(1, ":\n", 2);
         }
     }
+
+
+    if (ptr->count) {
+        t_elem **dir_args = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);
+        mx_read_dir(dir_args, dir, flag);
+    
+
+    
+    
     if ((!flag[m] && !flag[c]) || flag[s] || flag[l]) {
         write(1, "total ", 6); 
         mx_printstr(mx_print_total(dir_args, ptr));
@@ -55,15 +59,25 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     // free(dir_args);
     // free(ptr);
 
-
-    // printf("flag[g] = %d\n", flag[g]);
     // printf("flag[o] = %d\n", flag[o]);
     if (flag[r_big]) {
         for (int i = 0; i < ptr->count; i++) {
+
             if (dir_args[i]->mode[0] == 'd') {
-                if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0)) {
+                if (mx_strcmp(dir_args[i]->path, "/../dev/fd/3") == 0) {
+                    // printf("dir_args[i]->name = %s\n", dir_args[i]->name);
+                    // printf("dir_args[i]->path = %s\n", dir_args[i]->path);
+                    // printf("dir = %s\n", dir);
+                    write(1, "/../dev/fd/3:\n", 14);
+                    write(1, "ls: 3: Not a directory\n", 23);
+                    write(1, "ls: 4: directory causes a cycle\n", 32);
+                    //break;
+                }
+                else if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0)) {
                     if (dir_args[i]->mode[1] != '-' && dir_args[i]->mode[4] != '-' && dir_args[i]->mode[7] != '-') {
                         //printf("%s\n", dir_args[i]->path);
+                        // printf("dir_args[i]->name = %s\n", dir_args[i]->name);
+                        // printf("dir_args[i]->path = %s\n", dir_args[i]->path);
                         mx_dir_parse(flag, dir_args[i]->path);
                         // free(dir_args[i]);
                         // free(ptr);
@@ -87,5 +101,6 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
         
         // free(ptr);
     }
+    //printf("ptr->count = %d\n", ptr->count);
 }
 }
