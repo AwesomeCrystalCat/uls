@@ -1,38 +1,29 @@
 #include "uls.h"
 
-static int partition(t_elem **arr, int left, int right) {
-    int mid = left + (right - left) / 2;
-    int pivot = arr[mid]->u_time;
-    t_elem *temp;
-
-    while (left <= right) {
-        while (arr[left]->u_time < pivot)
-            left++;
-        while (arr[right]->u_time > pivot)
-            right--;
-        if (left <= right) {
-            if (arr[left]->u_time != arr[right]->u_time) {
-                temp = arr[right];
-                arr[right] = arr[left];
-                arr[left] = temp;
-            }
-            left++;
-            right--;
-        }
-    }
-    return left;
+static void swap_elems(t_elem *arr1, t_elem *arr2) {
+    t_elem temp = *arr1;
+    *arr1 = *arr2;
+    *arr2 = temp;
 }
 
-void mx_quick_rev_time_sort(t_elem **arr, int left, int right) {
+void mx_quick_rev_time_sort(t_elem **ptr, int left, int right) {
+    int i = 0;
+    int j = 0;
     int pivot = 0;
 
-    if (arr) {
-        if (left < right) {
-            pivot = partition(arr, left, right);
-            if (left < pivot - 1)
-                mx_quick_rev_time_sort(arr, left, pivot - 1);
-            if (pivot < right)
-                mx_quick_rev_time_sort(arr, pivot, right);
+    if (left < right) {
+        pivot = left;
+        i = left;
+        j = right;
+        while (i < j) {
+            while (mx_strcmp(ptr[i]->f_time, ptr[pivot]->f_time) > 0 && i < right)
+                i++;
+            while (mx_strcmp(ptr[j]->f_time, ptr[pivot]->f_time) < 0)
+                j--;
+            if (i < j)
+                swap_elems(ptr[i], ptr[j]);
         }
+        mx_quick_elem_sort(ptr, left, j - 1);
+        mx_quick_elem_sort(ptr, j + 1, right);
     }
 }
