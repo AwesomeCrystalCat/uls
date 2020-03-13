@@ -39,20 +39,20 @@ static char set_access_mode(int mode, int user_type) {
 static char set_file_type(struct stat *buff) {
     char chr;
 
-    switch (buff->st_mode & S_IFMT) {
-           case S_IFBLK: chr = 'b';
+    switch (buff->st_mode & MX_IFMT) {
+           case MX_IFBLK: chr = 'b';
            break;
-           case S_IFCHR: chr = 'c';
+           case MX_IFCHR: chr = 'c';
            break;
-           case S_IFDIR: chr = 'd';
+           case MX_IFDIR: chr = 'd';
            break;
-           case S_IFIFO: chr = 'p';
+           case MX_IFIFO: chr = 'p';
            break;
-           case S_IFLNK: chr = 'l';
+           case MX_IFLNK: chr = 'l';
            break;
-           case S_IFREG: chr = '-';
+           case MX_IFREG: chr = '-';
            break;
-           case S_IFSOCK: chr = 's';
+           case MX_IFSOCK: chr = 's';
            break;
            }
     return chr;

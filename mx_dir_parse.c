@@ -1,106 +1,28 @@
 #include "uls.h"
 
+void write_total(t_elem **dir_args, t_all *ptr) {
+    write(1, "total ", 6); 
+    mx_printstr(mx_print_total(dir_args, ptr));
+    write(1, "\n", 1);
+}
+
 void mx_dir_parse(e_flg *flag, const char *dir) {
-    int cur = 0;
-
     t_all *ptr = malloc(sizeof(t_all));
-    // printf("%s\n", dir);
+
     ptr->count = mx_files_count(dir, flag);
-
-    if (flag[r_big] || flag[l] || flag[s]) {
-        if (!(mx_strcmp(dir, ".") == 0)) {
-            write(1, "./", 2);
-            write(1, dir, mx_strlen(dir));
-            write(1, ":\n", 2);
-        }
-    }
-
-
+    mx_print_fname(flag, dir);
+    if (ptr->count == 0)
+        write(1, "total 0\n", 9);
     if (ptr->count) {
         t_elem **dir_args = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);
         mx_read_dir(dir_args, dir, flag);
-    
-
-    
-    
-    if ((!flag[m] && !flag[c]) || flag[s] || flag[l]) {
-        write(1, "total ", 6); 
-        mx_printstr(mx_print_total(dir_args, ptr));
-        write(1, "\n", 1);
-    }
-    //printf("flag[s] = %d\n", flag[s]);
-    
-    
-    // for (int i = 0; i < ptr->count; i++)
-    //         printf("%s\n", dir_args[i]->name);
-    mx_sorting(dir_args, ptr, flag);
-    mx_cols_and_rows(dir_args, ptr, flag);
-    // printf("%d, %d, %d, %d\n", ptr->lines, ptr->cols, ptr->count, ptr->name_len);
-    // write(1, dir, mx_strlen(dir));
-    // write(1, ":", 1);
-    // write(1, "\n", 1);
-    // if (flag[s] || flag[l])
-    //     mx_print_total(dir_args, ptr, flag);
-    if (flag[l])
-        mx_output_l(dir_args, ptr, flag);
-    else if (flag[m])
-        mx_output_m(dir_args, ptr, flag, 0);
-    else if (flag[one])
-        mx_output_1(dir_args, ptr, flag, 0);
-    else if (flag[x])
-        mx_output_x(dir_args, ptr, flag, 0);
-    else
-        mx_output_c(dir_args, ptr, flag, 0);
-    
-    write(1, "\n", 1);
-    flag[r_big] == 1 ? write(1, "\n", 1) : 0;
-    // for (int i = 0; i < ptr->count; i++)
-    //         free(dir_args[i]);
-    // free(dir_args);
-    // free(ptr);
-
-    // printf("flag[o] = %d\n", flag[o]);
-    if (flag[r_big]) {
-        for (int i = 0; i < ptr->count; i++) {
-
-            if (dir_args[i]->mode[0] == 'd') {
-                if (mx_strcmp(dir_args[i]->path, "/../dev/fd/3") == 0) {
-                    // printf("dir_args[i]->name = %s\n", dir_args[i]->name);
-                    // printf("dir_args[i]->path = %s\n", dir_args[i]->path);
-                    // printf("dir = %s\n", dir);
-                    write(1, "/../dev/fd/3:\n", 14);
-                    write(1, "ls: 3: Not a directory\n", 23);
-                    write(1, "ls: 4: directory causes a cycle\n", 32);
-                    //break;
-                }
-                else if (!(mx_strcmp(dir_args[i]->name, ".") == 0 || mx_strcmp(dir_args[i]->name, "..") == 0)) {
-                    if (dir_args[i]->mode[1] != '-' && dir_args[i]->mode[4] != '-' && dir_args[i]->mode[7] != '-') {
-                        //printf("%s\n", dir_args[i]->path);
-                        // printf("dir_args[i]->name = %s\n", dir_args[i]->name);
-                        // printf("dir_args[i]->path = %s\n", dir_args[i]->path);
-                        mx_dir_parse(flag, dir_args[i]->path);
-                        // free(dir_args[i]);
-                        // free(ptr);
-                        
-                    }
-                else {
-                    write(1, "ls: ", 4);
-                    write(1, dir_args[i]->name, mx_strlen(dir_args[i]->name));
-                    write(1, ": Permission denied\n", 20);
-                }
-                // write(1, "\n", 1);
-                
-                }
-            }
-            else {
-                // free(dir_args[i]);
-                // free(ptr);
-            }
+        if ((!flag[m] && !flag[c]) || flag[s] || flag[l]) {
+            write_total(dir_args, ptr);
         }
-        // free(dir_args);
-        
-        // free(ptr);
+        mx_sorting(dir_args, ptr, flag);
+        mx_cols_and_rows(dir_args, ptr, flag);
+        mx_printer(dir_args, ptr, flag);
+        if (flag[r_big])
+            mx_recursion(ptr, dir_args, flag);
     }
-    //printf("ptr->count = %d\n", ptr->count);
-}
 }

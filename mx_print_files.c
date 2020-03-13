@@ -6,36 +6,9 @@ void mx_print_files(t_data *data, e_flg *flag) {
     t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * data->fcount);
 
     ptr->count = data->fcount;
-    for (int i = 0; data->files[i] != NULL; i++)
+    for (int i = 0; i < ptr->count; i++)
         arr[i] = mx_getstats(data->files[i], ".", flag);
-    if (flag[r]) {
-        if (flag[s_big])
-            mx_quick_rev_size_sort(arr, 0, data->fcount - 1);
-        else if (flag[t])
-            mx_quick_rev_time_sort(arr, 0, data->fcount - 1);
-        else
-            mx_quick_rev_elem_sort(arr, 0, data->fcount - 1);
-    }
-    else {
-        if (flag[s_big])
-            mx_quick_size_sort(arr, 0, data->fcount - 1);
-        else if (flag[t])
-            mx_quick_time_sort(arr, 0, data->fcount - 1);
-        else
-            mx_quick_elem_sort(arr, 0, data->fcount - 1);
-    }
-    if (isatty(1) == 1) {
-        for (int i = 0; data->files[i] != NULL; i++) {
-            if (flag[l])
-                mx_output_l(arr, ptr, flag);
-            else if (flag[g_big]) {
-                mx_print_colored(arr[i]->name, arr[i]->path);
-                mx_printstr("        ");
-            }
-            else {
-                write(1, arr[i]->name, mx_strlen(arr[i]->name));
-                mx_printstr("        ");
-            }
-        }
-    }
+    mx_sorting(arr, ptr, flag);
+    mx_cols_and_rows(arr, ptr, flag);
+    mx_printer(arr, ptr, flag);
 }

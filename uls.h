@@ -17,6 +17,14 @@
 #define MX_IWOTH 0000002
 #define MX_IXOTH 0000001
 
+#define MX_IFDIR 0040000
+#define MX_IFCHR 0020000
+#define MX_IFBLK 0060000
+#define MX_IFREG 0100000
+#define MX_IFIFO 0010000
+#define MX_IFLNK 0120000
+#define MX_IFSOCK 0140000
+
 # define MX_FIFO_COL "\x1b[33m"
 # define MX_CHR_COL "\x1b[34;43m"
 # define MX_DIR_COL "\x1b[1m\x1b[36m"
@@ -66,7 +74,7 @@ typedef struct s_all {
     int inode_n;
     int bsize_n;
     e_flg *flag;
-} t_all;
+}               t_all;
 
 typedef struct s_total {
     char *all_flags;
@@ -90,7 +98,7 @@ typedef struct s_elem {
     char* gid;
     unsigned int size_i;
     char* size;
-    int b;
+    unsigned int b;
     char* bsize;
     int u_time;
     char* r_time;
@@ -98,12 +106,12 @@ typedef struct s_elem {
 }               t_elem;
 
 typedef struct s_arr_data {
-    char **files;
     char **directs;
+    char **files;
     char **errors;
     int fcount;
     int dcount;
-} t_data;
+}               t_data;
 
 #include "libmx/inc/libmx.h"
 #include <dirent.h>
@@ -171,5 +179,20 @@ void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur);
 const char *mx_print_total(t_elem **arr, t_all *ptr);
 void mx_print_link(t_elem **arr, t_all *ptr, int j);
+void mx_print_fname(e_flg *flag, const char *name);
+void mx_recursion(t_all *ptr, t_elem **dir_args, e_flg *flag);
+void mx_denied_error(t_elem **arr, int num, e_flg *flag);
+
+int mx_strcmp(const char *s1, const char *s2);
+char *mx_strcpy(char *dst, const char *src);
+char *mx_strdup(const char *str);
+char *mx_strjoin(const char *s1, const char *s2);
+int mx_strlen(const char *s);
+char *mx_strnew(const int size);
+char *mx_itoa(int number);
+char *mx_strncpy(char *dst, const char *src, int len);
+char *mx_strndup(const char *s1, size_t n);
+void mx_printstr(const char *s);
+void mx_printchar(char c);
 
 #endif

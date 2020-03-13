@@ -48,6 +48,8 @@ SRCOUT = main.c \
 	mx_get_path.c \
 	mx_quick_time_sort.c \
 	mx_quick_rev_time_sort.c \
+	mx_print_fname.c \
+	mx_recursion.c \
 	mx_printer.c \
 	itoa.c \
 	mx_print_spaces.c \
@@ -56,6 +58,7 @@ SRCOUT = main.c \
 	mx_output_file_x.c \
 	mx_print_total.c \
 	mx_print_link.c \
+	mx_denied_error.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))
 
