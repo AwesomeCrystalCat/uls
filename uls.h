@@ -102,6 +102,7 @@ typedef struct s_elem {
     char* bsize;
     int u_time;
     char* r_time;
+    char* f_time;
     char* link_to;
 }               t_elem;
 
@@ -182,17 +183,5 @@ void mx_print_link(t_elem **arr, t_all *ptr, int j);
 void mx_print_fname(e_flg *flag, const char *name);
 void mx_recursion(t_all *ptr, t_elem **dir_args, e_flg *flag);
 void mx_denied_error(t_elem **arr, int num, e_flg *flag);
-
-int mx_strcmp(const char *s1, const char *s2);
-char *mx_strcpy(char *dst, const char *src);
-char *mx_strdup(const char *str);
-char *mx_strjoin(const char *s1, const char *s2);
-int mx_strlen(const char *s);
-char *mx_strnew(const int size);
-char *mx_itoa(int number);
-char *mx_strncpy(char *dst, const char *src, int len);
-char *mx_strndup(const char *s1, size_t n);
-void mx_printstr(const char *s);
-void mx_printchar(char c);
 
 #endif
