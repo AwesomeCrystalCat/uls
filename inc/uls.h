@@ -102,6 +102,7 @@ typedef struct s_elem {
     char* bsize;
     int u_time;
     char* r_time;
+    char* f_time;
     char* link_to;
 }               t_elem;
 
