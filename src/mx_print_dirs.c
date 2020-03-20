@@ -4,16 +4,20 @@ void mx_print_dirs(t_data *data, e_flg *flag) {
     struct stat buff;
     t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * data->dcount);
 
-    for (int i = 0; i < data->dcount; i++) {
+    for (int i = 0; i < data->dcount; i++)
         arr[i] = mx_getstats(data->directs[i], ".", flag);
-        if (arr[i]->mode[1] != '-'
-            && arr[i]->mode[4] != '-' && arr[i]->mode[7] != '-') {
-            mx_dir_parse(flag, data->directs[i]);
-            if (i < data->dcount - 1)
+    mx_sorting(arr, data->dcount, flag);
+    for (int j = 0; j < data->dcount; j++) {
+        if (arr[j]->mode[1] != '-'
+            && arr[j]->mode[4] != '-' && arr[j]->mode[7] != '-') {
+            if (data->dcount > 1 && !flag[r_big])
+                mx_print_fname(flag, arr[j]->name);
+            mx_dir_parse(flag, arr[j]->name);
+            if (j < data->dcount - 1)
                 write(1, "\n", 1);
         }
         else
             mx_denied_error(arr, i, flag);
-        free(arr[i]);
+        free(arr[j]);
     }
 }

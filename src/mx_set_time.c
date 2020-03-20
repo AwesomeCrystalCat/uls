@@ -21,4 +21,3 @@ void mx_set_time(struct stat *buff, t_elem *ptr, e_flg *flag) {
         ptr->r_time = mx_strndup(new_time + 4, 12);
     ptr->f_time = mx_strjoin(mx_itoa(ptr->u_time), ptr->name);
 }
-

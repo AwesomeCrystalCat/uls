@@ -164,7 +164,7 @@ void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit);
 void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag);
 void mx_get_bsize_num(t_all *ptr, t_elem **arr, e_flg *flag);
 void mx_get_inode_num(t_all *ptr, t_elem **arr, e_flg *flag);
-void mx_sorting(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_sorting(t_elem **arr, int num, e_flg *flag);
 void mx_quick_rev_elem_sort(t_elem **ptr, int left, int right);
 void mx_quick_size_sort(t_elem **arr, int left, int right);
 void mx_quick_rev_size_sort(t_elem **arr, int left, int right);
@@ -183,5 +183,17 @@ void mx_print_link(t_elem **arr, t_all *ptr, int j);
 void mx_print_fname(e_flg *flag, const char *name);
 void mx_recursion(t_all *ptr, t_elem **dir_args, e_flg *flag);
 void mx_denied_error(t_elem **arr, int num, e_flg *flag);
+
+int mx_strcmp(const char *s1, const char *s2);
+char *mx_strcpy(char *dst, const char *src);
+char *mx_strdup(const char *str);
+char *mx_strjoin(const char *s1, const char *s2);
+int mx_strlen(const char *s);
+char *mx_strnew(const int size);
+char *mx_itoa(int number);
+char *mx_strncpy(char *dst, const char *src, int len);
+char *mx_strndup(const char *s1, size_t n);
+void mx_printstr(const char *s);
+void mx_printchar(char c);
 
 #endif
