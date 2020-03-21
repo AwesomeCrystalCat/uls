@@ -19,12 +19,8 @@ const void *mx_getacl(const char *filename, struct stat *buff) {
      xattr = listxattr(filename, NULL, 0x0001, XATTR_NOFOLLOW);
      if (xattr > 0)
          att = (const void *)64;
-     else if (acl != NULL && ((buff->st_mode & 0170000) != 0120000)) {
+     else if (acl != NULL && ((buff->st_mode & 0170000) != 0120000))
          att = (const void *)43;
-         //char *tmp = acl_to_text(acl, NULL);
-         //write(1, tmp, mx_strlen(tmp));
-     }
-
      else
          att = (const void *)32;
      acl_free(acl);
