@@ -10,8 +10,8 @@ static int count_slashes(const char *file) {
         return slash;
 }
 
- const void *mx_getacl(const char *filename, struct stat *buff) {
-     const void *att;
+const void *mx_getacl(const char *filename, struct stat *buff) {
+     const void *att; 
      acl_t acl = NULL;
      ssize_t xattr = 0;
 
@@ -19,13 +19,17 @@ static int count_slashes(const char *file) {
      xattr = listxattr(filename, NULL, 0x0001, XATTR_NOFOLLOW);
      if (xattr > 0)
          att = (const void *)64;
-     else if (acl != NULL && ((buff->st_mode & 0170000) != 0120000))
+     else if (acl != NULL && ((buff->st_mode & 0170000) != 0120000)) {
          att = (const void *)43;
+         //char *tmp = acl_to_text(acl, NULL);
+         //write(1, tmp, mx_strlen(tmp));
+     }
+
      else
          att = (const void *)32;
      acl_free(acl);
      return att;
- }
+}
 
 t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) { //collect all stat of a file;
     t_elem *ptr = (t_elem *)malloc(sizeof(t_elem) * 1);

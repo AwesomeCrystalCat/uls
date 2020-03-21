@@ -16,10 +16,10 @@ const void *mx_getacl(const char *filename, struct stat *buff) {
      ssize_t xattr = 0;
 
      acl = acl_get_file(filename, 0x00000100);
-     xattr = listxattr(filename, NULL, 0x0001);
+     xattr = listxattr(filename, NULL, 0x0001, XATTR_NOFOLLOW);
      if (xattr > 0)
          att = (const void *)64;
-     else if (acl != NULL && ((buff->st_mode & 0170000) != 0120000)) 
+     else if (acl != NULL && ((buff->st_mode & 0170000) != 0120000))
          att = (const void *)43;
      else
          att = (const void *)32;

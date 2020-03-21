@@ -59,6 +59,11 @@ SRCOUT = main.c \
 	mx_print_total.c \
 	mx_print_link.c \
 	mx_denied_error.c \
+	mx_l_link.c \
+	mx_l_uid.c \
+	mx_l_gid.c \
+	mx_l_size.c \
+	mx_p_xattr.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))
 

@@ -1,45 +1,4 @@
 #include "uls.h"
-#include <stdio.h>
-
-int larg_link(t_elem **arr, t_all *ptr) {
-    int largest = 0;
-
-    for (int k = 0; k < ptr->count; k++) {
-        if (mx_strlen(arr[k]->link) > largest) 
-            largest = mx_strlen(arr[k]->link);
-    }
-    return largest;
-}
-
-int larg_uid(t_elem **arr, t_all *ptr) {
-    int largest = 0;
-
-    for (int k = 0; k < ptr->count; k++) {
-        if (mx_strlen(arr[k]->uid) > largest) 
-            largest = mx_strlen(arr[k]->uid);
-    }
-    return largest;
-}
-
-int larg_gid(t_elem **arr, t_all *ptr) {
-    int largest = 0;
-
-    for (int k = 0; k < ptr->count; k++) {
-        if (mx_strlen(arr[k]->gid) > largest) 
-            largest = mx_strlen(arr[k]->gid);
-    }
-    return largest;
-}
-
-int larg_size(t_elem **arr, t_all *ptr) {
-    int largest = 0;
-
-    for (int k = 0; k < ptr->count; k++) {
-        if (mx_strlen(arr[k]->size) > largest) 
-            largest = mx_strlen(arr[k]->size);
-    }
-    return largest;
-}
 
 static void kostul_l_i(t_elem **arr, t_all *ptr, int k) {
     mx_print_spaces(ptr->inode_n - mx_strlen(arr[k]->inode));
@@ -56,19 +15,19 @@ static void kostul_l_s(t_elem **arr, t_all *ptr, int k) {
 static void kostul_l(t_elem **arr, t_all *ptr, int k, e_flg *flag) {
     write(1, arr[k]->mode, mx_strlen(arr[k]->mode));
     write(1, &arr[k]->acl, 1);
-    mx_print_spaces(larg_link(arr, ptr) - mx_strlen(arr[k]->link) + 1);
+    mx_print_spaces(mx_l_link(arr, ptr) - mx_strlen(arr[k]->link) + 1);
     write(1, arr[k]->link, mx_strlen(arr[k]->link));
     write(1, " ", 1);
     if (!flag[g]) {
         write(1, arr[k]->uid, mx_strlen(arr[k]->uid));
-        mx_print_spaces(larg_uid(arr, ptr) - mx_strlen(arr[k]->uid) + 2);
+        mx_print_spaces(mx_l_uid(arr, ptr) - mx_strlen(arr[k]->uid) + 2);
     }
     (flag[g] && flag[o]) ? write(1, "  ", 2) : 0;
     if (!flag[o]) {
         write(1, arr[k]->gid, mx_strlen(arr[k]->gid));
-        mx_print_spaces(larg_gid(arr, ptr) - mx_strlen(arr[k]->gid) + 2);
+        mx_print_spaces(mx_l_gid(arr, ptr) - mx_strlen(arr[k]->gid) + 2);
     }
-    mx_print_spaces(larg_size(arr, ptr) - mx_strlen(arr[k]->size));
+    mx_print_spaces(mx_l_size(arr, ptr) - mx_strlen(arr[k]->size));
     write(1, arr[k]->size, mx_strlen(arr[k]->size));
     write(1, " ", 1);
     write(1, arr[k]->r_time, mx_strlen(arr[k]->r_time));
@@ -88,6 +47,7 @@ void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag) {
             mx_print_link(arr, ptr, k);
         if (flag[p] && arr[k]->mode[0] == 'd')
             write(1, "/", 1);
+        mx_p_xattr(arr, ptr, k, flag);
         if (k + 1 != ptr->count)
             write(1, "\n", 1);
     }

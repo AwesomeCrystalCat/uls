@@ -183,5 +183,10 @@ void mx_print_link(t_elem **arr, t_all *ptr, int j);
 void mx_print_fname(e_flg *flag, const char *name);
 void mx_recursion(t_all *ptr, t_elem **dir_args, e_flg *flag);
 void mx_denied_error(t_elem **arr, int num, e_flg *flag);
+int mx_l_link(t_elem **arr, t_all *ptr);
+int mx_l_uid(t_elem **arr, t_all *ptr);
+int mx_l_gid(t_elem **arr, t_all *ptr);
+int mx_l_size(t_elem **arr, t_all *ptr);
+void mx_p_xattr(t_elem **arr, t_all *ptr, int k, e_flg *flag);
 
 #endif
