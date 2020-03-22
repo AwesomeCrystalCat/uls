@@ -31,6 +31,7 @@
 # define MX_BLK_COL "\x1b[34;46m"
 # define MX_REG_COL "\x1b[37;2m"
 # define MX_LNK_COL "\x1b[35m"
+# define MX_BLN_COL "\x1b[30;41;22m"
 # define MX_SOCK_COL "\x1b[32m"
 # define MX_WHT_COL "\x1b[31m"
 # define MX_EXE_COL "\x1b[31m"
@@ -61,7 +62,7 @@ typedef enum e_flags {
    u,       //22
    x,       //23
    one      //24
-} e_flg;
+}            e_flg;
 
 typedef struct s_all {
     char **parsed;
@@ -74,37 +75,38 @@ typedef struct s_all {
     int inode_n;
     int bsize_n;
     e_flg *flag;
-}               t_all;
+}              t_all;
 
 typedef struct s_total {
     char *all_flags;
-    int num_of_flags; // в массиве входящих данных колличество аргументов с '-'
+    int num_of_flags;
     int num_of_err;
     int num_of_files;
     int num_of_directs;
     int count_dash;
     int size_all_fl;
     e_flg *flags;
-}               t_total;
+}              t_total;
 
 typedef struct s_elem {
     const char *name;
     const char *path;
-    char* inode;
-    char* mode;
+    char *inode;
+    char *mode;
     const void *acl;
-    char* link;
-    char* uid;
-    char* gid;
+    char *link;
+    char *uid;
+    char *gid;
     unsigned int size_i;
-    char* size;
+    char *size;
     unsigned int b;
-    char* bsize;
+    char *bsize;
     int u_time;
-    char* r_time;
-    char* f_time;
-    char* link_to;
-}               t_elem;
+    char *r_time;
+    char *f_time;
+    char *link_to;
+    int link_type;
+}              t_elem;
 
 typedef struct s_arr_data {
     char **directs;
@@ -112,7 +114,7 @@ typedef struct s_arr_data {
     char **errors;
     int fcount;
     int dcount;
-}               t_data;
+}              t_data;
 
 #include "libmx/inc/libmx.h"
 #include <dirent.h>
@@ -135,7 +137,7 @@ void mx_parse_args(int n, char **str, t_data *data);
 t_data *mx_data_init(int argc);
 t_total *mx_read_data(int argc, char **argv, t_data *data, e_flg *fl);
 void mx_uls(char name[]);
-void mx_read_flags(t_total *tot, char ** argv);
+void mx_read_flags(t_total *tot, char **argv);
 void mx_quick_cmp_sort(char **arr, int left, int right);
 void mx_quick_elem_sort(t_elem **ptr, int left, int right);
 char *mx_set_mode(struct stat *buff);
@@ -149,13 +151,13 @@ void mx_set_stats(t_all *ptr, t_elem **arr);
 void mx_find_name_len(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_read_dir(t_elem **dir_args, const char *str, e_flg *flag);
 void mx_print_err(char *str);
-void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl);
+void mx_swich_flags(int argc, char **argv, t_total *tot, e_flg *fl);
 void mx_prior_all(t_total *tot, e_flg *fl, char **argv);
-int mx_get_win_size();
+int mx_get_win_size(void);
 void mx_dir_parse(e_flg *flag, const char *dir);
 void mx_print_files(t_data *data, e_flg *flag);
 void mx_print_dirs(t_data *data, e_flg *flag);
-void mx_print_colored(const char *name, const char *path);
+void mx_print_colored(t_elem *arr, const char *path);
 void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
 void mx_errors_arr(t_total *tot, t_data *data, int argc, char **argv);
@@ -188,5 +190,7 @@ int mx_l_uid(t_elem **arr, t_all *ptr);
 int mx_l_gid(t_elem **arr, t_all *ptr);
 int mx_l_size(t_elem **arr, t_all *ptr);
 void mx_p_xattr(t_elem **arr, t_all *ptr, int k, e_flg *flag);
+char *mx_get_link(const char *name);
+void mx_set_prior_1(e_flg *fl, int *value);
 
 #endif

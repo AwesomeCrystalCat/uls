@@ -10,8 +10,6 @@ SRCOUT = main.c \
 	mx_parse_args.c \
 	mx_data_init.c \
 	mx_read_data.c \
-	mx_read_flags.c \
-	mx_quick_cmp_sort.c \
 	mx_set_mode.c \
 	mx_setuser.c \
 	mx_setgrp.c \
@@ -19,7 +17,6 @@ SRCOUT = main.c \
 	mx_set_time.c \
 	mx_getstats.c \
 	mx_files_count.c \
-	mx_set_stats.c \
 	mx_find_name_len.c \
 	mx_read_dir.c \
 	mx_get_win_size.c \
@@ -64,6 +61,7 @@ SRCOUT = main.c \
 	mx_l_gid.c \
 	mx_l_size.c \
 	mx_p_xattr.c \
+	mx_set_prior_1.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))
 

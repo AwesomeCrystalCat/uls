@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void write_total(t_elem **arr, t_all *ptr, e_flg *flag) {
+static void write_total(t_elem **arr, t_all *ptr, e_flg *flag) {
     if (flag[s] || flag[l] || flag[o] || flag[g]) {
         if (arr) {
             write(1, "total ", 6); 
@@ -13,7 +13,7 @@ void write_total(t_elem **arr, t_all *ptr, e_flg *flag) {
 }
 
 void mx_dir_parse(e_flg *flag, const char *dir) {
-    t_all *ptr = malloc(sizeof(t_all));
+    t_all *ptr = (t_all *)malloc(sizeof(t_all));
 
     ptr->count = mx_files_count(dir, flag);
     if (flag[r_big])
@@ -21,6 +21,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
     write_total(NULL, ptr, flag);
     if (ptr->count) {
         t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);
+
         mx_read_dir(arr, dir, flag);
         write_total(arr, ptr, flag);
         mx_sorting(arr, ptr->count, flag);

@@ -13,7 +13,7 @@ static int find_all(t_all *ptr, t_elem **dir_args, int cur, e_flg *flag) {
     return res;
 }
 
-static int kostul_m_i(t_elem **arr, t_all *ptr, int k, int limit) {
+static int print_inode_m(t_elem **arr, t_all *ptr, int k, int limit) {
     mx_print_spaces(ptr->inode_n - mx_strlen(arr[k]->inode));
     write(1, arr[k]->inode, mx_strlen(arr[k]->inode));
     write(1, " ", 1);
@@ -21,7 +21,7 @@ static int kostul_m_i(t_elem **arr, t_all *ptr, int k, int limit) {
     return limit;
 }
 
-static int kostul_m_s(t_elem **arr, t_all *ptr, int k, int limit) {
+static int print_bsize_m(t_elem **arr, t_all *ptr, int k, int limit) {
     mx_print_spaces(ptr->bsize_n - mx_strlen(arr[k]->bsize));
     write(1, arr[k]->bsize, mx_strlen(arr[k]->bsize));
     write(1, " ", 1);
@@ -35,8 +35,8 @@ static void output_m_file(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
             write(1, "\n", 1);
             limit = 0;
         }
-        flag[i] == 1 ? limit = kostul_m_i(arr, ptr, k, limit) : limit;
-        flag[s] == 1 ? limit = kostul_m_s(arr, ptr, k, limit) : limit;
+        flag[i] == 1 ? limit = print_inode_m(arr, ptr, k, limit) : limit;
+        flag[s] == 1 ? limit = print_bsize_m(arr, ptr, k, limit) : limit;
         if (flag[g_big] && isatty(1) == 1)
             mx_print_colored(arr[k], arr[k]->path); 
         else
@@ -54,15 +54,13 @@ void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
     if (isatty(1) == 1) {
         for (int k = 0; k < ptr->count; k++) {
             if (find_all(ptr, arr, k, flag) + limit + 2 > ptr->line_len) {
-            write(1, "\n", 1);
-            limit = 0;
+                write(1, "\n", 1);
+                limit = 0;
             }
-            flag[i] == 1 ? limit = kostul_m_i(arr, ptr, k, limit) : limit;
-            flag[s] == 1 ? limit = kostul_m_s(arr, ptr, k, limit) : limit;
-            if (flag[g_big] && isatty(1) == 1)
-                mx_print_colored(arr[k], arr[k]->path); 
-            else
-                mx_printstr(arr[k]->name);
+            flag[i] ? limit = print_inode_m(arr, ptr, k, limit) : limit;
+            flag[s] ? limit = print_bsize_m(arr, ptr, k, limit) : limit;
+            flag[g_big] ? (mx_print_colored(arr[k], arr[k]->path)) : 0;
+            (!flag[g_big]) ? (mx_printstr(arr[k]->name)) : 0;
             if (k + 1 != ptr->count)
                 write(1, ", ", 2);
             if (k + 2 != ptr->count)

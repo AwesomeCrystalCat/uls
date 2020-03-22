@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/alex/Desktop/uls_21_03/./inc -I/Users/alex/Desktop/uls_21_03/libmx/inc -I/Users/alex/Desktop/uls_21_03/libmx 
+C_INCLUDES = -I/Users/alex/Desktop/better_ls/./inc -I/Users/alex/Desktop/better_ls/libmx/inc -I/Users/alex/Desktop/better_ls/libmx 
 

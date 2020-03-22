@@ -11,11 +11,11 @@ void mx_output_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur) {
                     write(1, "\n", 1);
                 else if (j + 1 != ptr->count)
                     mx_print_spaces(cur);
-        }
-        if (limit + ptr->cols < ptr->count)
-            limit += ptr->cols;
-        else 
-            limit = ptr->count;
+            }
+            if (limit + ptr->cols < ptr->count)
+                limit += ptr->cols;
+            else 
+                limit = ptr->count;
         }
     }
     else

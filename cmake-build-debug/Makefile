@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alex/Desktop/uls_21_03
+CMAKE_SOURCE_DIR = /Users/alex/Desktop/better_ls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alex/Desktop/uls_21_03/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/alex/Desktop/better_ls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/uls_21_03/cmake-build-debug/CMakeFiles /Users/alex/Desktop/uls_21_03/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/better_ls/cmake-build-debug/CMakeFiles /Users/alex/Desktop/better_ls/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/uls_21_03/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/better_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1810,33 +1810,6 @@ libmx/src/mx_swap_list.c.s:
 	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_swap_list.c.s
 .PHONY : libmx/src/mx_swap_list.c.s
 
-src/itoa.o: src/itoa.c.o
-
-.PHONY : src/itoa.o
-
-# target to build an object file
-src/itoa.c.o:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/itoa.c.o
-.PHONY : src/itoa.c.o
-
-src/itoa.i: src/itoa.c.i
-
-.PHONY : src/itoa.i
-
-# target to preprocess a source file
-src/itoa.c.i:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/itoa.c.i
-.PHONY : src/itoa.c.i
-
-src/itoa.s: src/itoa.c.s
-
-.PHONY : src/itoa.s
-
-# target to generate assembly for a file
-src/itoa.c.s:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/itoa.c.s
-.PHONY : src/itoa.c.s
-
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -2188,6 +2161,141 @@ src/mx_getstats.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_getstats.c.s
 .PHONY : src/mx_getstats.c.s
 
+src/mx_itoa.o: src/mx_itoa.c.o
+
+.PHONY : src/mx_itoa.o
+
+# target to build an object file
+src/mx_itoa.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_itoa.c.o
+.PHONY : src/mx_itoa.c.o
+
+src/mx_itoa.i: src/mx_itoa.c.i
+
+.PHONY : src/mx_itoa.i
+
+# target to preprocess a source file
+src/mx_itoa.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_itoa.c.i
+.PHONY : src/mx_itoa.c.i
+
+src/mx_itoa.s: src/mx_itoa.c.s
+
+.PHONY : src/mx_itoa.s
+
+# target to generate assembly for a file
+src/mx_itoa.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_itoa.c.s
+.PHONY : src/mx_itoa.c.s
+
+src/mx_l_gid.o: src/mx_l_gid.c.o
+
+.PHONY : src/mx_l_gid.o
+
+# target to build an object file
+src/mx_l_gid.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_gid.c.o
+.PHONY : src/mx_l_gid.c.o
+
+src/mx_l_gid.i: src/mx_l_gid.c.i
+
+.PHONY : src/mx_l_gid.i
+
+# target to preprocess a source file
+src/mx_l_gid.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_gid.c.i
+.PHONY : src/mx_l_gid.c.i
+
+src/mx_l_gid.s: src/mx_l_gid.c.s
+
+.PHONY : src/mx_l_gid.s
+
+# target to generate assembly for a file
+src/mx_l_gid.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_gid.c.s
+.PHONY : src/mx_l_gid.c.s
+
+src/mx_l_link.o: src/mx_l_link.c.o
+
+.PHONY : src/mx_l_link.o
+
+# target to build an object file
+src/mx_l_link.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_link.c.o
+.PHONY : src/mx_l_link.c.o
+
+src/mx_l_link.i: src/mx_l_link.c.i
+
+.PHONY : src/mx_l_link.i
+
+# target to preprocess a source file
+src/mx_l_link.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_link.c.i
+.PHONY : src/mx_l_link.c.i
+
+src/mx_l_link.s: src/mx_l_link.c.s
+
+.PHONY : src/mx_l_link.s
+
+# target to generate assembly for a file
+src/mx_l_link.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_link.c.s
+.PHONY : src/mx_l_link.c.s
+
+src/mx_l_size.o: src/mx_l_size.c.o
+
+.PHONY : src/mx_l_size.o
+
+# target to build an object file
+src/mx_l_size.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_size.c.o
+.PHONY : src/mx_l_size.c.o
+
+src/mx_l_size.i: src/mx_l_size.c.i
+
+.PHONY : src/mx_l_size.i
+
+# target to preprocess a source file
+src/mx_l_size.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_size.c.i
+.PHONY : src/mx_l_size.c.i
+
+src/mx_l_size.s: src/mx_l_size.c.s
+
+.PHONY : src/mx_l_size.s
+
+# target to generate assembly for a file
+src/mx_l_size.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_size.c.s
+.PHONY : src/mx_l_size.c.s
+
+src/mx_l_uid.o: src/mx_l_uid.c.o
+
+.PHONY : src/mx_l_uid.o
+
+# target to build an object file
+src/mx_l_uid.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_uid.c.o
+.PHONY : src/mx_l_uid.c.o
+
+src/mx_l_uid.i: src/mx_l_uid.c.i
+
+.PHONY : src/mx_l_uid.i
+
+# target to preprocess a source file
+src/mx_l_uid.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_uid.c.i
+.PHONY : src/mx_l_uid.c.i
+
+src/mx_l_uid.s: src/mx_l_uid.c.s
+
+.PHONY : src/mx_l_uid.s
+
+# target to generate assembly for a file
+src/mx_l_uid.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_l_uid.c.s
+.PHONY : src/mx_l_uid.c.s
+
 src/mx_output_1.o: src/mx_output_1.c.o
 
 .PHONY : src/mx_output_1.o
@@ -2376,6 +2484,33 @@ src/mx_output_x.s: src/mx_output_x.c.s
 src/mx_output_x.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_output_x.c.s
 .PHONY : src/mx_output_x.c.s
+
+src/mx_p_xattr.o: src/mx_p_xattr.c.o
+
+.PHONY : src/mx_p_xattr.o
+
+# target to build an object file
+src/mx_p_xattr.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o
+.PHONY : src/mx_p_xattr.c.o
+
+src/mx_p_xattr.i: src/mx_p_xattr.c.i
+
+.PHONY : src/mx_p_xattr.i
+
+# target to preprocess a source file
+src/mx_p_xattr.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_p_xattr.c.i
+.PHONY : src/mx_p_xattr.c.i
+
+src/mx_p_xattr.s: src/mx_p_xattr.c.s
+
+.PHONY : src/mx_p_xattr.s
+
+# target to generate assembly for a file
+src/mx_p_xattr.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_p_xattr.c.s
+.PHONY : src/mx_p_xattr.c.s
 
 src/mx_parse_args.o: src/mx_parse_args.c.o
 
@@ -2728,33 +2863,6 @@ src/mx_prior_all.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_prior_all.c.s
 .PHONY : src/mx_prior_all.c.s
 
-src/mx_quick_cmp_sort.o: src/mx_quick_cmp_sort.c.o
-
-.PHONY : src/mx_quick_cmp_sort.o
-
-# target to build an object file
-src/mx_quick_cmp_sort.c.o:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_quick_cmp_sort.c.o
-.PHONY : src/mx_quick_cmp_sort.c.o
-
-src/mx_quick_cmp_sort.i: src/mx_quick_cmp_sort.c.i
-
-.PHONY : src/mx_quick_cmp_sort.i
-
-# target to preprocess a source file
-src/mx_quick_cmp_sort.c.i:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_quick_cmp_sort.c.i
-.PHONY : src/mx_quick_cmp_sort.c.i
-
-src/mx_quick_cmp_sort.s: src/mx_quick_cmp_sort.c.s
-
-.PHONY : src/mx_quick_cmp_sort.s
-
-# target to generate assembly for a file
-src/mx_quick_cmp_sort.c.s:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_quick_cmp_sort.c.s
-.PHONY : src/mx_quick_cmp_sort.c.s
-
 src/mx_quick_elem_sort.o: src/mx_quick_elem_sort.c.o
 
 .PHONY : src/mx_quick_elem_sort.o
@@ -2971,33 +3079,6 @@ src/mx_read_dir.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_dir.c.s
 .PHONY : src/mx_read_dir.c.s
 
-src/mx_read_flags.o: src/mx_read_flags.c.o
-
-.PHONY : src/mx_read_flags.o
-
-# target to build an object file
-src/mx_read_flags.c.o:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_flags.c.o
-.PHONY : src/mx_read_flags.c.o
-
-src/mx_read_flags.i: src/mx_read_flags.c.i
-
-.PHONY : src/mx_read_flags.i
-
-# target to preprocess a source file
-src/mx_read_flags.c.i:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_flags.c.i
-.PHONY : src/mx_read_flags.c.i
-
-src/mx_read_flags.s: src/mx_read_flags.c.s
-
-.PHONY : src/mx_read_flags.s
-
-# target to generate assembly for a file
-src/mx_read_flags.c.s:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_read_flags.c.s
-.PHONY : src/mx_read_flags.c.s
-
 src/mx_recursion.o: src/mx_recursion.c.o
 
 .PHONY : src/mx_recursion.o
@@ -3079,32 +3160,32 @@ src/mx_set_mode.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_mode.c.s
 .PHONY : src/mx_set_mode.c.s
 
-src/mx_set_stats.o: src/mx_set_stats.c.o
+src/mx_set_prior_1.o: src/mx_set_prior_1.c.o
 
-.PHONY : src/mx_set_stats.o
+.PHONY : src/mx_set_prior_1.o
 
 # target to build an object file
-src/mx_set_stats.c.o:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_stats.c.o
-.PHONY : src/mx_set_stats.c.o
+src/mx_set_prior_1.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o
+.PHONY : src/mx_set_prior_1.c.o
 
-src/mx_set_stats.i: src/mx_set_stats.c.i
+src/mx_set_prior_1.i: src/mx_set_prior_1.c.i
 
-.PHONY : src/mx_set_stats.i
+.PHONY : src/mx_set_prior_1.i
 
 # target to preprocess a source file
-src/mx_set_stats.c.i:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_stats.c.i
-.PHONY : src/mx_set_stats.c.i
+src/mx_set_prior_1.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.i
+.PHONY : src/mx_set_prior_1.c.i
 
-src/mx_set_stats.s: src/mx_set_stats.c.s
+src/mx_set_prior_1.s: src/mx_set_prior_1.c.s
 
-.PHONY : src/mx_set_stats.s
+.PHONY : src/mx_set_prior_1.s
 
 # target to generate assembly for a file
-src/mx_set_stats.c.s:
-	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_stats.c.s
-.PHONY : src/mx_set_stats.c.s
+src/mx_set_prior_1.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.s
+.PHONY : src/mx_set_prior_1.c.s
 
 src/mx_set_time.o: src/mx_set_time.c.o
 
@@ -3437,9 +3518,6 @@ help:
 	@echo "... libmx/src/mx_swap_list.o"
 	@echo "... libmx/src/mx_swap_list.i"
 	@echo "... libmx/src/mx_swap_list.s"
-	@echo "... src/itoa.o"
-	@echo "... src/itoa.i"
-	@echo "... src/itoa.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -3479,6 +3557,21 @@ help:
 	@echo "... src/mx_getstats.o"
 	@echo "... src/mx_getstats.i"
 	@echo "... src/mx_getstats.s"
+	@echo "... src/mx_itoa.o"
+	@echo "... src/mx_itoa.i"
+	@echo "... src/mx_itoa.s"
+	@echo "... src/mx_l_gid.o"
+	@echo "... src/mx_l_gid.i"
+	@echo "... src/mx_l_gid.s"
+	@echo "... src/mx_l_link.o"
+	@echo "... src/mx_l_link.i"
+	@echo "... src/mx_l_link.s"
+	@echo "... src/mx_l_size.o"
+	@echo "... src/mx_l_size.i"
+	@echo "... src/mx_l_size.s"
+	@echo "... src/mx_l_uid.o"
+	@echo "... src/mx_l_uid.i"
+	@echo "... src/mx_l_uid.s"
 	@echo "... src/mx_output_1.o"
 	@echo "... src/mx_output_1.i"
 	@echo "... src/mx_output_1.s"
@@ -3500,6 +3593,9 @@ help:
 	@echo "... src/mx_output_x.o"
 	@echo "... src/mx_output_x.i"
 	@echo "... src/mx_output_x.s"
+	@echo "... src/mx_p_xattr.o"
+	@echo "... src/mx_p_xattr.i"
+	@echo "... src/mx_p_xattr.s"
 	@echo "... src/mx_parse_args.o"
 	@echo "... src/mx_parse_args.i"
 	@echo "... src/mx_parse_args.s"
@@ -3539,9 +3635,6 @@ help:
 	@echo "... src/mx_prior_all.o"
 	@echo "... src/mx_prior_all.i"
 	@echo "... src/mx_prior_all.s"
-	@echo "... src/mx_quick_cmp_sort.o"
-	@echo "... src/mx_quick_cmp_sort.i"
-	@echo "... src/mx_quick_cmp_sort.s"
 	@echo "... src/mx_quick_elem_sort.o"
 	@echo "... src/mx_quick_elem_sort.i"
 	@echo "... src/mx_quick_elem_sort.s"
@@ -3566,9 +3659,6 @@ help:
 	@echo "... src/mx_read_dir.o"
 	@echo "... src/mx_read_dir.i"
 	@echo "... src/mx_read_dir.s"
-	@echo "... src/mx_read_flags.o"
-	@echo "... src/mx_read_flags.i"
-	@echo "... src/mx_read_flags.s"
 	@echo "... src/mx_recursion.o"
 	@echo "... src/mx_recursion.i"
 	@echo "... src/mx_recursion.s"
@@ -3578,9 +3668,9 @@ help:
 	@echo "... src/mx_set_mode.o"
 	@echo "... src/mx_set_mode.i"
 	@echo "... src/mx_set_mode.s"
-	@echo "... src/mx_set_stats.o"
-	@echo "... src/mx_set_stats.i"
-	@echo "... src/mx_set_stats.s"
+	@echo "... src/mx_set_prior_1.o"
+	@echo "... src/mx_set_prior_1.i"
+	@echo "... src/mx_set_prior_1.s"
 	@echo "... src/mx_set_time.o"
 	@echo "... src/mx_set_time.i"
 	@echo "... src/mx_set_time.s"

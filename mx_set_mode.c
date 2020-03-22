@@ -37,30 +37,27 @@ static char set_access_mode(int mode, int user_type) {
 }
 
 static char set_file_type(struct stat *buff) {
-    char chr;
-
-    switch (buff->st_mode & MX_IFMT) {
-           case MX_IFBLK: chr = 'b';
-           break;
-           case MX_IFCHR: chr = 'c';
-           break;
-           case MX_IFDIR: chr = 'd';
-           break;
-           case MX_IFIFO: chr = 'p';
-           break;
-           case MX_IFLNK: chr = 'l';
-           break;
-           case MX_IFREG: chr = '-';
-           break;
-           case MX_IFSOCK: chr = 's';
-           break;
-           }
-    return chr;
+    if ((buff->st_mode & MX_IFMT) == MX_IFBLK)
+        return 'b';
+    if ((buff->st_mode & MX_IFMT) == MX_IFCHR)
+        return 'c';
+    if ((buff->st_mode & MX_IFMT) == MX_IFDIR)
+        return 'd';
+    if ((buff->st_mode & MX_IFMT) == MX_IFIFO)
+        return 'p';
+    if ((buff->st_mode & MX_IFMT) == MX_IFLNK)
+        return 'l';
+    if ((buff->st_mode & MX_IFMT) == MX_IFREG)
+        return '-';
+    if ((buff->st_mode & MX_IFMT) == MX_IFSOCK)
+        return 's';
+    return 0;
 }
 
-char *mx_set_mode(struct stat *buff) { //add permission mode s and t
+char *mx_set_mode(struct stat *buff) {
     char *str = mx_strnew(10);
     int val = (buff->st_mode & ~MX_IFMT);
+
     str[0] = set_file_type(buff);
     str[1] = (val & MX_IRUSR) ? 'r' : '-';
     str[2] = (val & MX_IWUSR) ? 'w' : '-';  

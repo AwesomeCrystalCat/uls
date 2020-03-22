@@ -7,6 +7,7 @@ void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl) {
     tot->count_dash = 0;
     for (int i = 1; i < argc; i++) {
         struct stat buffer;
+
         if (lstat(argv[i], &buffer) == -1) {
             if (argv[i][0] != '-' || !argv[i][1])
                 break;
@@ -38,8 +39,8 @@ static void my_switch(char **argv, int i, t_total *tot, e_flg *fl) {
 
 static void illegal_fl(t_total *tot, int i, int j, char **argv) {
     char *illegal_flag = mx_strnew(1);
-    illegal_flag[0] = argv[i][j];
 
+    illegal_flag[0] = argv[i][j];
     mx_print_err("uls: illegal option -- ");
     mx_print_err(illegal_flag);
     free(illegal_flag);

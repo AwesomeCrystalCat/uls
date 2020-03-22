@@ -10,7 +10,7 @@
 typedef struct s_list {
     void *data;
     struct s_list *next;
-} t_list;
+}              t_list;
 
 void mx_printchar(char c);
 void mx_print_unicode(wchar_t c);

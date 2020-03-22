@@ -12,7 +12,8 @@ char *mx_get_link(const char *name) {
     return linkname;
 }
 
-static void dead_folder(const char *path, t_data *data, int num, char **str) {
+static void define_link_path(const char *path,
+                        t_data *data, int num, char **str) {
     struct stat buff;
     char *link_path = mx_get_link(path);
 
@@ -38,7 +39,7 @@ void mx_parse_args(int n, char **str, t_data *data) {
                     if ((buff.st_mode & MX_IFMT) == MX_IFDIR)
                         data->directs[data->dcount++] = mx_strdup(str[i]);
                     else if ((buff.st_mode & MX_IFMT) == MX_IFLNK)
-                        dead_folder(path, data, i, str);
+                        define_link_path(path, data, i, str);
                     else
                         data->files[data->fcount++] = mx_strdup(str[i]);
                 }

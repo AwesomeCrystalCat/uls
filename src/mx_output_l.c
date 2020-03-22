@@ -1,18 +1,18 @@
 #include "uls.h"
 
-static void kostul_l_i(t_elem **arr, t_all *ptr, int k) {
+static void print_inode_l(t_elem **arr, t_all *ptr, int k) {
     mx_print_spaces(ptr->inode_n - mx_strlen(arr[k]->inode));
     write(1, arr[k]->inode, mx_strlen(arr[k]->inode));
     write(1, " ", 1);
 }
 
-static void kostul_l_s(t_elem **arr, t_all *ptr, int k) {
+static void print_bsize_l(t_elem **arr, t_all *ptr, int k) {
     mx_print_spaces(ptr->bsize_n - mx_strlen(arr[k]->bsize));
     write(1, arr[k]->bsize, mx_strlen(arr[k]->bsize));
     write(1, " ", 1);
 }
 
-static void kostul_l(t_elem **arr, t_all *ptr, int k, e_flg *flag) {
+static void print_out_l(t_elem **arr, t_all *ptr, int k, e_flg *flag) {
     write(1, arr[k]->mode, mx_strlen(arr[k]->mode));
     write(1, &arr[k]->acl, 1);
     mx_print_spaces(mx_l_link(arr, ptr) - mx_strlen(arr[k]->link) + 1);
@@ -36,9 +36,9 @@ static void kostul_l(t_elem **arr, t_all *ptr, int k, e_flg *flag) {
 
 void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag) {
     for (int k = 0; k < ptr->count; k++) {
-        flag[i] ? kostul_l_i(arr, ptr, k) : 0;
-        flag[s] ? kostul_l_s(arr, ptr, k) : 0;
-        kostul_l(arr, ptr, k, flag);
+        flag[i] ? print_inode_l(arr, ptr, k) : 0;
+        flag[s] ? print_bsize_l(arr, ptr, k) : 0;
+        print_out_l(arr, ptr, k, flag);
         if (flag[g_big] && isatty(1) == 1)
             mx_print_colored(arr[k], arr[k]->path);
         else

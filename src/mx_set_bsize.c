@@ -1,5 +1,4 @@
 #include "uls.h"
-#include <stdio.h>
 
 char *mx_set_bsize(struct stat *buff, const char *str) {
     int num = buff->st_size;

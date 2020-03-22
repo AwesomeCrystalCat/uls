@@ -9,7 +9,8 @@ static void swap_elems(t_elem *arr1, t_elem *arr2) {
 static int wild_cmp_r(char *s1, char *s2) {
     int i = 0;
 
-    for (; s1[i] == s2[i] && (s1[i] >= '0' && s1[i] <= '9') && (s2[i] >= '0' && s2[i] <= '9'); i++);
+    for (; s1[i] == s2[i] && (s1[i] >= '0' && s1[i] <= '9')
+         && (s2[i] >= '0' && s2[i] <= '9'); i++);
     if ((s1[i] >= '0' && s1[i] <= '9') || (s2[i] >= '0' && s2[i] <= '9'))
         return s1[i] - s2[i];
     else {

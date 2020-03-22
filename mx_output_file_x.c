@@ -21,9 +21,10 @@ static void cols_and_rows_x(t_elem **dir_args, t_all *ptr, e_flg *flag) {
 }
 
 void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur) {
-    cols_and_rows_x(dir_args, ptr, flag);
-    int limit = ptr->cols;
+    int limit;
 
+    cols_and_rows_x(dir_args, ptr, flag);
+    limit = ptr->cols;
     for (int j = 0; j < ptr->count;) {
         for (; j < limit; j++) {
             cur = mx_print_is(dir_args, ptr, flag, j);
@@ -31,10 +32,10 @@ void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur) {
                 write(1, "\n", 1);
             else if (j + 1 != ptr->count)
                 mx_print_spaces(cur);
-    }
-    if (limit + ptr->cols < ptr->count)
-        limit += ptr->cols;
-    else 
-        limit = ptr->count;
+        }
+        if (limit + ptr->cols < ptr->count)
+            limit += ptr->cols;
+        else 
+            limit = ptr->count;
     } 
 }
