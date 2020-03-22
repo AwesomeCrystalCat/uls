@@ -105,6 +105,7 @@ typedef struct s_elem {
     char* r_time;
     char* f_time;
     char* link_to;
+    int link_type;
 }               t_elem;
 
 typedef struct s_arr_data {
