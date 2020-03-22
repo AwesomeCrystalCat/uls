@@ -1,5 +1,4 @@
 #include "uls.h"
-#include "stdio.h"
 
 int mx_files_count(const char *name, e_flg *flag) {
     int count = 0;

@@ -58,7 +58,7 @@ static char set_file_type(struct stat *buff) {
     return chr;
 }
 
-char *mx_set_mode(struct stat *buff) { //add permission mode s and t
+char *mx_set_mode(struct stat *buff) {
     char *str = mx_strnew(10);
     int val = (buff->st_mode & ~MX_IFMT);
     str[0] = set_file_type(buff);

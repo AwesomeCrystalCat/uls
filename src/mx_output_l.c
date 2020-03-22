@@ -40,7 +40,7 @@ void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag) {
         flag[s] ? kostul_l_s(arr, ptr, k) : 0;
         kostul_l(arr, ptr, k, flag);
         if (flag[g_big] && isatty(1) == 1)
-            mx_print_colored(arr[k]->name, arr[k]->path);
+            mx_print_colored(arr[k], arr[k]->path);
         else
             write(1, arr[k]->name, mx_strlen(arr[k]->name));
         if (arr[k]->mode[0] == 'l')

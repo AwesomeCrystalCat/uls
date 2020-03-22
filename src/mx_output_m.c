@@ -38,7 +38,7 @@ static void output_m_file(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
         flag[i] == 1 ? limit = kostul_m_i(arr, ptr, k, limit) : limit;
         flag[s] == 1 ? limit = kostul_m_s(arr, ptr, k, limit) : limit;
         if (flag[g_big] && isatty(1) == 1)
-            mx_print_colored(arr[k]->name, arr[k]->path); 
+            mx_print_colored(arr[k], arr[k]->path); 
         else
             mx_printstr(arr[k]->name);
         if (k + 1 != ptr->count)
@@ -60,7 +60,7 @@ void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
             flag[i] == 1 ? limit = kostul_m_i(arr, ptr, k, limit) : limit;
             flag[s] == 1 ? limit = kostul_m_s(arr, ptr, k, limit) : limit;
             if (flag[g_big] && isatty(1) == 1)
-                mx_print_colored(arr[k]->name, arr[k]->path); 
+                mx_print_colored(arr[k], arr[k]->path); 
             else
                 mx_printstr(arr[k]->name);
             if (k + 1 != ptr->count)

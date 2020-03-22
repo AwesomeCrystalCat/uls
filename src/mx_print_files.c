@@ -1,5 +1,4 @@
 #include "uls.h"
-#include <stdio.h>
 
 void mx_print_files(t_data *data, e_flg *flag) {
     t_all *ptr = (t_all *)malloc(sizeof(t_all));

@@ -31,6 +31,7 @@
 # define MX_BLK_COL "\x1b[34;46m"
 # define MX_REG_COL "\x1b[37;2m"
 # define MX_LNK_COL "\x1b[35m"
+# define MX_BLN_COL "\x1b[30;41;22m"
 # define MX_SOCK_COL "\x1b[32m"
 # define MX_WHT_COL "\x1b[31m"
 # define MX_EXE_COL "\x1b[31m"
@@ -155,7 +156,7 @@ int mx_get_win_size();
 void mx_dir_parse(e_flg *flag, const char *dir);
 void mx_print_files(t_data *data, e_flg *flag);
 void mx_print_dirs(t_data *data, e_flg *flag);
-void mx_print_colored(const char *name, const char *path);
+void mx_print_colored(t_elem *arr, const char *path);
 void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
 void mx_errors_arr(t_total *tot, t_data *data, int argc, char **argv);
@@ -188,5 +189,6 @@ int mx_l_uid(t_elem **arr, t_all *ptr);
 int mx_l_gid(t_elem **arr, t_all *ptr);
 int mx_l_size(t_elem **arr, t_all *ptr);
 void mx_p_xattr(t_elem **arr, t_all *ptr, int k, e_flg *flag);
+char *mx_get_link(const char *name);
 
 #endif

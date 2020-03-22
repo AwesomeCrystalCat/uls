@@ -51,7 +51,7 @@ SRCOUT = main.c \
 	mx_print_fname.c \
 	mx_recursion.c \
 	mx_printer.c \
-	itoa.c \
+	mx_itoa.c \
 	mx_print_spaces.c \
 	mx_print_is.c \
 	mx_output_file.c \
