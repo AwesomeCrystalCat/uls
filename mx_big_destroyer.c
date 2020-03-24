@@ -1,7 +1,7 @@
 #include "uls.h"
 
-void mx_big_destroyer(t_elem **arr, t_all *ptr) {
-    for (int k = 0; k < ptr->count; k++) {
+void mx_big_destroyer(t_elem **arr, int n) {
+    for (int k = 0; k < n; k++) {
         free((void *)arr[k]->name);
         free((void *)arr[k]->path);
         free(arr[k]->inode);

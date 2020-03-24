@@ -10,6 +10,6 @@ void mx_print_files(t_data *data, e_flg *flag) {
     mx_sorting(arr, ptr->count, flag);
     mx_cols_and_rows(arr, ptr, flag);
     mx_printer(arr, ptr, flag);
-    mx_big_destroyer(arr, ptr);
+    mx_big_destroyer(arr, ptr->count);
     free(ptr);
 }

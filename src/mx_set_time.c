@@ -1,12 +1,14 @@
 #include "uls.h"
 
 static void time_end(t_elem *ptr, e_flg *flag, char *new, char *sec) {
+    char *tmp = NULL;
+
     if (time(0) - ptr->u_time > 15552000) {
-        sec = mx_strndup(new + 4, 7);
-        free(new);
-        new = mx_strndup(sec + 19, 5);
-        ptr->r_time = mx_strjoin(ptr->r_time, new);
+        tmp = mx_strndup(new + 4, 7);
+        sec = mx_strndup(tmp + 19, 5);
+        ptr->r_time = mx_strjoin(tmp, sec);
         free(sec);
+        free(tmp);
     }
     else if (flag[t_big])
         ptr->r_time = mx_strndup(new + 4, 20);

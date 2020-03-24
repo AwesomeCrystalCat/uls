@@ -11,7 +11,7 @@ const char *mx_get_path(const char *file, const char *dir) {
     }
     else {
         path = mx_strjoin(path, dir);
-        path = mx_strjoin(path,"/");
+        path = mx_strjoin(path, "/");
         path = mx_strjoin(path, file);
     }
     return path;

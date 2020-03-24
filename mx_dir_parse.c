@@ -16,7 +16,7 @@ void mx_dir_parse(e_flg *flag, const char *dir) {
         mx_printer(arr, ptr, flag);
         if (flag[r_big])
             mx_recursion(ptr, arr, flag);
-        mx_big_destroyer(arr, ptr);
+        mx_big_destroyer(arr, ptr->count);
     }
     free(ptr);
 }

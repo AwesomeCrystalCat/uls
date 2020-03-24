@@ -184,7 +184,7 @@ int mx_l_size(t_elem **arr, t_all *ptr);
 void mx_p_xattr(t_elem **arr, t_all *ptr, int k, e_flg *flag);
 char *mx_get_link(const char *name);
 void mx_set_prior_1(e_flg *fl, int *value);
-void mx_big_destroyer(t_elem **arr, t_all *ptr);
+void mx_big_destroyer(t_elem **arr, int n);
 void mx_write_total(t_elem **arr, t_all *ptr, e_flg *flag);
 
 #endif
