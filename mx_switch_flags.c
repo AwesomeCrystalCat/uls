@@ -25,6 +25,7 @@ void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl) {
 static void my_switch(char **argv, int i, t_total *tot, e_flg *fl) {
     for (int j = 1; j < mx_strlen(argv[i]); j++) {
         bool test = false;
+
         for (int k = 0; k < tot->size_all_fl; k++) {
             if (argv[i][j] == tot->all_flags[k]) {
                 fl[k] = 1;

@@ -12,6 +12,7 @@ void mx_print_errors(t_data *data) {
             str_err = mx_strjoin(str_err, "uls: ");
             str_err = (mx_strjoin(str_err, data->errors[i]));
             perror(str_err);
+            free(str_err);
         }
     }
 }

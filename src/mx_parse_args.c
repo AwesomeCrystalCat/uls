@@ -25,6 +25,7 @@ static void define_link_path(const char *path,
     }
     else
         data->files[data->fcount++] = mx_strdup(str[num]);
+    free(link_path);
 }
 
 void mx_parse_args(int n, char **str, t_data *data) {
@@ -43,6 +44,7 @@ void mx_parse_args(int n, char **str, t_data *data) {
                     else
                         data->files[data->fcount++] = mx_strdup(str[i]);
                 }
+                free((void *)path);
             }
         }
     }

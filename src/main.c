@@ -10,8 +10,9 @@ int main (int argc, char **argv) {
 
     mx_parse_args(argc, argv, data);
     if (data->dcount == 0 && data->fcount == 0
-        && data->errors[0] == NULL)
+        && data->errors[0] == NULL) {
         mx_dir_parse(flag, ".");
+    }
     else {
         if (data->fcount != 0)
             mx_print_files(data, flag);
@@ -20,5 +21,6 @@ int main (int argc, char **argv) {
         if (data->dcount != 0)
             mx_print_dirs(data, flag);
     }
-    return 0;
+    system("leaks -q uls");
+    //return 0;
 }

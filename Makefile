@@ -62,6 +62,8 @@ SRCOUT = main.c \
 	mx_l_size.c \
 	mx_p_xattr.c \
 	mx_set_prior_1.c \
+	mx_big_destroyer.c \
+	mx_write_total.c \
 
 SRCS = $(addprefix ./src/, $(SRCOUT))
 

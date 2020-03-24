@@ -14,6 +14,7 @@ static void get_link_type(t_elem *ptr) {
     }
     else
         ptr->link_type = -1;
+    free(link_name);
 }
 
 static const void *get_acl_att(const char *filename, struct stat *buff) {

@@ -1,23 +1,36 @@
 #include "uls.h"
 
+static void time_end(t_elem *ptr, e_flg *flag, char *new, char *sec) {
+    if (time(0) - ptr->u_time > 15552000) {
+        sec = mx_strndup(new + 4, 7);
+        free(new);
+        new = mx_strndup(sec + 19, 5);
+        ptr->r_time = mx_strjoin(ptr->r_time, new);
+        free(sec);
+    }
+    else if (flag[t_big])
+        ptr->r_time = mx_strndup(new + 4, 20);
+    else
+        ptr->r_time = mx_strndup(new + 4, 12);
+    sec = mx_itoa(ptr->u_time);
+    ptr->f_time = mx_strjoin(sec, ptr->name);
+    free(new);
+    free(sec);
+}
+
 void mx_set_time(struct stat *buff, t_elem *ptr, e_flg *flag) {
-    char* new_time = NULL;
+    char *new = NULL;
+    char *sec = NULL;
 
     if (flag[u]) {
         ptr->u_time = buff->st_atime;
-        new_time = mx_strdup(ctime(&buff->st_atime));
+        sec = ctime(&buff->st_atime);
+        new = mx_strdup(sec);
     }
     else {
         ptr->u_time = buff->st_mtime;
-        new_time = mx_strdup(ctime(&buff->st_mtime));
+        sec = ctime(&buff->st_mtime);
+        new = mx_strdup(sec);
     }
-    if (time(0) - ptr->u_time > 15552000) {
-        ptr->r_time = mx_strndup(new_time + 4, 7);
-        ptr->r_time = mx_strjoin(ptr->r_time, mx_strndup(new_time + 19, 5));
-    }
-    else if (flag[t_big])
-        ptr->r_time = mx_strndup(new_time + 4, 20);
-    else
-        ptr->r_time = mx_strndup(new_time + 4, 12);
-    ptr->f_time = mx_strjoin(mx_itoa(ptr->u_time), ptr->name);
+    time_end(ptr, flag, new, sec);
 }

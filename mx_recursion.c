@@ -10,14 +10,10 @@ void mx_recursion(t_all *ptr, t_elem **arr, e_flg *flag) {
                     && arr[i]->mode[7] != '-') {
                     write(1, "\n", 1);
                     mx_dir_parse(flag, arr[i]->path);
-                    free(arr[i]);
                 }
                 else
                     mx_denied_error(arr, i, flag);
             }
         }
-        else
-            free(arr[i]);
-    }    
-    free(ptr);
+    }
 }

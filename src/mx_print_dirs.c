@@ -1,5 +1,23 @@
 #include "uls.h"
 
+static void big_destroyer(t_elem **arr, int n) {
+    for (int k = 0; k < n; k++) {
+        free((void *)arr[k]->name);
+        free((void *)arr[k]->path);
+        free(arr[k]->inode);
+        free(arr[k]->mode);
+        free(arr[k]->link);
+        free(arr[k]->uid);
+        free(arr[k]->gid);
+        free(arr[k]->size);
+        free(arr[k]->bsize);
+        free(arr[k]->r_time);
+        free(arr[k]->f_time);
+        free(arr[k]);
+    }
+    free(arr);
+}
+
 void mx_print_dirs(t_data *data, e_flg *flag) {
     struct stat buff;
     t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * data->dcount);
@@ -18,6 +36,6 @@ void mx_print_dirs(t_data *data, e_flg *flag) {
         }
         else
             mx_denied_error(arr, i, flag);
-        free(arr[j]);
     }
+    big_destroyer(arr, data->dcount);
 }

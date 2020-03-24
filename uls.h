@@ -65,13 +65,11 @@ typedef enum e_flags {
 }            e_flg;
 
 typedef struct s_all {
-    char **parsed;
     unsigned int lines;
     unsigned int cols;
     int count;
     int name_len;
     int line_len;
-    int spaces;
     int inode_n;
     int bsize_n;
     e_flg *flag;
@@ -79,13 +77,8 @@ typedef struct s_all {
 
 typedef struct s_total {
     char *all_flags;
-    int num_of_flags;
-    int num_of_err;
-    int num_of_files;
-    int num_of_directs;
     int count_dash;
     int size_all_fl;
-    e_flg *flags;
 }              t_total;
 
 typedef struct s_elem {
@@ -104,7 +97,6 @@ typedef struct s_elem {
     int u_time;
     char *r_time;
     char *f_time;
-    char *link_to;
     int link_type;
 }              t_elem;
 
@@ -192,5 +184,7 @@ int mx_l_size(t_elem **arr, t_all *ptr);
 void mx_p_xattr(t_elem **arr, t_all *ptr, int k, e_flg *flag);
 char *mx_get_link(const char *name);
 void mx_set_prior_1(e_flg *fl, int *value);
+void mx_big_destroyer(t_elem **arr, t_all *ptr);
+void mx_write_total(t_elem **arr, t_all *ptr, e_flg *flag);
 
 #endif

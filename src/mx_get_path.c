@@ -1,7 +1,7 @@
 #include "uls.h"
 
 const char *mx_get_path(const char *file, const char *dir) {
-    const char *path = malloc(sizeof(char *));
+    const char *path = NULL;
 
     if (!mx_strcmp(dir, "."))
         path = mx_strdup(file);
