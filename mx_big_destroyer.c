@@ -13,6 +13,8 @@ void mx_big_destroyer(t_elem **arr, int n) {
         free(arr[k]->bsize);
         free(arr[k]->r_time);
         free(arr[k]->f_time);
+        if (arr[k]->path_link != NULL)
+            free((void *)arr[k]->path_link);
         free(arr[k]);
     }
     free(arr);

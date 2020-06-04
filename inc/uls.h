@@ -84,6 +84,7 @@ typedef struct s_total {
 typedef struct s_elem {
     const char *name;
     const char *path;
+    const char *path_link;
     char *inode;
     char *mode;
     const void *acl;

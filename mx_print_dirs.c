@@ -3,6 +3,7 @@
 void mx_print_dirs(t_data *data, e_flg *flag) {
     struct stat buff;
     t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * data->dcount);
+
     for (int i = 0; i < data->dcount; i++)
         arr[i] = mx_getstats(data->directs[i], ".", flag);
     mx_sorting(arr, data->dcount, flag);
