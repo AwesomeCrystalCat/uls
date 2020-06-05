@@ -25,43 +25,47 @@
 #define MX_IFLNK 0120000
 #define MX_IFSOCK 0140000
 
-# define MX_FIFO_COL "\x1b[33m"
-# define MX_CHR_COL "\x1b[34;43m"
-# define MX_DIR_COL "\x1b[1m\x1b[36m"
-# define MX_BLK_COL "\x1b[34;46m"
-# define MX_REG_COL "\x1b[37;2m"
-# define MX_LNK_COL "\x1b[35m"
-# define MX_BLN_COL "\x1b[30;41;22m"
-# define MX_SOCK_COL "\x1b[32m"
-# define MX_WHT_COL "\x1b[31m"
-# define MX_EXE_COL "\x1b[31m"
-# define MX_NONE_COL "\x1b[0m"
+#define MX_FIFO_COL "\x1b[33m"
+#define MX_CHR_COL "\x1b[34;43m"
+#define MX_DIR_COL "\x1b[1m\x1b[34m"
+#define MX_BLK_COL "\x1b[34;46m"
+#define MX_REG_COL "\x1b[31m"
+#define MX_LNK_COL "\x1b[35m"
+#define MX_BLN_COL "\x1b[30;41;22m"
+#define MX_SOCK_COL "\x1b[32m"
+#define MX_WHT_COL "\x1b[31m"
+#define MX_EXE_COL "\x1b[31m"
+#define MX_NONE_COL "\x1b[0m"
+#define MX_NEXE_COL "\x1b[97m"
+#define MX_YDIR_COL "\x1b[30;43;22m"
+#define MX_GDIR_COL "\x1b[30;42;22m"
+#define MX_RREG_COL "\x1b[30;41m"
 
 typedef enum e_flags {
-   dog,     //1
-   a_big,   //2
-   c_big,   //3
-   g_big,   //4
-   r_big,   //5
-   s_big,   //6
-   t_big,   //7
-   a,       //8
-   c,       //9
-   e,       //10
-   f,       //11
-   g,       //12
-   i,       //13
-   l,       //14
-   m,       //15
-   n,       //16
-   o,       //17
-   p,       //18
-   r,       //19
-   s,       //20
-   t,       //21
-   u,       //22
-   x,       //23
-   one      //24
+    dog,     //1
+    a_big,   //2
+    c_big,   //3
+    g_big,   //4
+    r_big,   //5
+    s_big,   //6
+    t_big,   //7
+    a,       //8
+    c,       //9
+    e,       //10
+    f,       //11
+    g,       //12
+    i,       //13
+    l,       //14
+    m,       //15
+    n,       //16
+    o,       //17
+    p,       //18
+    r,       //19
+    s,       //20
+    t,       //21
+    u,       //22
+    x,       //23
+    one      //24
 }            e_flg;
 
 typedef struct s_all {
@@ -172,7 +176,8 @@ void mx_output_c(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
 void mx_print_spaces(int num);
 int mx_print_is(t_elem **dir_args, t_all *ptr, e_flg *flag, int j);
 void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag);
-void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur);
+void mx_output_file_x(t_elem **dir_args, t_all *ptr,
+                      e_flg *flag, int cur);
 const char *mx_print_total(t_elem **arr, t_all *ptr);
 void mx_print_link(t_elem **arr, t_all *ptr, int j);
 void mx_print_fname(e_flg *flag, const char *name);

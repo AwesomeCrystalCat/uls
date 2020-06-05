@@ -5,7 +5,7 @@ static void time_end(t_elem *ptr, e_flg *flag, char *new, char *sec) {
 
     if (time(0) - ptr->u_time > 15552000) {
         tmp = mx_strndup(new + 4, 7);
-        sec = mx_strndup(tmp + 19, 5);
+        sec = mx_strndup(new + 19, 5);
         ptr->r_time = mx_strjoin(tmp, sec);
         free(sec);
         free(tmp);
