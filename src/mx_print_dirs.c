@@ -10,9 +10,14 @@ void mx_print_dirs(t_data *data, e_flg *flag) {
     for (int j = 0; j < data->dcount; j++) {
         if (arr[j]->mode[1] != '-'
             && arr[j]->mode[4] != '-' && arr[j]->mode[7] != '-') {
-            if ((data->dcount > 1 || data->fcount) && !flag[r_big])
-                mx_print_fname(flag, arr[j]->name);
-            mx_dir_parse(flag, arr[j]->name);
+
+            if (arr[j]->name[0] == '/')
+                mx_dir_parse(flag, arr[j]->name, 0);
+            else if (data->dcount > 1)
+                mx_dir_parse(flag, arr[j]->name, -1);
+            else
+                mx_dir_parse(flag, arr[j]->name, -2);
+
             if (j < data->dcount - 1)
                 write(1, "\n", 1);
         }

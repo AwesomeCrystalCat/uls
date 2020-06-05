@@ -57,11 +57,23 @@ static t_elem *init_stat() {
     return ptr;
 }
 
+static const char *delete_slash(t_elem *ptr, const char *file, const char *dir) {
+    int n = mx_strlen(dir) - 1;
+
+    if (dir[n] == '/') {
+        dir = strndup(dir, n);
+        n = -1;
+    }
+    ptr->path = mx_get_path(file, dir);
+    n == -1 ? free((void *)dir) : 0;
+    return ptr->path;
+}
+
 t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) {
     t_elem *ptr = init_stat();
     struct stat buff;
 
-    ptr->path = mx_get_path(file, dir);
+    ptr->path = delete_slash(ptr, file, dir);
     lstat(ptr->path, &buff);
     ptr->name = mx_strdup(file);
     ptr->mode = mx_set_mode(&buff);

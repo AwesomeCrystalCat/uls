@@ -10,7 +10,7 @@ int main (int argc, char **argv) {
     mx_parse_args(argc, argv, data);
     if (data->dcount == 0 && data->fcount == 0
         && data->errors[0] == NULL) {
-        mx_dir_parse(flag, ".");
+        mx_dir_parse(flag, ".", 1);
     }
     else {
         if (data->fcount != 0)

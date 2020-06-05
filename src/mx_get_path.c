@@ -2,10 +2,11 @@
 
 const char *mx_get_path(const char *file, const char *dir) {
     const char *path = NULL;
-    char *tmp;
+    char *tmp = NULL;
 
     if (!mx_strcmp(dir, "."))
         path = mx_strdup(file);
+
     else if (!mx_strcmp(dir, "/")) {
         tmp = mx_strdup("/");
         path = mx_strjoin(tmp, file);

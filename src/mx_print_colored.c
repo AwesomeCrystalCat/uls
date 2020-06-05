@@ -52,3 +52,4 @@ void mx_print_colored(t_elem *arr, const char *path) {
     if ((buff.st_mode & MX_IFMT) == MX_IFSOCK)
         write_colored(arr->name, MX_SOCK_COL);
 }
+   

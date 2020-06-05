@@ -43,6 +43,7 @@ char *mx_strcat(char *restrict s1, const char *restrict s2);
 char *mx_strstr(const char *haystack, const char *needle);
 int mx_get_substr_index(const char *str, const char *sub);
 int mx_strncmp(const char *s1, const char *s2); //
+int mx_strncmp1(const char *s1, const char *s2, int n); //
 int mx_count_substr(const char *str, const char *sub);
 int mx_count_words(const char *str, char c);
 char *mx_strtrim(const char *str);

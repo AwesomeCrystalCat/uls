@@ -34,6 +34,7 @@ SRCS = ./src/mx_printchar.c \
 	./src/mx_strstr.c \
 	./src/mx_get_substr_index.c \
 	./src/mx_strncmp.c \
+	./src/mx_strncmp1.c \
 	./src/mx_count_substr.c \
 	./src/mx_count_words.c \
 	./src/mx_strtrim.c \
@@ -94,6 +95,7 @@ SRCOUT = mx_printchar.c \
 	mx_strstr.c \
 	mx_get_substr_index.c \
 	mx_strncmp.c \
+	mx_strncmp1.c \
 	mx_count_substr.c \
 	mx_count_words.c \
 	mx_strtrim.c \
@@ -154,6 +156,7 @@ OBJS = ./obj/mx_printchar.o \
 	./obj/mx_strstr.o \
 	./obj/mx_get_substr_index.o \
 	./obj/mx_strncmp.o \
+	./obj/mx_strncmp1.o \
 	./obj/mx_count_substr.o \
 	./obj/mx_count_words.o \
 	./obj/mx_strtrim.o \
@@ -214,6 +217,7 @@ OBJOUT = mx_printchar.o \
 	mx_strstr.o \
 	mx_get_substr_index.o \
 	mx_strncmp.o \
+	mx_strncmp1.o \
 	mx_count_substr.o \
 	mx_count_words.o \
 	mx_strtrim.o \
