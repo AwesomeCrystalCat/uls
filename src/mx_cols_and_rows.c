@@ -11,6 +11,7 @@ void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag) {
     }
     else {
         ptr->cols = ptr->line_len / ptr->name_len;
+        ptr->cols == 0 ? ptr->cols++ : 0;
         ptr->lines = ptr->count / ptr->cols;
         if (ptr->count % ptr->cols > 0)
             ptr->lines++;

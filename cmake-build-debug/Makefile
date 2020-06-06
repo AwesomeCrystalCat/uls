@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/obuhaiov/Desktop/ULSULS/uls
+CMAKE_SOURCE_DIR = /Users/alex/Desktop/111
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/obuhaiov/Desktop/ULSULS/uls/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/alex/Desktop/111/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/obuhaiov/Desktop/ULSULS/uls/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/obuhaiov/Desktop/ULSULS/uls/cmake-build-debug/CMakeFiles /Users/obuhaiov/Desktop/ULSULS/uls/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/obuhaiov/Desktop/ULSULS/uls/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1593,6 +1593,33 @@ libmx/src/mx_strncmp.s: libmx/src/mx_strncmp.c.s
 libmx/src/mx_strncmp.c.s:
 	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp.c.s
 .PHONY : libmx/src/mx_strncmp.c.s
+
+libmx/src/mx_strncmp1.o: libmx/src/mx_strncmp1.c.o
+
+.PHONY : libmx/src/mx_strncmp1.o
+
+# target to build an object file
+libmx/src/mx_strncmp1.c.o:
+	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp1.c.o
+.PHONY : libmx/src/mx_strncmp1.c.o
+
+libmx/src/mx_strncmp1.i: libmx/src/mx_strncmp1.c.i
+
+.PHONY : libmx/src/mx_strncmp1.i
+
+# target to preprocess a source file
+libmx/src/mx_strncmp1.c.i:
+	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp1.c.i
+.PHONY : libmx/src/mx_strncmp1.c.i
+
+libmx/src/mx_strncmp1.s: libmx/src/mx_strncmp1.c.s
+
+.PHONY : libmx/src/mx_strncmp1.s
+
+# target to generate assembly for a file
+libmx/src/mx_strncmp1.c.s:
+	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_strncmp1.c.s
+.PHONY : libmx/src/mx_strncmp1.c.s
 
 libmx/src/mx_strncpy.o: libmx/src/mx_strncpy.c.o
 
@@ -3548,6 +3575,9 @@ help:
 	@echo "... libmx/src/mx_strncmp.o"
 	@echo "... libmx/src/mx_strncmp.i"
 	@echo "... libmx/src/mx_strncmp.s"
+	@echo "... libmx/src/mx_strncmp1.o"
+	@echo "... libmx/src/mx_strncmp1.i"
+	@echo "... libmx/src/mx_strncmp1.s"
 	@echo "... libmx/src/mx_strncpy.o"
 	@echo "... libmx/src/mx_strncpy.i"
 	@echo "... libmx/src/mx_strncpy.s"

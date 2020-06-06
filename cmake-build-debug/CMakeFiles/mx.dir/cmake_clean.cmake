@@ -53,6 +53,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mx.dir/libmx/src/mx_strjoin.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_strlen.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_strncmp.c.o"
+  "CMakeFiles/mx.dir/libmx/src/mx_strncmp1.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_strncpy.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_strndup.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_strnew.c.o"

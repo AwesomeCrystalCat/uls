@@ -20,6 +20,5 @@ int main (int argc, char **argv) {
         if (data->dcount != 0)
             mx_print_dirs(data, flag);
     }
-    system("leaks -q uls");
-    //return 0;
+    return 0;
 }

@@ -18,7 +18,7 @@ static void get_link_type(t_elem *ptr) {
 }
 
 static const void *get_acl_att(const char *filename, struct stat *buff) {
-    const void *att; 
+    const void *att;
     acl_t acl = NULL;
     ssize_t xattr = 0;
 
@@ -57,7 +57,8 @@ static t_elem *init_stat() {
     return ptr;
 }
 
-static const char *delete_slash(t_elem *ptr, const char *file, const char *dir) {
+static const char *delete_slash(t_elem *ptr, const char *file,
+                                const char *dir) {
     int n = mx_strlen(dir) - 1;
 
     if (dir[n] == '/') {
