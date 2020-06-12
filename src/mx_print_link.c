@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_print_link(t_elem **arr, t_all *ptr, int j) {
+void mx_print_link(t_elem **arr, int j) {
     char linkbuf[1024];
     int len = readlink(arr[j]->path, linkbuf, sizeof linkbuf);
 

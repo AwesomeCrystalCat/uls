@@ -35,7 +35,7 @@ static const void *get_acl_att(const char *filename, struct stat *buff) {
     return att;
 }
 
-static t_elem *init_stat() {
+static t_elem *init_stat(void) {
     t_elem *ptr = (t_elem *)malloc(sizeof(t_elem) * 1);
 
     ptr->path = NULL;
@@ -48,7 +48,6 @@ static t_elem *init_stat() {
     ptr->gid = NULL;
     ptr->size_i = 0;
     ptr->size = NULL;
-    ptr->sort_size = NULL;
     ptr->b = 0;
     ptr->bsize = NULL;
     ptr->u_time = 0;
@@ -67,7 +66,8 @@ static const char *delete_slash(t_elem *ptr, const char *file,
         n = -1;
     }
     ptr->path = mx_get_path(file, dir);
-    n == -1 ? free((void *)dir) : 0;
+    if (n == -1)
+        free((void *)dir);
     return ptr->path;
 }
 
@@ -79,7 +79,8 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) {
     lstat(ptr->path, &buff);
     ptr->name = mx_strdup(file);
     ptr->mode = mx_set_mode(&buff);
-    ptr->mode[0] == 'l' ? get_link_type(ptr) : 0;
+    if (ptr->mode[0] == 'l')
+        get_link_type(ptr);
     ptr->inode = mx_itoa(buff.st_ino);
     ptr->acl = get_acl_att(ptr->path, &buff);
     ptr->link = mx_itoa(buff.st_nlink);
@@ -87,7 +88,6 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) {
     ptr->gid = mx_setgrp(&buff, flag);
     ptr->size_i = buff.st_size;
     ptr->size = mx_itoa(buff.st_size);
-    ptr->sort_size = mx_strjoin(ptr->size, ptr->name);
     ptr->b = buff.st_blocks;
     ptr->bsize = mx_itoa(buff.st_blocks);
     mx_set_time(&buff, ptr, flag);

@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_print_fname(e_flg *flag, const char *name, int cur_dir) {
+void mx_print_fname(const char *name, int cur_dir) {
     if (mx_strcmp(name, ".") != 0 && cur_dir != -2) {
         if (cur_dir == 1)
             write(1, ".", 1);

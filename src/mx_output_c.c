@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static int count_len_c(t_elem **arr, t_all *ptr, int j, int cur) {
+static int count_len_c(t_all *ptr, int j, int cur) {
     if (j + ptr->lines < ptr->count) {
         j += ptr->lines;
         mx_print_spaces(cur);
@@ -25,7 +25,7 @@ void mx_output_c(t_elem **arr, t_all *ptr, e_flg *flag, int cur) {
                 || (j + 1 == ptr->count
                 && ptr->lines * ptr->cols == ptr->count))
                 break;
-            j = count_len_c(arr, ptr, j, cur);
+            j = count_len_c(ptr, j, cur);
         }
     }
     else

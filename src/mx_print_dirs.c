@@ -1,24 +1,36 @@
 #include "uls.h"
 
+static void check_slash(t_data *data, t_elem **arr, e_flg *flag, int j) {
+    if (arr[j]->name[0] == '/' && (data->dcount > 1 || flag[r_big])) {
+        data->cur_dir = 0;
+        mx_dir_parse(flag, arr[j]->name, data);
+    }
+    else if (data->dcount > 1) {
+        data->cur_dir = -1;
+        mx_dir_parse(flag, arr[j]->name, data);
+    }
+    else {
+        data->cur_dir = -2;
+        mx_dir_parse(flag, arr[j]->name, data);
+    }
+    if (j < data->dcount - 1)
+        write(1, "\n", 1);
+}
+
 static void over_thinking(t_data *data, e_flg *flag, t_elem **arr) {
     for (int j = 0; j < data->dcount; j++) {
-        if (arr[j]->mode[1] != '-' && arr[j]->mode[4] != '-'
-            && arr[j]->mode[7] != '-') {
-            if (arr[j]->name[0] == '/' && (data->dcount > 1 || flag[r_big]))
-                mx_dir_parse(flag, arr[j]->name, 0);
-            else if (data->dcount > 1)
-                mx_dir_parse(flag, arr[j]->name, -1);
-            else
-                mx_dir_parse(flag, arr[j]->name, -2);
-            j < data->dcount - 1 ? write(1, "\n", 1) : 0;
+        if (arr[j]->mode[1] == 'r'
+            && (mx_strcmp(arr[j]->uid, "mtararuiev") == 0))
+            check_slash(data, arr, flag, j);
+        else if (arr[j]->mode[4] == 'r' && arr[j]->mode[7] == 'r')
+            check_slash(data, arr, flag, j);
+        else {
+            mx_denied_error(arr, j, data);
         }
-        else
-            mx_denied_error(arr, i, flag);
     }
 }
 
 void mx_print_dirs(t_data *data, e_flg *flag) {
-    struct stat buff;
     t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * data->dcount);
 
     for (int i = 0; i < data->dcount; i++)

@@ -7,6 +7,7 @@ INC = ./inc/uls.h
 HEAD = uls.h
 
 SRCOUT = main.c \
+	mx_check_perm.c \
 	mx_parse_args.c \
 	mx_data_init.c \
 	mx_read_data.c \
@@ -69,9 +70,9 @@ SRCS = $(addprefix ./src/, $(SRCOUT))
 
 OBJOUT = $(SRCOUT:%.c=%.o)
 
-CFLAG = -std=c11 -Wall -Wextra -Wpedantic -Werror
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic -Werror
 
-all: install
+all: install clean
 
 install:
 	@make install -C libmx

@@ -7,8 +7,6 @@ static void swap_elems(t_elem *arr1, t_elem *arr2) {
 }
 
 static int wild_cmp_r(t_elem **ptr, int j, int pivot) {
-    int i = 0;
-
     if (mx_strcmp(ptr[j]->size, ptr[pivot]->size) == 0)
         return mx_strcmp(ptr[j]->name, ptr[pivot]->name);
     else {
@@ -33,7 +31,7 @@ void mx_quick_rev_size_sort(t_elem **ptr, int left, int right) {
         j = right;
         while (i < j) {
             while (wild_cmp_r(ptr, i, pivot) > 0
-                && i < right)
+                   && i < right)
                 i++;
             while (wild_cmp_r(ptr, j, pivot) < 0)
                 j--;

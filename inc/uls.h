@@ -69,13 +69,14 @@ typedef enum e_flags {
 }            e_flg;
 
 typedef struct s_all {
-    unsigned int lines;
-    unsigned int cols;
+    int lines;
+    int cols;
     int count;
     int name_len;
     int line_len;
     int inode_n;
     int bsize_n;
+    int limit;
     e_flg *flag;
 }              t_all;
 
@@ -97,7 +98,6 @@ typedef struct s_elem {
     char *gid;
     unsigned int size_i;
     char *size;
-    char *sort_size;
     unsigned int b;
     char *bsize;
     int u_time;
@@ -112,6 +112,8 @@ typedef struct s_arr_data {
     char **errors;
     int fcount;
     int dcount;
+    int ecount;
+    int cur_dir;
 }              t_data;
 
 #include "libmx/inc/libmx.h"
@@ -133,7 +135,7 @@ typedef struct s_arr_data {
 int main(int argc, char **argv);
 void mx_parse_args(int n, char **str, t_data *data);
 t_data *mx_data_init(int argc);
-t_total *mx_read_data(int argc, char **argv, t_data *data, e_flg *fl);
+void mx_read_data(int argc, char **argv, t_data *data, e_flg *fl);
 void mx_uls(char name[]);
 void mx_read_flags(t_total *tot, char **argv);
 void mx_quick_cmp_sort(char **arr, int left, int right);
@@ -152,7 +154,7 @@ void mx_print_err(char *str);
 void mx_swich_flags(int argc, char **argv, t_total *tot, e_flg *fl);
 void mx_prior_all(t_total *tot, e_flg *fl, char **argv);
 int mx_get_win_size(void);
-void mx_dir_parse(e_flg *flag, const char *dir, int cur_dir);
+void mx_dir_parse(e_flg *flag, const char *dir, t_data *data);
 void mx_print_files(t_data *data, e_flg *flag);
 void mx_print_dirs(t_data *data, e_flg *flag);
 void mx_print_colored(t_elem *arr, const char *path);
@@ -160,7 +162,7 @@ void mx_output_l(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_output_1(t_elem **arr, t_all *ptr, e_flg *flag, int cur);
 void mx_errors_arr(t_total *tot, t_data *data, int argc, char **argv);
 void mx_print_errors(t_data *data);
-void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit);
+void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_cols_and_rows(t_elem **dir_args, t_all *ptr, e_flg *flag);
 void mx_get_bsize_num(t_all *ptr, t_elem **arr, e_flg *flag);
 void mx_get_inode_num(t_all *ptr, t_elem **arr, e_flg *flag);
@@ -179,10 +181,10 @@ int mx_print_is(t_elem **dir_args, t_all *ptr, e_flg *flag, int j);
 void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_output_file_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur);
 const char *mx_print_total(t_elem **arr, t_all *ptr);
-void mx_print_link(t_elem **arr, t_all *ptr, int j);
-void mx_print_fname(e_flg *flag, const char *name, int cur_dir);
-void mx_recursion(t_all *ptr, t_elem **dir_args, e_flg *flag, int cur_dir);
-void mx_denied_error(t_elem **arr, int num, e_flg *flag);
+void mx_print_link(t_elem **arr, int j);
+void mx_print_fname(const char *name, int cur_dir);
+void mx_recursion(t_all *ptr, t_elem **dir_args, e_flg *flag, t_data *data);
+void mx_denied_error(t_elem **arr, int num, t_data *data);
 int mx_l_link(t_elem **arr, t_all *ptr);
 int mx_l_uid(t_elem **arr, t_all *ptr);
 int mx_l_gid(t_elem **arr, t_all *ptr);
@@ -192,5 +194,6 @@ char *mx_get_link(const char *name);
 void mx_set_prior_1(e_flg *fl, int *value);
 void mx_big_destroyer(t_elem **arr, int n);
 void mx_write_total(t_elem **arr, t_all *ptr, e_flg *flag);
+void mx_check_perm(t_elem **arr, int i, e_flg *flag, t_data *data);
 
 #endif

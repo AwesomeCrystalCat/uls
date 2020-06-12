@@ -23,18 +23,18 @@ static void print_xattr(char *key, const char *path,
 
     write(1, "\n", 1);
     while (buflen > 0) {
-        mx_print_spaces(8);
+        write (1, "\t", 1);
         write(1, key, mx_strlen(key));
         val = getxattr(path, key, NULL, 0, 127, 0x0001);
         tmp = mx_itoa((int)val);
-        mx_print_spaces(sp - mx_strlen(tmp) - mx_strlen(key));
+        write (1, "\t", 1);
+        mx_print_spaces(sp - 8 - (mx_strlen(key) - mx_strlen(tmp)));
         write(1, tmp, mx_strlen(tmp));
+        write (1, " ", 1);
         keylen = strlen(key) + 1;
         buflen -= keylen;
         key += keylen;
         free(tmp);
-        if (buflen > 0)
-            write(1, "\n", 1);
     }
 }
 

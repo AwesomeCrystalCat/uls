@@ -35,7 +35,7 @@ void mx_quick_time_sort(t_elem **ptr, int left, int right) {
         j = right;
         while (i < j) {
             while (wild_cmp_r(ptr[i]->f_time, ptr[pivot]->f_time) > 0
-                && i < right)
+                   && i < right)
                 i++;
             while (wild_cmp_r(ptr[j]->f_time, ptr[pivot]->f_time) < 0)
                 j--;

@@ -1,5 +1,10 @@
 #include "uls.h"
 
+static void print_newrow(int j, int c) {
+    if (j != c)
+        write(1, "\n", 1);
+} 
+
 void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag) {
     for (int j = 0; j < ptr->count; j++) {
         int cur = ptr->name_len;
@@ -19,6 +24,6 @@ void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag) {
         write(1, arr[j]->name, mx_strlen(arr[j]->name));
         if (flag[p] && arr[j]->mode[0] == 'd')
             write(1, "/", 1);
-        j + 1 != ptr->count ? write(1, "\n", 1) : 0;
+        print_newrow(j + 1, ptr->count);
     }
 }

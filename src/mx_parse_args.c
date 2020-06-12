@@ -13,7 +13,7 @@ char *mx_get_link(const char *name) {
 }
 
 static void define_link_path(const char *path,
-                        t_data *data, int num, char **str) {
+                            t_data *data, int num, char **str) {
     struct stat buff;
     char *link_path = mx_get_link(path);
 

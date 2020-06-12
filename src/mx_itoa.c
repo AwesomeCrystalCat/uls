@@ -1,13 +1,17 @@
 #include "uls.h"
 
 static int mx_numlen(int num) {
-    int len = num < 0 ? 1 : 0;
+    int len = 0;
 
+    if (num < 0)
+        len = 1;
     while (num > 0 || -num > 0 || num == -2147483648) {
         num /= 10;
         len++;
     }
-    return len == 0 ? 1 : len;
+    if (len == 0)
+        len = 1;
+    return len;
 }
 
 char *mx_itoa(int number) {

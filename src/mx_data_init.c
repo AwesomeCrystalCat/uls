@@ -9,5 +9,7 @@ t_data *mx_data_init(int argc) {
     data->dcount = 0;
     data->fcount = 0;
     data->errors[0] = NULL;
+    data->ecount = 0;
+    data->cur_dir = 0;
     return data;
 }
