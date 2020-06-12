@@ -4,6 +4,7 @@ static void get_link_type(t_elem *ptr) {
     struct stat buff;
     char *link_name = mx_get_link(ptr->path); 
 
+    ptr->link_type = 0;
     if (lstat(link_name, &buff) == 0) {
         if ((buff.st_mode & MX_IFMT) == MX_IFDIR) {
             ptr->path_link = mx_strdup(link_name);
@@ -47,12 +48,12 @@ static t_elem *init_stat() {
     ptr->gid = NULL;
     ptr->size_i = 0;
     ptr->size = NULL;
+    ptr->sort_size = NULL;
     ptr->b = 0;
     ptr->bsize = NULL;
     ptr->u_time = 0;
     ptr->r_time = NULL;
     ptr->f_time = NULL;
-    ptr->link_type = 0;
     ptr->path_link = NULL;
     return ptr;
 }
@@ -86,6 +87,7 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) {
     ptr->gid = mx_setgrp(&buff, flag);
     ptr->size_i = buff.st_size;
     ptr->size = mx_itoa(buff.st_size);
+    ptr->sort_size = mx_strjoin(ptr->size, ptr->name);
     ptr->b = buff.st_blocks;
     ptr->bsize = mx_itoa(buff.st_blocks);
     mx_set_time(&buff, ptr, flag);

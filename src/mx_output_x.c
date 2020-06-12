@@ -18,6 +18,5 @@ void mx_output_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur) {
                 limit = ptr->count;
         }
     }
-    else
-        mx_output_file_x(dir_args, ptr, flag, cur);
+    isatty(1) != 1 ? mx_output_file_x(dir_args, ptr, flag, cur) : 0;
 }

@@ -97,6 +97,7 @@ typedef struct s_elem {
     char *gid;
     unsigned int size_i;
     char *size;
+    char *sort_size;
     unsigned int b;
     char *bsize;
     int u_time;

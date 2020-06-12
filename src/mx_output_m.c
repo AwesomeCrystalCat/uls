@@ -41,6 +41,8 @@ static void output_m_file(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
             mx_print_colored(arr[k], arr[k]->path); 
         else
             mx_printstr(arr[k]->name);
+        if (flag[p] && arr[k]->mode[0] == 'd')
+            write(1, "/", 1);
         if (k + 1 != ptr->count)
             write(1, ", ", 2);
         if (k + 2 != ptr->count)
@@ -61,11 +63,11 @@ void mx_output_m(t_elem **arr, t_all *ptr, e_flg *flag, int limit) {
             flag[s] ? limit = print_bsize_m(arr, ptr, k, limit) : limit;
             flag[g_big] ? (mx_print_colored(arr[k], arr[k]->path)) : 0;
             (!flag[g_big]) ? (mx_printstr(arr[k]->name)) : 0;
-            if (k + 1 != ptr->count)
-                write(1, ", ", 2);
-            if (k + 2 != ptr->count)
-                limit += mx_strlen(arr[k]->name) + 2;
-            else
+            if (flag[p] && arr[k]->mode[0] == 'd')
+                write(1, "/", 1);
+            k + 1 != ptr->count ? write(1, ", ", 2) : 0;
+            k + 2 != ptr->count ? limit += mx_strlen(arr[k]->name) + 2 : 0;
+            if (k + 1 == ptr->count && k + 2 == ptr->count)
                 limit += mx_strlen(arr[k]->name); 
         }
     }

@@ -1,38 +1,46 @@
 #include "uls.h"
 
-static int partition(t_elem **arr, int left, int right) {
-    int mid = left + (right - left) / 2;
-    int pivot = arr[mid]->size_i;
-    t_elem *temp;
-
-    while (left <= right) {
-        while (arr[left]->size_i > pivot)
-            left++;
-        while (arr[right]->size_i < pivot)
-            right--;
-        if (left <= right) {
-            if (arr[left]->size_i != arr[right]->size_i) {
-                temp = arr[right];
-                arr[right] = arr[left];
-                arr[left] = temp;
-            }
-            left++;
-            right--;
-        }
-    }
-    return left;
+static void swap_elems(t_elem *arr1, t_elem *arr2) {
+    t_elem temp = *arr1;
+    *arr1 = *arr2;
+    *arr2 = temp;
 }
 
-void mx_quick_size_sort(t_elem **arr, int left, int right) {
+static int wild_cmp_r(t_elem **ptr, int j, int pivot) {
+    int i = 0;
+
+    if (mx_strcmp(ptr[j]->size, ptr[pivot]->size) == 0)
+        return mx_strcmp(ptr[pivot]->name, ptr[j]->name);
+    else {
+        if (mx_strlen(ptr[j]->size) == mx_strlen(ptr[pivot]->size)) 
+            return mx_strcmp(ptr[j]->size, ptr[pivot]->size);
+        else if (mx_strlen(ptr[j]->size) > mx_strlen(ptr[pivot]->size))
+            return 1;
+        else 
+            return -1;
+    }
+    return 0;
+}
+
+void mx_quick_size_sort(t_elem **ptr, int left, int right) {
+    int i = 0;
+    int j = 0;
     int pivot = 0;
 
-    if (arr) {
-        if (left < right) {
-            pivot = partition(arr, left, right);
-            if (left < pivot - 1)
-                mx_quick_size_sort(arr, left, pivot - 1);
-            if (pivot < right)
-                mx_quick_size_sort(arr, pivot, right);
+    if (left < right) {
+        pivot = left;
+        i = left;
+        j = right;
+        while (i < j) {
+            while (wild_cmp_r(ptr, i, pivot) > 0
+                && i < right)
+                i++;
+            while (wild_cmp_r(ptr, j, pivot) < 0)
+                j--;
+            if (i < j)
+                swap_elems(ptr[i], ptr[j]);
         }
+        mx_quick_size_sort(ptr, left, j - 1);
+        mx_quick_size_sort(ptr, j + 1, right);
     }
 }
