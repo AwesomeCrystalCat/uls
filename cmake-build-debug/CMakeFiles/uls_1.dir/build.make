@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alex/Desktop/111
+CMAKE_SOURCE_DIR = /Users/obuhaiov/Desktop/111111111111
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alex/Desktop/111/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/obuhaiov/Desktop/111111111111/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uls_1.dir/depend.make
@@ -59,762 +59,776 @@ include CMakeFiles/uls_1.dir/flags.make
 
 CMakeFiles/uls_1.dir/src/main.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/uls_1.dir/src/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/main.c.o   -c /Users/alex/Desktop/111/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/uls_1.dir/src/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/main.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/main.c
 
 CMakeFiles/uls_1.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/main.c > CMakeFiles/uls_1.dir/src/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/main.c > CMakeFiles/uls_1.dir/src/main.c.i
 
 CMakeFiles/uls_1.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/main.c -o CMakeFiles/uls_1.dir/src/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/main.c -o CMakeFiles/uls_1.dir/src/main.c.s
 
 CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o: ../src/mx_big_destroyer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o   -c /Users/alex/Desktop/111/src/mx_big_destroyer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_big_destroyer.c
 
 CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_big_destroyer.c > CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_big_destroyer.c > CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.i
 
 CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_big_destroyer.c -o CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_big_destroyer.c -o CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.s
+
+CMakeFiles/uls_1.dir/src/mx_check_perm.c.o: CMakeFiles/uls_1.dir/flags.make
+CMakeFiles/uls_1.dir/src/mx_check_perm.c.o: ../src/mx_check_perm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/uls_1.dir/src/mx_check_perm.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_check_perm.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_check_perm.c
+
+CMakeFiles/uls_1.dir/src/mx_check_perm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_check_perm.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_check_perm.c > CMakeFiles/uls_1.dir/src/mx_check_perm.c.i
+
+CMakeFiles/uls_1.dir/src/mx_check_perm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_check_perm.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_check_perm.c -o CMakeFiles/uls_1.dir/src/mx_check_perm.c.s
 
 CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o: ../src/mx_cols_and_rows.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o   -c /Users/alex/Desktop/111/src/mx_cols_and_rows.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_cols_and_rows.c
 
 CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_cols_and_rows.c > CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_cols_and_rows.c > CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.i
 
 CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_cols_and_rows.c -o CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_cols_and_rows.c -o CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.s
 
 CMakeFiles/uls_1.dir/src/mx_data_init.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_data_init.c.o: ../src/mx_data_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/uls_1.dir/src/mx_data_init.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_data_init.c.o   -c /Users/alex/Desktop/111/src/mx_data_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/uls_1.dir/src/mx_data_init.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_data_init.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_data_init.c
 
 CMakeFiles/uls_1.dir/src/mx_data_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_data_init.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_data_init.c > CMakeFiles/uls_1.dir/src/mx_data_init.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_data_init.c > CMakeFiles/uls_1.dir/src/mx_data_init.c.i
 
 CMakeFiles/uls_1.dir/src/mx_data_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_data_init.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_data_init.c -o CMakeFiles/uls_1.dir/src/mx_data_init.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_data_init.c -o CMakeFiles/uls_1.dir/src/mx_data_init.c.s
 
 CMakeFiles/uls_1.dir/src/mx_denied_error.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_denied_error.c.o: ../src/mx_denied_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/uls_1.dir/src/mx_denied_error.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_denied_error.c.o   -c /Users/alex/Desktop/111/src/mx_denied_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/uls_1.dir/src/mx_denied_error.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_denied_error.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_denied_error.c
 
 CMakeFiles/uls_1.dir/src/mx_denied_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_denied_error.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_denied_error.c > CMakeFiles/uls_1.dir/src/mx_denied_error.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_denied_error.c > CMakeFiles/uls_1.dir/src/mx_denied_error.c.i
 
 CMakeFiles/uls_1.dir/src/mx_denied_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_denied_error.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_denied_error.c -o CMakeFiles/uls_1.dir/src/mx_denied_error.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_denied_error.c -o CMakeFiles/uls_1.dir/src/mx_denied_error.c.s
 
 CMakeFiles/uls_1.dir/src/mx_dir_parse.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_dir_parse.c.o: ../src/mx_dir_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/uls_1.dir/src/mx_dir_parse.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_dir_parse.c.o   -c /Users/alex/Desktop/111/src/mx_dir_parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/uls_1.dir/src/mx_dir_parse.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_dir_parse.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_dir_parse.c
 
 CMakeFiles/uls_1.dir/src/mx_dir_parse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_dir_parse.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_dir_parse.c > CMakeFiles/uls_1.dir/src/mx_dir_parse.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_dir_parse.c > CMakeFiles/uls_1.dir/src/mx_dir_parse.c.i
 
 CMakeFiles/uls_1.dir/src/mx_dir_parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_dir_parse.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_dir_parse.c -o CMakeFiles/uls_1.dir/src/mx_dir_parse.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_dir_parse.c -o CMakeFiles/uls_1.dir/src/mx_dir_parse.c.s
 
 CMakeFiles/uls_1.dir/src/mx_errors_array.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_errors_array.c.o: ../src/mx_errors_array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/uls_1.dir/src/mx_errors_array.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_errors_array.c.o   -c /Users/alex/Desktop/111/src/mx_errors_array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/uls_1.dir/src/mx_errors_array.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_errors_array.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_errors_array.c
 
 CMakeFiles/uls_1.dir/src/mx_errors_array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_errors_array.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_errors_array.c > CMakeFiles/uls_1.dir/src/mx_errors_array.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_errors_array.c > CMakeFiles/uls_1.dir/src/mx_errors_array.c.i
 
 CMakeFiles/uls_1.dir/src/mx_errors_array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_errors_array.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_errors_array.c -o CMakeFiles/uls_1.dir/src/mx_errors_array.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_errors_array.c -o CMakeFiles/uls_1.dir/src/mx_errors_array.c.s
 
 CMakeFiles/uls_1.dir/src/mx_files_count.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_files_count.c.o: ../src/mx_files_count.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/uls_1.dir/src/mx_files_count.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_files_count.c.o   -c /Users/alex/Desktop/111/src/mx_files_count.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/uls_1.dir/src/mx_files_count.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_files_count.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_files_count.c
 
 CMakeFiles/uls_1.dir/src/mx_files_count.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_files_count.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_files_count.c > CMakeFiles/uls_1.dir/src/mx_files_count.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_files_count.c > CMakeFiles/uls_1.dir/src/mx_files_count.c.i
 
 CMakeFiles/uls_1.dir/src/mx_files_count.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_files_count.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_files_count.c -o CMakeFiles/uls_1.dir/src/mx_files_count.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_files_count.c -o CMakeFiles/uls_1.dir/src/mx_files_count.c.s
 
 CMakeFiles/uls_1.dir/src/mx_find_name_len.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_find_name_len.c.o: ../src/mx_find_name_len.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/uls_1.dir/src/mx_find_name_len.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_find_name_len.c.o   -c /Users/alex/Desktop/111/src/mx_find_name_len.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/uls_1.dir/src/mx_find_name_len.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_find_name_len.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_find_name_len.c
 
 CMakeFiles/uls_1.dir/src/mx_find_name_len.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_find_name_len.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_find_name_len.c > CMakeFiles/uls_1.dir/src/mx_find_name_len.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_find_name_len.c > CMakeFiles/uls_1.dir/src/mx_find_name_len.c.i
 
 CMakeFiles/uls_1.dir/src/mx_find_name_len.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_find_name_len.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_find_name_len.c -o CMakeFiles/uls_1.dir/src/mx_find_name_len.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_find_name_len.c -o CMakeFiles/uls_1.dir/src/mx_find_name_len.c.s
 
 CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.o: ../src/mx_get_bsize_num.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.o   -c /Users/alex/Desktop/111/src/mx_get_bsize_num.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_get_bsize_num.c
 
 CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_get_bsize_num.c > CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_get_bsize_num.c > CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.i
 
 CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_get_bsize_num.c -o CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_get_bsize_num.c -o CMakeFiles/uls_1.dir/src/mx_get_bsize_num.c.s
 
 CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.o: ../src/mx_get_inode_num.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.o   -c /Users/alex/Desktop/111/src/mx_get_inode_num.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_get_inode_num.c
 
 CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_get_inode_num.c > CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_get_inode_num.c > CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.i
 
 CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_get_inode_num.c -o CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_get_inode_num.c -o CMakeFiles/uls_1.dir/src/mx_get_inode_num.c.s
 
 CMakeFiles/uls_1.dir/src/mx_get_path.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_get_path.c.o: ../src/mx_get_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/uls_1.dir/src/mx_get_path.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_path.c.o   -c /Users/alex/Desktop/111/src/mx_get_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/uls_1.dir/src/mx_get_path.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_path.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_get_path.c
 
 CMakeFiles/uls_1.dir/src/mx_get_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_get_path.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_get_path.c > CMakeFiles/uls_1.dir/src/mx_get_path.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_get_path.c > CMakeFiles/uls_1.dir/src/mx_get_path.c.i
 
 CMakeFiles/uls_1.dir/src/mx_get_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_get_path.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_get_path.c -o CMakeFiles/uls_1.dir/src/mx_get_path.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_get_path.c -o CMakeFiles/uls_1.dir/src/mx_get_path.c.s
 
 CMakeFiles/uls_1.dir/src/mx_get_win_size.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_get_win_size.c.o: ../src/mx_get_win_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/uls_1.dir/src/mx_get_win_size.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_win_size.c.o   -c /Users/alex/Desktop/111/src/mx_get_win_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/uls_1.dir/src/mx_get_win_size.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_get_win_size.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_get_win_size.c
 
 CMakeFiles/uls_1.dir/src/mx_get_win_size.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_get_win_size.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_get_win_size.c > CMakeFiles/uls_1.dir/src/mx_get_win_size.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_get_win_size.c > CMakeFiles/uls_1.dir/src/mx_get_win_size.c.i
 
 CMakeFiles/uls_1.dir/src/mx_get_win_size.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_get_win_size.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_get_win_size.c -o CMakeFiles/uls_1.dir/src/mx_get_win_size.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_get_win_size.c -o CMakeFiles/uls_1.dir/src/mx_get_win_size.c.s
 
 CMakeFiles/uls_1.dir/src/mx_getstats.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_getstats.c.o: ../src/mx_getstats.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/uls_1.dir/src/mx_getstats.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_getstats.c.o   -c /Users/alex/Desktop/111/src/mx_getstats.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/uls_1.dir/src/mx_getstats.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_getstats.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_getstats.c
 
 CMakeFiles/uls_1.dir/src/mx_getstats.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_getstats.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_getstats.c > CMakeFiles/uls_1.dir/src/mx_getstats.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_getstats.c > CMakeFiles/uls_1.dir/src/mx_getstats.c.i
 
 CMakeFiles/uls_1.dir/src/mx_getstats.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_getstats.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_getstats.c -o CMakeFiles/uls_1.dir/src/mx_getstats.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_getstats.c -o CMakeFiles/uls_1.dir/src/mx_getstats.c.s
 
 CMakeFiles/uls_1.dir/src/mx_itoa.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_itoa.c.o: ../src/mx_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/uls_1.dir/src/mx_itoa.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_itoa.c.o   -c /Users/alex/Desktop/111/src/mx_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/uls_1.dir/src/mx_itoa.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_itoa.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_itoa.c
 
 CMakeFiles/uls_1.dir/src/mx_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_itoa.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_itoa.c > CMakeFiles/uls_1.dir/src/mx_itoa.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_itoa.c > CMakeFiles/uls_1.dir/src/mx_itoa.c.i
 
 CMakeFiles/uls_1.dir/src/mx_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_itoa.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_itoa.c -o CMakeFiles/uls_1.dir/src/mx_itoa.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_itoa.c -o CMakeFiles/uls_1.dir/src/mx_itoa.c.s
 
 CMakeFiles/uls_1.dir/src/mx_l_gid.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_l_gid.c.o: ../src/mx_l_gid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/uls_1.dir/src/mx_l_gid.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_gid.c.o   -c /Users/alex/Desktop/111/src/mx_l_gid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/uls_1.dir/src/mx_l_gid.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_gid.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_l_gid.c
 
 CMakeFiles/uls_1.dir/src/mx_l_gid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_l_gid.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_l_gid.c > CMakeFiles/uls_1.dir/src/mx_l_gid.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_l_gid.c > CMakeFiles/uls_1.dir/src/mx_l_gid.c.i
 
 CMakeFiles/uls_1.dir/src/mx_l_gid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_l_gid.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_l_gid.c -o CMakeFiles/uls_1.dir/src/mx_l_gid.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_l_gid.c -o CMakeFiles/uls_1.dir/src/mx_l_gid.c.s
 
 CMakeFiles/uls_1.dir/src/mx_l_link.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_l_link.c.o: ../src/mx_l_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/uls_1.dir/src/mx_l_link.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_link.c.o   -c /Users/alex/Desktop/111/src/mx_l_link.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/uls_1.dir/src/mx_l_link.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_link.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_l_link.c
 
 CMakeFiles/uls_1.dir/src/mx_l_link.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_l_link.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_l_link.c > CMakeFiles/uls_1.dir/src/mx_l_link.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_l_link.c > CMakeFiles/uls_1.dir/src/mx_l_link.c.i
 
 CMakeFiles/uls_1.dir/src/mx_l_link.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_l_link.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_l_link.c -o CMakeFiles/uls_1.dir/src/mx_l_link.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_l_link.c -o CMakeFiles/uls_1.dir/src/mx_l_link.c.s
 
 CMakeFiles/uls_1.dir/src/mx_l_size.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_l_size.c.o: ../src/mx_l_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/uls_1.dir/src/mx_l_size.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_size.c.o   -c /Users/alex/Desktop/111/src/mx_l_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/uls_1.dir/src/mx_l_size.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_size.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_l_size.c
 
 CMakeFiles/uls_1.dir/src/mx_l_size.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_l_size.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_l_size.c > CMakeFiles/uls_1.dir/src/mx_l_size.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_l_size.c > CMakeFiles/uls_1.dir/src/mx_l_size.c.i
 
 CMakeFiles/uls_1.dir/src/mx_l_size.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_l_size.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_l_size.c -o CMakeFiles/uls_1.dir/src/mx_l_size.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_l_size.c -o CMakeFiles/uls_1.dir/src/mx_l_size.c.s
 
 CMakeFiles/uls_1.dir/src/mx_l_uid.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_l_uid.c.o: ../src/mx_l_uid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/uls_1.dir/src/mx_l_uid.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_uid.c.o   -c /Users/alex/Desktop/111/src/mx_l_uid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/uls_1.dir/src/mx_l_uid.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_l_uid.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_l_uid.c
 
 CMakeFiles/uls_1.dir/src/mx_l_uid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_l_uid.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_l_uid.c > CMakeFiles/uls_1.dir/src/mx_l_uid.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_l_uid.c > CMakeFiles/uls_1.dir/src/mx_l_uid.c.i
 
 CMakeFiles/uls_1.dir/src/mx_l_uid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_l_uid.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_l_uid.c -o CMakeFiles/uls_1.dir/src/mx_l_uid.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_l_uid.c -o CMakeFiles/uls_1.dir/src/mx_l_uid.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_1.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_1.c.o: ../src/mx_output_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/uls_1.dir/src/mx_output_1.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_1.c.o   -c /Users/alex/Desktop/111/src/mx_output_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/uls_1.dir/src/mx_output_1.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_1.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_1.c
 
 CMakeFiles/uls_1.dir/src/mx_output_1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_1.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_1.c > CMakeFiles/uls_1.dir/src/mx_output_1.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_1.c > CMakeFiles/uls_1.dir/src/mx_output_1.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_1.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_1.c -o CMakeFiles/uls_1.dir/src/mx_output_1.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_1.c -o CMakeFiles/uls_1.dir/src/mx_output_1.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_c.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_c.c.o: ../src/mx_output_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/uls_1.dir/src/mx_output_c.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_c.c.o   -c /Users/alex/Desktop/111/src/mx_output_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/uls_1.dir/src/mx_output_c.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_c.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_c.c
 
 CMakeFiles/uls_1.dir/src/mx_output_c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_c.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_c.c > CMakeFiles/uls_1.dir/src/mx_output_c.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_c.c > CMakeFiles/uls_1.dir/src/mx_output_c.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_c.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_c.c -o CMakeFiles/uls_1.dir/src/mx_output_c.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_c.c -o CMakeFiles/uls_1.dir/src/mx_output_c.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_file.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_file.c.o: ../src/mx_output_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/uls_1.dir/src/mx_output_file.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_file.c.o   -c /Users/alex/Desktop/111/src/mx_output_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/uls_1.dir/src/mx_output_file.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_file.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_file.c
 
 CMakeFiles/uls_1.dir/src/mx_output_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_file.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_file.c > CMakeFiles/uls_1.dir/src/mx_output_file.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_file.c > CMakeFiles/uls_1.dir/src/mx_output_file.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_file.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_file.c -o CMakeFiles/uls_1.dir/src/mx_output_file.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_file.c -o CMakeFiles/uls_1.dir/src/mx_output_file.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_file_x.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_file_x.c.o: ../src/mx_output_file_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/uls_1.dir/src/mx_output_file_x.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_file_x.c.o   -c /Users/alex/Desktop/111/src/mx_output_file_x.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/uls_1.dir/src/mx_output_file_x.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_file_x.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_file_x.c
 
 CMakeFiles/uls_1.dir/src/mx_output_file_x.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_file_x.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_file_x.c > CMakeFiles/uls_1.dir/src/mx_output_file_x.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_file_x.c > CMakeFiles/uls_1.dir/src/mx_output_file_x.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_file_x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_file_x.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_file_x.c -o CMakeFiles/uls_1.dir/src/mx_output_file_x.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_file_x.c -o CMakeFiles/uls_1.dir/src/mx_output_file_x.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_l.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_l.c.o: ../src/mx_output_l.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/uls_1.dir/src/mx_output_l.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_l.c.o   -c /Users/alex/Desktop/111/src/mx_output_l.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/uls_1.dir/src/mx_output_l.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_l.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_l.c
 
 CMakeFiles/uls_1.dir/src/mx_output_l.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_l.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_l.c > CMakeFiles/uls_1.dir/src/mx_output_l.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_l.c > CMakeFiles/uls_1.dir/src/mx_output_l.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_l.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_l.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_l.c -o CMakeFiles/uls_1.dir/src/mx_output_l.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_l.c -o CMakeFiles/uls_1.dir/src/mx_output_l.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_m.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_m.c.o: ../src/mx_output_m.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/uls_1.dir/src/mx_output_m.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_m.c.o   -c /Users/alex/Desktop/111/src/mx_output_m.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/uls_1.dir/src/mx_output_m.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_m.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_m.c
 
 CMakeFiles/uls_1.dir/src/mx_output_m.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_m.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_m.c > CMakeFiles/uls_1.dir/src/mx_output_m.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_m.c > CMakeFiles/uls_1.dir/src/mx_output_m.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_m.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_m.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_m.c -o CMakeFiles/uls_1.dir/src/mx_output_m.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_m.c -o CMakeFiles/uls_1.dir/src/mx_output_m.c.s
 
 CMakeFiles/uls_1.dir/src/mx_output_x.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_output_x.c.o: ../src/mx_output_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/uls_1.dir/src/mx_output_x.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_x.c.o   -c /Users/alex/Desktop/111/src/mx_output_x.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/uls_1.dir/src/mx_output_x.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_output_x.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_output_x.c
 
 CMakeFiles/uls_1.dir/src/mx_output_x.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_output_x.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_output_x.c > CMakeFiles/uls_1.dir/src/mx_output_x.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_output_x.c > CMakeFiles/uls_1.dir/src/mx_output_x.c.i
 
 CMakeFiles/uls_1.dir/src/mx_output_x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_output_x.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_output_x.c -o CMakeFiles/uls_1.dir/src/mx_output_x.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_output_x.c -o CMakeFiles/uls_1.dir/src/mx_output_x.c.s
 
 CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o: ../src/mx_p_xattr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o   -c /Users/alex/Desktop/111/src/mx_p_xattr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_p_xattr.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_p_xattr.c
 
 CMakeFiles/uls_1.dir/src/mx_p_xattr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_p_xattr.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_p_xattr.c > CMakeFiles/uls_1.dir/src/mx_p_xattr.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_p_xattr.c > CMakeFiles/uls_1.dir/src/mx_p_xattr.c.i
 
 CMakeFiles/uls_1.dir/src/mx_p_xattr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_p_xattr.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_p_xattr.c -o CMakeFiles/uls_1.dir/src/mx_p_xattr.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_p_xattr.c -o CMakeFiles/uls_1.dir/src/mx_p_xattr.c.s
 
 CMakeFiles/uls_1.dir/src/mx_parse_args.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_parse_args.c.o: ../src/mx_parse_args.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/uls_1.dir/src/mx_parse_args.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_parse_args.c.o   -c /Users/alex/Desktop/111/src/mx_parse_args.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/uls_1.dir/src/mx_parse_args.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_parse_args.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_parse_args.c
 
 CMakeFiles/uls_1.dir/src/mx_parse_args.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_parse_args.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_parse_args.c > CMakeFiles/uls_1.dir/src/mx_parse_args.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_parse_args.c > CMakeFiles/uls_1.dir/src/mx_parse_args.c.i
 
 CMakeFiles/uls_1.dir/src/mx_parse_args.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_parse_args.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_parse_args.c -o CMakeFiles/uls_1.dir/src/mx_parse_args.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_parse_args.c -o CMakeFiles/uls_1.dir/src/mx_parse_args.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_colored.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_colored.c.o: ../src/mx_print_colored.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/uls_1.dir/src/mx_print_colored.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_colored.c.o   -c /Users/alex/Desktop/111/src/mx_print_colored.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/uls_1.dir/src/mx_print_colored.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_colored.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_colored.c
 
 CMakeFiles/uls_1.dir/src/mx_print_colored.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_colored.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_colored.c > CMakeFiles/uls_1.dir/src/mx_print_colored.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_colored.c > CMakeFiles/uls_1.dir/src/mx_print_colored.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_colored.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_colored.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_colored.c -o CMakeFiles/uls_1.dir/src/mx_print_colored.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_colored.c -o CMakeFiles/uls_1.dir/src/mx_print_colored.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_dirs.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_dirs.c.o: ../src/mx_print_dirs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/uls_1.dir/src/mx_print_dirs.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_dirs.c.o   -c /Users/alex/Desktop/111/src/mx_print_dirs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/uls_1.dir/src/mx_print_dirs.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_dirs.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_dirs.c
 
 CMakeFiles/uls_1.dir/src/mx_print_dirs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_dirs.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_dirs.c > CMakeFiles/uls_1.dir/src/mx_print_dirs.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_dirs.c > CMakeFiles/uls_1.dir/src/mx_print_dirs.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_dirs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_dirs.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_dirs.c -o CMakeFiles/uls_1.dir/src/mx_print_dirs.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_dirs.c -o CMakeFiles/uls_1.dir/src/mx_print_dirs.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_err.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_err.c.o: ../src/mx_print_err.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/uls_1.dir/src/mx_print_err.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_err.c.o   -c /Users/alex/Desktop/111/src/mx_print_err.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/uls_1.dir/src/mx_print_err.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_err.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_err.c
 
 CMakeFiles/uls_1.dir/src/mx_print_err.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_err.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_err.c > CMakeFiles/uls_1.dir/src/mx_print_err.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_err.c > CMakeFiles/uls_1.dir/src/mx_print_err.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_err.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_err.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_err.c -o CMakeFiles/uls_1.dir/src/mx_print_err.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_err.c -o CMakeFiles/uls_1.dir/src/mx_print_err.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_errors.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_errors.c.o: ../src/mx_print_errors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/uls_1.dir/src/mx_print_errors.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_errors.c.o   -c /Users/alex/Desktop/111/src/mx_print_errors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/uls_1.dir/src/mx_print_errors.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_errors.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_errors.c
 
 CMakeFiles/uls_1.dir/src/mx_print_errors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_errors.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_errors.c > CMakeFiles/uls_1.dir/src/mx_print_errors.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_errors.c > CMakeFiles/uls_1.dir/src/mx_print_errors.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_errors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_errors.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_errors.c -o CMakeFiles/uls_1.dir/src/mx_print_errors.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_errors.c -o CMakeFiles/uls_1.dir/src/mx_print_errors.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_files.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_files.c.o: ../src/mx_print_files.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/uls_1.dir/src/mx_print_files.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_files.c.o   -c /Users/alex/Desktop/111/src/mx_print_files.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/uls_1.dir/src/mx_print_files.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_files.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_files.c
 
 CMakeFiles/uls_1.dir/src/mx_print_files.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_files.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_files.c > CMakeFiles/uls_1.dir/src/mx_print_files.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_files.c > CMakeFiles/uls_1.dir/src/mx_print_files.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_files.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_files.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_files.c -o CMakeFiles/uls_1.dir/src/mx_print_files.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_files.c -o CMakeFiles/uls_1.dir/src/mx_print_files.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_fname.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_fname.c.o: ../src/mx_print_fname.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/uls_1.dir/src/mx_print_fname.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_fname.c.o   -c /Users/alex/Desktop/111/src/mx_print_fname.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/uls_1.dir/src/mx_print_fname.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_fname.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_fname.c
 
 CMakeFiles/uls_1.dir/src/mx_print_fname.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_fname.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_fname.c > CMakeFiles/uls_1.dir/src/mx_print_fname.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_fname.c > CMakeFiles/uls_1.dir/src/mx_print_fname.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_fname.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_fname.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_fname.c -o CMakeFiles/uls_1.dir/src/mx_print_fname.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_fname.c -o CMakeFiles/uls_1.dir/src/mx_print_fname.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_is.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_is.c.o: ../src/mx_print_is.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/uls_1.dir/src/mx_print_is.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_is.c.o   -c /Users/alex/Desktop/111/src/mx_print_is.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/uls_1.dir/src/mx_print_is.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_is.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_is.c
 
 CMakeFiles/uls_1.dir/src/mx_print_is.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_is.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_is.c > CMakeFiles/uls_1.dir/src/mx_print_is.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_is.c > CMakeFiles/uls_1.dir/src/mx_print_is.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_is.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_is.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_is.c -o CMakeFiles/uls_1.dir/src/mx_print_is.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_is.c -o CMakeFiles/uls_1.dir/src/mx_print_is.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_link.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_link.c.o: ../src/mx_print_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/uls_1.dir/src/mx_print_link.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_link.c.o   -c /Users/alex/Desktop/111/src/mx_print_link.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/uls_1.dir/src/mx_print_link.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_link.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_link.c
 
 CMakeFiles/uls_1.dir/src/mx_print_link.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_link.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_link.c > CMakeFiles/uls_1.dir/src/mx_print_link.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_link.c > CMakeFiles/uls_1.dir/src/mx_print_link.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_link.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_link.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_link.c -o CMakeFiles/uls_1.dir/src/mx_print_link.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_link.c -o CMakeFiles/uls_1.dir/src/mx_print_link.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_spaces.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_spaces.c.o: ../src/mx_print_spaces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/uls_1.dir/src/mx_print_spaces.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_spaces.c.o   -c /Users/alex/Desktop/111/src/mx_print_spaces.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/uls_1.dir/src/mx_print_spaces.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_spaces.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_spaces.c
 
 CMakeFiles/uls_1.dir/src/mx_print_spaces.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_spaces.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_spaces.c > CMakeFiles/uls_1.dir/src/mx_print_spaces.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_spaces.c > CMakeFiles/uls_1.dir/src/mx_print_spaces.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_spaces.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_spaces.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_spaces.c -o CMakeFiles/uls_1.dir/src/mx_print_spaces.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_spaces.c -o CMakeFiles/uls_1.dir/src/mx_print_spaces.c.s
 
 CMakeFiles/uls_1.dir/src/mx_print_total.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_print_total.c.o: ../src/mx_print_total.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/uls_1.dir/src/mx_print_total.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_total.c.o   -c /Users/alex/Desktop/111/src/mx_print_total.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/uls_1.dir/src/mx_print_total.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_print_total.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_print_total.c
 
 CMakeFiles/uls_1.dir/src/mx_print_total.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_print_total.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_print_total.c > CMakeFiles/uls_1.dir/src/mx_print_total.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_print_total.c > CMakeFiles/uls_1.dir/src/mx_print_total.c.i
 
 CMakeFiles/uls_1.dir/src/mx_print_total.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_print_total.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_print_total.c -o CMakeFiles/uls_1.dir/src/mx_print_total.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_print_total.c -o CMakeFiles/uls_1.dir/src/mx_print_total.c.s
 
 CMakeFiles/uls_1.dir/src/mx_printer.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_printer.c.o: ../src/mx_printer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/uls_1.dir/src/mx_printer.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_printer.c.o   -c /Users/alex/Desktop/111/src/mx_printer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/uls_1.dir/src/mx_printer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_printer.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_printer.c
 
 CMakeFiles/uls_1.dir/src/mx_printer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_printer.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_printer.c > CMakeFiles/uls_1.dir/src/mx_printer.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_printer.c > CMakeFiles/uls_1.dir/src/mx_printer.c.i
 
 CMakeFiles/uls_1.dir/src/mx_printer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_printer.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_printer.c -o CMakeFiles/uls_1.dir/src/mx_printer.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_printer.c -o CMakeFiles/uls_1.dir/src/mx_printer.c.s
 
 CMakeFiles/uls_1.dir/src/mx_prior_all.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_prior_all.c.o: ../src/mx_prior_all.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/uls_1.dir/src/mx_prior_all.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_prior_all.c.o   -c /Users/alex/Desktop/111/src/mx_prior_all.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/uls_1.dir/src/mx_prior_all.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_prior_all.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_prior_all.c
 
 CMakeFiles/uls_1.dir/src/mx_prior_all.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_prior_all.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_prior_all.c > CMakeFiles/uls_1.dir/src/mx_prior_all.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_prior_all.c > CMakeFiles/uls_1.dir/src/mx_prior_all.c.i
 
 CMakeFiles/uls_1.dir/src/mx_prior_all.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_prior_all.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_prior_all.c -o CMakeFiles/uls_1.dir/src/mx_prior_all.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_prior_all.c -o CMakeFiles/uls_1.dir/src/mx_prior_all.c.s
 
 CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.o: ../src/mx_quick_elem_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.o   -c /Users/alex/Desktop/111/src/mx_quick_elem_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_quick_elem_sort.c
 
 CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_quick_elem_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_quick_elem_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.i
 
 CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_quick_elem_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_quick_elem_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_elem_sort.c.s
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.o: ../src/mx_quick_rev_elem_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.o   -c /Users/alex/Desktop/111/src/mx_quick_rev_elem_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_elem_sort.c
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_quick_rev_elem_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_elem_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.i
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_quick_rev_elem_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_elem_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_rev_elem_sort.c.s
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.o: ../src/mx_quick_rev_size_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.o   -c /Users/alex/Desktop/111/src/mx_quick_rev_size_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_size_sort.c
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_quick_rev_size_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_size_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.i
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_quick_rev_size_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_size_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_rev_size_sort.c.s
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.o: ../src/mx_quick_rev_time_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.o   -c /Users/alex/Desktop/111/src/mx_quick_rev_time_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_time_sort.c
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_quick_rev_time_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_time_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.i
 
 CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_quick_rev_time_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_quick_rev_time_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_rev_time_sort.c.s
 
 CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.o: ../src/mx_quick_size_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.o   -c /Users/alex/Desktop/111/src/mx_quick_size_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_quick_size_sort.c
 
 CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_quick_size_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_quick_size_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.i
 
 CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_quick_size_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_quick_size_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_size_sort.c.s
 
 CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.o: ../src/mx_quick_time_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.o   -c /Users/alex/Desktop/111/src/mx_quick_time_sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_quick_time_sort.c
 
 CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_quick_time_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_quick_time_sort.c > CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.i
 
 CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_quick_time_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_quick_time_sort.c -o CMakeFiles/uls_1.dir/src/mx_quick_time_sort.c.s
 
 CMakeFiles/uls_1.dir/src/mx_read_data.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_read_data.c.o: ../src/mx_read_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/uls_1.dir/src/mx_read_data.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_read_data.c.o   -c /Users/alex/Desktop/111/src/mx_read_data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/uls_1.dir/src/mx_read_data.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_read_data.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_read_data.c
 
 CMakeFiles/uls_1.dir/src/mx_read_data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_read_data.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_read_data.c > CMakeFiles/uls_1.dir/src/mx_read_data.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_read_data.c > CMakeFiles/uls_1.dir/src/mx_read_data.c.i
 
 CMakeFiles/uls_1.dir/src/mx_read_data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_read_data.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_read_data.c -o CMakeFiles/uls_1.dir/src/mx_read_data.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_read_data.c -o CMakeFiles/uls_1.dir/src/mx_read_data.c.s
 
 CMakeFiles/uls_1.dir/src/mx_read_dir.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_read_dir.c.o: ../src/mx_read_dir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/uls_1.dir/src/mx_read_dir.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_read_dir.c.o   -c /Users/alex/Desktop/111/src/mx_read_dir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/uls_1.dir/src/mx_read_dir.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_read_dir.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_read_dir.c
 
 CMakeFiles/uls_1.dir/src/mx_read_dir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_read_dir.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_read_dir.c > CMakeFiles/uls_1.dir/src/mx_read_dir.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_read_dir.c > CMakeFiles/uls_1.dir/src/mx_read_dir.c.i
 
 CMakeFiles/uls_1.dir/src/mx_read_dir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_read_dir.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_read_dir.c -o CMakeFiles/uls_1.dir/src/mx_read_dir.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_read_dir.c -o CMakeFiles/uls_1.dir/src/mx_read_dir.c.s
 
 CMakeFiles/uls_1.dir/src/mx_recursion.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_recursion.c.o: ../src/mx_recursion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/uls_1.dir/src/mx_recursion.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_recursion.c.o   -c /Users/alex/Desktop/111/src/mx_recursion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/uls_1.dir/src/mx_recursion.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_recursion.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_recursion.c
 
 CMakeFiles/uls_1.dir/src/mx_recursion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_recursion.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_recursion.c > CMakeFiles/uls_1.dir/src/mx_recursion.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_recursion.c > CMakeFiles/uls_1.dir/src/mx_recursion.c.i
 
 CMakeFiles/uls_1.dir/src/mx_recursion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_recursion.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_recursion.c -o CMakeFiles/uls_1.dir/src/mx_recursion.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_recursion.c -o CMakeFiles/uls_1.dir/src/mx_recursion.c.s
 
 CMakeFiles/uls_1.dir/src/mx_set_bsize.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_set_bsize.c.o: ../src/mx_set_bsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/uls_1.dir/src/mx_set_bsize.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_bsize.c.o   -c /Users/alex/Desktop/111/src/mx_set_bsize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/uls_1.dir/src/mx_set_bsize.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_bsize.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_set_bsize.c
 
 CMakeFiles/uls_1.dir/src/mx_set_bsize.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_set_bsize.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_set_bsize.c > CMakeFiles/uls_1.dir/src/mx_set_bsize.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_set_bsize.c > CMakeFiles/uls_1.dir/src/mx_set_bsize.c.i
 
 CMakeFiles/uls_1.dir/src/mx_set_bsize.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_set_bsize.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_set_bsize.c -o CMakeFiles/uls_1.dir/src/mx_set_bsize.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_set_bsize.c -o CMakeFiles/uls_1.dir/src/mx_set_bsize.c.s
 
 CMakeFiles/uls_1.dir/src/mx_set_mode.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_set_mode.c.o: ../src/mx_set_mode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/uls_1.dir/src/mx_set_mode.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_mode.c.o   -c /Users/alex/Desktop/111/src/mx_set_mode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/uls_1.dir/src/mx_set_mode.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_mode.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_set_mode.c
 
 CMakeFiles/uls_1.dir/src/mx_set_mode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_set_mode.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_set_mode.c > CMakeFiles/uls_1.dir/src/mx_set_mode.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_set_mode.c > CMakeFiles/uls_1.dir/src/mx_set_mode.c.i
 
 CMakeFiles/uls_1.dir/src/mx_set_mode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_set_mode.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_set_mode.c -o CMakeFiles/uls_1.dir/src/mx_set_mode.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_set_mode.c -o CMakeFiles/uls_1.dir/src/mx_set_mode.c.s
 
 CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o: ../src/mx_set_prior_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o   -c /Users/alex/Desktop/111/src/mx_set_prior_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_set_prior_1.c
 
 CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_set_prior_1.c > CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_set_prior_1.c > CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.i
 
 CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_set_prior_1.c -o CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_set_prior_1.c -o CMakeFiles/uls_1.dir/src/mx_set_prior_1.c.s
 
 CMakeFiles/uls_1.dir/src/mx_set_time.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_set_time.c.o: ../src/mx_set_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/uls_1.dir/src/mx_set_time.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_time.c.o   -c /Users/alex/Desktop/111/src/mx_set_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/uls_1.dir/src/mx_set_time.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_set_time.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_set_time.c
 
 CMakeFiles/uls_1.dir/src/mx_set_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_set_time.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_set_time.c > CMakeFiles/uls_1.dir/src/mx_set_time.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_set_time.c > CMakeFiles/uls_1.dir/src/mx_set_time.c.i
 
 CMakeFiles/uls_1.dir/src/mx_set_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_set_time.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_set_time.c -o CMakeFiles/uls_1.dir/src/mx_set_time.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_set_time.c -o CMakeFiles/uls_1.dir/src/mx_set_time.c.s
 
 CMakeFiles/uls_1.dir/src/mx_setgrp.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_setgrp.c.o: ../src/mx_setgrp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/uls_1.dir/src/mx_setgrp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_setgrp.c.o   -c /Users/alex/Desktop/111/src/mx_setgrp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/uls_1.dir/src/mx_setgrp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_setgrp.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_setgrp.c
 
 CMakeFiles/uls_1.dir/src/mx_setgrp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_setgrp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_setgrp.c > CMakeFiles/uls_1.dir/src/mx_setgrp.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_setgrp.c > CMakeFiles/uls_1.dir/src/mx_setgrp.c.i
 
 CMakeFiles/uls_1.dir/src/mx_setgrp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_setgrp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_setgrp.c -o CMakeFiles/uls_1.dir/src/mx_setgrp.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_setgrp.c -o CMakeFiles/uls_1.dir/src/mx_setgrp.c.s
 
 CMakeFiles/uls_1.dir/src/mx_setuser.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_setuser.c.o: ../src/mx_setuser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/uls_1.dir/src/mx_setuser.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_setuser.c.o   -c /Users/alex/Desktop/111/src/mx_setuser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/uls_1.dir/src/mx_setuser.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_setuser.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_setuser.c
 
 CMakeFiles/uls_1.dir/src/mx_setuser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_setuser.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_setuser.c > CMakeFiles/uls_1.dir/src/mx_setuser.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_setuser.c > CMakeFiles/uls_1.dir/src/mx_setuser.c.i
 
 CMakeFiles/uls_1.dir/src/mx_setuser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_setuser.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_setuser.c -o CMakeFiles/uls_1.dir/src/mx_setuser.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_setuser.c -o CMakeFiles/uls_1.dir/src/mx_setuser.c.s
 
 CMakeFiles/uls_1.dir/src/mx_sorting.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_sorting.c.o: ../src/mx_sorting.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/uls_1.dir/src/mx_sorting.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_sorting.c.o   -c /Users/alex/Desktop/111/src/mx_sorting.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/uls_1.dir/src/mx_sorting.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_sorting.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_sorting.c
 
 CMakeFiles/uls_1.dir/src/mx_sorting.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_sorting.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_sorting.c > CMakeFiles/uls_1.dir/src/mx_sorting.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_sorting.c > CMakeFiles/uls_1.dir/src/mx_sorting.c.i
 
 CMakeFiles/uls_1.dir/src/mx_sorting.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_sorting.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_sorting.c -o CMakeFiles/uls_1.dir/src/mx_sorting.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_sorting.c -o CMakeFiles/uls_1.dir/src/mx_sorting.c.s
 
 CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o: ../src/mx_switch_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o   -c /Users/alex/Desktop/111/src/mx_switch_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_switch_flags.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_switch_flags.c
 
 CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_switch_flags.c > CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_switch_flags.c > CMakeFiles/uls_1.dir/src/mx_switch_flags.c.i
 
 CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_switch_flags.c -o CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_switch_flags.c -o CMakeFiles/uls_1.dir/src/mx_switch_flags.c.s
 
 CMakeFiles/uls_1.dir/src/mx_write_total.c.o: CMakeFiles/uls_1.dir/flags.make
 CMakeFiles/uls_1.dir/src/mx_write_total.c.o: ../src/mx_write_total.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/uls_1.dir/src/mx_write_total.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_write_total.c.o   -c /Users/alex/Desktop/111/src/mx_write_total.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/uls_1.dir/src/mx_write_total.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls_1.dir/src/mx_write_total.c.o   -c /Users/obuhaiov/Desktop/111111111111/src/mx_write_total.c
 
 CMakeFiles/uls_1.dir/src/mx_write_total.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls_1.dir/src/mx_write_total.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alex/Desktop/111/src/mx_write_total.c > CMakeFiles/uls_1.dir/src/mx_write_total.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obuhaiov/Desktop/111111111111/src/mx_write_total.c > CMakeFiles/uls_1.dir/src/mx_write_total.c.i
 
 CMakeFiles/uls_1.dir/src/mx_write_total.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls_1.dir/src/mx_write_total.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alex/Desktop/111/src/mx_write_total.c -o CMakeFiles/uls_1.dir/src/mx_write_total.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obuhaiov/Desktop/111111111111/src/mx_write_total.c -o CMakeFiles/uls_1.dir/src/mx_write_total.c.s
 
 # Object files for target uls_1
 uls_1_OBJECTS = \
 "CMakeFiles/uls_1.dir/src/main.c.o" \
 "CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o" \
+"CMakeFiles/uls_1.dir/src/mx_check_perm.c.o" \
 "CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o" \
 "CMakeFiles/uls_1.dir/src/mx_data_init.c.o" \
 "CMakeFiles/uls_1.dir/src/mx_denied_error.c.o" \
@@ -877,6 +891,7 @@ uls_1_EXTERNAL_OBJECTS =
 
 uls_1: CMakeFiles/uls_1.dir/src/main.c.o
 uls_1: CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o
+uls_1: CMakeFiles/uls_1.dir/src/mx_check_perm.c.o
 uls_1: CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o
 uls_1: CMakeFiles/uls_1.dir/src/mx_data_init.c.o
 uls_1: CMakeFiles/uls_1.dir/src/mx_denied_error.c.o
@@ -936,7 +951,7 @@ uls_1: CMakeFiles/uls_1.dir/src/mx_write_total.c.o
 uls_1: CMakeFiles/uls_1.dir/build.make
 uls_1: libmx.a
 uls_1: CMakeFiles/uls_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking C executable uls_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking C executable uls_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uls_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -949,6 +964,6 @@ CMakeFiles/uls_1.dir/clean:
 .PHONY : CMakeFiles/uls_1.dir/clean
 
 CMakeFiles/uls_1.dir/depend:
-	cd /Users/alex/Desktop/111/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alex/Desktop/111 /Users/alex/Desktop/111 /Users/alex/Desktop/111/cmake-build-debug /Users/alex/Desktop/111/cmake-build-debug /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/uls_1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/obuhaiov/Desktop/111111111111/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/obuhaiov/Desktop/111111111111 /Users/obuhaiov/Desktop/111111111111 /Users/obuhaiov/Desktop/111111111111/cmake-build-debug /Users/obuhaiov/Desktop/111111111111/cmake-build-debug /Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles/uls_1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uls_1.dir/depend
 

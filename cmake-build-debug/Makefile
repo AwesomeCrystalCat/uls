@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alex/Desktop/111
+CMAKE_SOURCE_DIR = /Users/obuhaiov/Desktop/111111111111
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alex/Desktop/111/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/obuhaiov/Desktop/111111111111/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/alex/Desktop/111/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/obuhaiov/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles /Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alex/Desktop/111/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -594,33 +594,6 @@ libmx/src/mx_isspace.s: libmx/src/mx_isspace.c.s
 libmx/src/mx_isspace.c.s:
 	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_isspace.c.s
 .PHONY : libmx/src/mx_isspace.c.s
-
-libmx/src/mx_itoa.o: libmx/src/mx_itoa.c.o
-
-.PHONY : libmx/src/mx_itoa.o
-
-# target to build an object file
-libmx/src/mx_itoa.c.o:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_itoa.c.o
-.PHONY : libmx/src/mx_itoa.c.o
-
-libmx/src/mx_itoa.i: libmx/src/mx_itoa.c.i
-
-.PHONY : libmx/src/mx_itoa.i
-
-# target to preprocess a source file
-libmx/src/mx_itoa.c.i:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_itoa.c.i
-.PHONY : libmx/src/mx_itoa.c.i
-
-libmx/src/mx_itoa.s: libmx/src/mx_itoa.c.s
-
-.PHONY : libmx/src/mx_itoa.s
-
-# target to generate assembly for a file
-libmx/src/mx_itoa.c.s:
-	$(MAKE) -f CMakeFiles/mx.dir/build.make CMakeFiles/mx.dir/libmx/src/mx_itoa.c.s
-.PHONY : libmx/src/mx_itoa.c.s
 
 libmx/src/mx_len_to_delim.o: libmx/src/mx_len_to_delim.c.o
 
@@ -1890,6 +1863,33 @@ src/mx_big_destroyer.s: src/mx_big_destroyer.c.s
 src/mx_big_destroyer.c.s:
 	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.s
 .PHONY : src/mx_big_destroyer.c.s
+
+src/mx_check_perm.o: src/mx_check_perm.c.o
+
+.PHONY : src/mx_check_perm.o
+
+# target to build an object file
+src/mx_check_perm.c.o:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_check_perm.c.o
+.PHONY : src/mx_check_perm.c.o
+
+src/mx_check_perm.i: src/mx_check_perm.c.i
+
+.PHONY : src/mx_check_perm.i
+
+# target to preprocess a source file
+src/mx_check_perm.c.i:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_check_perm.c.i
+.PHONY : src/mx_check_perm.c.i
+
+src/mx_check_perm.s: src/mx_check_perm.c.s
+
+.PHONY : src/mx_check_perm.s
+
+# target to generate assembly for a file
+src/mx_check_perm.c.s:
+	$(MAKE) -f CMakeFiles/uls_1.dir/build.make CMakeFiles/uls_1.dir/src/mx_check_perm.c.s
+.PHONY : src/mx_check_perm.c.s
 
 src/mx_cols_and_rows.o: src/mx_cols_and_rows.c.o
 
@@ -3464,9 +3464,6 @@ help:
 	@echo "... libmx/src/mx_isspace.o"
 	@echo "... libmx/src/mx_isspace.i"
 	@echo "... libmx/src/mx_isspace.s"
-	@echo "... libmx/src/mx_itoa.o"
-	@echo "... libmx/src/mx_itoa.i"
-	@echo "... libmx/src/mx_itoa.s"
 	@echo "... libmx/src/mx_len_to_delim.o"
 	@echo "... libmx/src/mx_len_to_delim.i"
 	@echo "... libmx/src/mx_len_to_delim.s"
@@ -3608,6 +3605,9 @@ help:
 	@echo "... src/mx_big_destroyer.o"
 	@echo "... src/mx_big_destroyer.i"
 	@echo "... src/mx_big_destroyer.s"
+	@echo "... src/mx_check_perm.o"
+	@echo "... src/mx_check_perm.i"
+	@echo "... src/mx_check_perm.s"
 	@echo "... src/mx_cols_and_rows.o"
 	@echo "... src/mx_cols_and_rows.i"
 	@echo "... src/mx_cols_and_rows.s"

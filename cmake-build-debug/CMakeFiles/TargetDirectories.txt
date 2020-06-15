@@ -1,4 +1,4 @@
-/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/uls_1.dir
-/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/alex/Desktop/111/cmake-build-debug/CMakeFiles/mx.dir
+/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles/uls_1.dir
+/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/obuhaiov/Desktop/111111111111/cmake-build-debug/CMakeFiles/mx.dir

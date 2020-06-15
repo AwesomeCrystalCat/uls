@@ -16,7 +16,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/mx.dir/libmx/src/mx_hex_to_nbr.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_is_space.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_isspace.c.o"
-  "CMakeFiles/mx.dir/libmx/src/mx_itoa.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_len_to_delim.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_list_size.c.o"
   "CMakeFiles/mx.dir/libmx/src/mx_memccpy.c.o"

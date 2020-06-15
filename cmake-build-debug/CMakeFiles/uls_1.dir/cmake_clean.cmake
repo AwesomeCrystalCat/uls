@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/uls_1.dir/src/main.c.o"
   "CMakeFiles/uls_1.dir/src/mx_big_destroyer.c.o"
+  "CMakeFiles/uls_1.dir/src/mx_check_perm.c.o"
   "CMakeFiles/uls_1.dir/src/mx_cols_and_rows.c.o"
   "CMakeFiles/uls_1.dir/src/mx_data_init.c.o"
   "CMakeFiles/uls_1.dir/src/mx_denied_error.c.o"
