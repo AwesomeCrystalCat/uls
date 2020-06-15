@@ -1,7 +1,12 @@
 #include "uls.h"
 
 static void check_slash(t_data *data, t_elem **arr, e_flg *flag, int j) {
-    if (arr[j]->name[0] == '/' && (data->dcount > 1 || flag[r_big])) {
+    if (flag[r_big] && data->dcount == 1) {
+        printf("name is %s\n", arr[j]->name);
+        data->cur_dir = -2;
+        mx_dir_parse(flag, arr[j]->name, data);
+    }
+    else if (flag[r_big] && data->dcount > 1) {
         data->cur_dir = 0;
         mx_dir_parse(flag, arr[j]->name, data);
     }
@@ -10,7 +15,7 @@ static void check_slash(t_data *data, t_elem **arr, e_flg *flag, int j) {
         mx_dir_parse(flag, arr[j]->name, data);
     }
     else {
-        data->cur_dir = -2;
+        data->cur_dir = 0;
         mx_dir_parse(flag, arr[j]->name, data);
     }
     if (j < data->dcount - 1)

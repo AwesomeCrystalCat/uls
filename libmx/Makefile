@@ -15,7 +15,6 @@ SRCS = ./src/mx_printchar.c \
 	./src/mx_hex_to_nbr.c \
 	./src/mx_strnew.c \
 	./src/mx_nbr_to_hex.c \
-	./src/mx_itoa.c \
 	./src/mx_foreach.c \
 	./src/mx_binary_search.c \
 	./src/mx_bubble_sort.c \
@@ -76,7 +75,6 @@ SRCOUT = mx_printchar.c \
 	mx_hex_to_nbr.c \
 	mx_strnew.c \
 	mx_nbr_to_hex.c \
-	mx_itoa.c \
 	mx_foreach.c \
 	mx_binary_search.c \
 	mx_bubble_sort.c \
@@ -137,7 +135,6 @@ OBJS = ./obj/mx_printchar.o \
 	./obj/mx_hex_to_nbr.o \
 	./obj/mx_strnew.o \
 	./obj/mx_nbr_to_hex.o \
-	./obj/mx_itoa.o \
 	./obj/mx_foreach.o \
 	./obj/mx_binary_search.o \
 	./obj/mx_bubble_sort.o \
@@ -198,7 +195,6 @@ OBJOUT = mx_printchar.o \
 	mx_hex_to_nbr.o \
 	mx_strnew.o \
 	mx_nbr_to_hex.o \
-	mx_itoa.o \
 	mx_foreach.o \
 	mx_binary_search.o \
 	mx_bubble_sort.o \

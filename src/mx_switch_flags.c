@@ -32,6 +32,7 @@ static void my_switch(char **argv, int i, t_total *tot, e_flg *fl) {
 
 void mx_swich_flags(int argc, char **argv, t_total *tot,  e_flg *fl) {
     tot->count_dash = 0;
+
     for (int i = 1; i < argc; i++) {
         struct stat buffer;
 

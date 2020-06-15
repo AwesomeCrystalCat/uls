@@ -10,4 +10,5 @@ void mx_read_data(int argc, char **argv, t_data *data, e_flg *fl) {
     mx_prior_all(tot, fl, argv);
     mx_errors_arr(tot, data, argc, argv);
     mx_print_errors(data);
+    free(tot);
 }

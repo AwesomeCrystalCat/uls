@@ -2,6 +2,7 @@
 
 static void swap_elems(t_elem *arr1, t_elem *arr2) {
     t_elem temp = *arr1;
+
     *arr1 = *arr2;
     *arr2 = temp;
 }

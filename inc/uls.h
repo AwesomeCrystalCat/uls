@@ -96,7 +96,7 @@ typedef struct s_elem {
     char *link;
     char *uid;
     char *gid;
-    unsigned int size_i;
+    int size_i;
     char *size;
     unsigned int b;
     char *bsize;
@@ -133,6 +133,7 @@ typedef struct s_arr_data {
 #include <stdio.h>
 
 int main(int argc, char **argv);
+char *mx_itoa(long long unsigned number);
 void mx_parse_args(int n, char **str, t_data *data);
 t_data *mx_data_init(int argc);
 void mx_read_data(int argc, char **argv, t_data *data, e_flg *fl);
