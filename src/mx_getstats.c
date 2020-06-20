@@ -62,7 +62,7 @@ static const char *delete_slash(t_elem *ptr, const char *file,
     int n = mx_strlen(dir) - 1;
 
     if (dir[n] == '/') {
-        dir = strndup(dir, n);
+        dir = mx_strndup(dir, n);
         n = -1;
     }
     ptr->path = mx_get_path(file, dir);
@@ -87,7 +87,7 @@ t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag) {
     ptr->uid = mx_setuser(&buff, flag);
     ptr->gid = mx_setgrp(&buff, flag);
     ptr->size_i = buff.st_size;
-    ptr->size = mx_itoa(buff.st_size);
+    ptr->size = mx_get_real_size(&buff, ptr->mode, 0, 0);
     ptr->b = buff.st_blocks;
     ptr->bsize = mx_itoa(buff.st_blocks);
     mx_set_time(&buff, ptr, flag);

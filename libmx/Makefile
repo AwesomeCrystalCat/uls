@@ -258,6 +258,7 @@ install:
 	@rm -rf $(SRCOUT) $(HEAD)
 
 uninstall: clean
+	@rm -rf libmx.a
 	@rm -rf $(NAME)
 
 clean:

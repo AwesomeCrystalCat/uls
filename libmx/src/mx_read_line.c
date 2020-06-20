@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 static int count_bytes(char **data, char **lineptr,
-char delim, int fd) {
+                       char delim, int fd) {
     int len = 0;
     char *tmp = NULL;
 
@@ -32,14 +32,14 @@ static bool is_delim(char *buf, char delim) {
 }
 
 static int check_data(int nbytes,
-char **data, const int fd) {
+                      char **data, const int fd) {
     if (nbytes == 0 && (!data[fd] || data[fd][0] == '\0'))
         return -1;
     return 0;
 }
 
 static int read_file(char **data, const int fd,
-size_t buf_size, char delim) {
+                     size_t buf_size, char delim) {
     char buf[buf_size];
     char *temp = NULL;
     int nbytes = 0;
@@ -56,7 +56,7 @@ size_t buf_size, char delim) {
 }
 
 int mx_read_line(char **lineptr, size_t buf_size,
-char delim, const int fd) {
+                 char delim, const int fd) {
     static char *data[255];
     int nbytes = 0;
 
@@ -64,7 +64,7 @@ char delim, const int fd) {
         return -2;
     if (!data[fd])
         data[fd] = mx_strnew(0);
-    nbytes = read_file(data, fd, buf_size, delim); 
+    nbytes = read_file(data, fd, buf_size, delim);
     if ((check_data(nbytes, data, fd) == -1))
         return -1;
     return count_bytes(data, lineptr, delim, fd);

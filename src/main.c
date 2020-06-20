@@ -20,7 +20,7 @@ int main (int argc, char **argv) {
     if (data->dcount == 0 && data->fcount == 0
         && data->errors[0] == NULL) {
             data->cur_dir = 1;
-            mx_dir_parse(flag, ".", data); 
+            mx_dir_parse(flag, ".", data);
         }
     else
         files_handling(data, flag);

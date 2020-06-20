@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-static int count_chars(const char *s, char c) {    
+static int count_chars(const char *s, char c) {
     int i = 0;
 
     while (s[i] != c && s[i] != '\0')

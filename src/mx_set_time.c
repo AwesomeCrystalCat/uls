@@ -3,7 +3,7 @@
 static void time_end(t_elem *ptr, e_flg *flag, char *new, char *sec) {
     char *tmp = NULL;
 
-    if (time(0) - ptr->u_time > 15552000) {
+    if (time(0) - ptr->u_time > 15713490) {
         tmp = mx_strndup(new + 4, 7);
         sec = mx_strndup(new + 19, 5);
         ptr->r_time = mx_strjoin(tmp, sec);

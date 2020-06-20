@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 static char *replacer(char *res, const char *str,
-const char *sub, const char *replace) {
+                      const char *sub, const char *replace) {
     int i = 0;
     int j = 0;
 
@@ -21,7 +21,7 @@ const char *sub, const char *replace) {
 }
 
 char *mx_replace_substr(const char *str,
-const char *sub, const char *replace) {
+                        const char *sub, const char *replace) {
     char *res = NULL;
     int new_s;
     int sub_s;

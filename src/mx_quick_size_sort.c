@@ -11,11 +11,11 @@ static int wild_cmp_r(t_elem **ptr, int j, int pivot) {
     if (mx_strcmp(ptr[j]->size, ptr[pivot]->size) == 0)
         return mx_strcmp(ptr[pivot]->name, ptr[j]->name);
     else {
-        if (mx_strlen(ptr[j]->size) == mx_strlen(ptr[pivot]->size)) 
+        if (mx_strlen(ptr[j]->size) == mx_strlen(ptr[pivot]->size))
             return mx_strcmp(ptr[j]->size, ptr[pivot]->size);
         else if (mx_strlen(ptr[j]->size) > mx_strlen(ptr[pivot]->size))
             return 1;
-        else 
+        else
             return -1;
     }
     return 0;

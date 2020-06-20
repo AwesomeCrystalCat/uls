@@ -3,7 +3,7 @@
 static void print_newrow(int j, int c) {
     if (j != c)
         write(1, "\n", 1);
-} 
+}
 
 void mx_output_file(t_elem **arr, t_all *ptr, e_flg *flag) {
     for (int j = 0; j < ptr->count; j++) {

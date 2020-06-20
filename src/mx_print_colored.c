@@ -1,15 +1,15 @@
 #include "uls.h"
 
-static void putstr(const char *str, int fd) {
+static void put_str(const char *str, int fd) {
     int len = mx_strlen(str);
 
     write(fd, str, len);
 }
 
 static void write_colored(const char *name, char *str) {
-    putstr(str, 1);
-    putstr(name, 1);
-    putstr(MX_NONE_COL, 1);
+    put_str(str, 1);
+    put_str(name, 1);
+    put_str(MX_NONE_COL, 1);
 }
 
 static void write_colored_file(t_elem *arr) {

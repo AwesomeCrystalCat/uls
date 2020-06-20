@@ -3,8 +3,7 @@
 void mx_dir_parse(e_flg *flag, const char *dir, t_data *data) {
     t_all *ptr = malloc(sizeof(t_all));
 
-    ptr->count = mx_files_count(dir, flag);
-    mx_print_fname(dir, data->cur_dir);
+    ptr->count = mx_files_count(dir, flag, data);
     mx_write_total(NULL, ptr, flag);
     if (ptr->count) {
         t_elem **arr = (t_elem **)malloc(sizeof(t_elem *) * ptr->count);

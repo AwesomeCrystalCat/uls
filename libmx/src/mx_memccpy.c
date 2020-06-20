@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 void *mx_memccpy(void *restrict dst, const void *restrict src,
-int c, size_t n) {
+                 int c, size_t n) {
     char *d = NULL;
     char *s = NULL;
 

@@ -10,6 +10,6 @@ void mx_printer(t_elem **dir_args, t_all *ptr, e_flg *flag) {
     else if (flag[x])
         mx_output_x(dir_args, ptr, flag, 0);
     else
-        mx_output_c(dir_args, ptr, flag, 0);   
+        mx_output_c(dir_args, ptr, flag, 0);
     write(1, "\n", 1);
 }

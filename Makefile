@@ -7,6 +7,7 @@ INC = ./inc/uls.h
 HEAD = uls.h
 
 SRCOUT = main.c \
+	mx_get_real_size.c \
 	mx_check_perm.c \
 	mx_parse_args.c \
 	mx_data_init.c \
@@ -87,10 +88,10 @@ install:
 clean:
 	@rm -rf $(OBJOUT) $(SRCOUT) $(HEAD) obj
 	@make uninstall -C libmx
+	@rm -rf libmx.a
 
 uninstall: clean
-	@make clean -C libmx
+	@make uninstall -C libmx
 	@rm -rf $(NAME)
-	@rm -rf libmx.a
 
 reinstall: uninstall install

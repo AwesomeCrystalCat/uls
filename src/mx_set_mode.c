@@ -60,7 +60,7 @@ char *mx_set_mode(struct stat *buff) {
 
     str[0] = set_file_type(buff);
     str[1] = (val & MX_IRUSR) ? 'r' : '-';
-    str[2] = (val & MX_IWUSR) ? 'w' : '-';  
+    str[2] = (val & MX_IWUSR) ? 'w' : '-';
     str[3] = set_access_mode(buff->st_mode, 1);
     str[4] = (val & MX_IRGRP) ? 'r' : '-';
     str[5] = (val & MX_IWGRP) ? 'w' : '-';

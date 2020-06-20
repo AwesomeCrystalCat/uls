@@ -11,7 +11,7 @@ char *mx_strjoin(const char *s1, const char *s2) {
             str[i] = s1[i];
         i--;
         for (; j <= mx_strlen(s1) + mx_strlen(s2)
-            && i <= mx_strlen(s1) + mx_strlen(s2); j++, i++)
+             && i <= mx_strlen(s1) + mx_strlen(s2); j++, i++)
             str[i] = s2[j];
     }
     else if (s1)

@@ -36,7 +36,7 @@ static void output_m_file(t_elem **arr, t_all *ptr, e_flg *flag) {
         }
         print_inode_bs_m(arr, ptr, k, flag);
         if (flag[g_big] && isatty(1) == 1)
-            mx_print_colored(arr[k], arr[k]->path); 
+            mx_print_colored(arr[k], arr[k]->path);
         else
             mx_printstr(arr[k]->name);
         if (flag[p] && arr[k]->mode[0] == 'd')

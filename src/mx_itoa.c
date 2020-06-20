@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static int mx_numlen(long long unsigned num) {
+static int mx_numlen(unsigned long long num) {
     int len = 0;
 
     while (num > 0) {
@@ -12,7 +12,7 @@ static int mx_numlen(long long unsigned num) {
     return len;
 }
 
-char *mx_itoa(long long unsigned number) {
+char *mx_itoa(unsigned long long number) {
     int len = mx_numlen(number);
     char *result = mx_strnew(len);
     int min = 0;

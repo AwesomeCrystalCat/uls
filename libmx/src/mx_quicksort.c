@@ -28,7 +28,7 @@ static int partition(char **arr, int left, int right, int *count) {
     return left;
 }
 
-int mx_quicksort_origin(char **arr, int left, int right) {
+int mx_quicksort(char **arr, int left, int right) {
     int count = 0;
     int pivot = 0;
 
@@ -36,9 +36,9 @@ int mx_quicksort_origin(char **arr, int left, int right) {
         if (left < right) {
             pivot = partition(arr, left, right, &count);
             if (left < pivot - 1)
-                mx_quicksort_origin(arr, left, pivot - 1);
+                mx_quicksort(arr, left, pivot - 1);
             if (pivot < right)
-                mx_quicksort_origin(arr, pivot, right);
+                mx_quicksort(arr, pivot, right);
         }
         return count;
     }

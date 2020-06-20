@@ -26,12 +26,12 @@ static void print_xattr(char *key, const char *path,
         write (1, "\t", 1);
         write(1, key, mx_strlen(key));
         val = getxattr(path, key, NULL, 0, 127, 0x0001);
-        tmp = mx_itoa((int)val);
+        tmp = mx_itoa(val);
         write (1, "\t", 1);
         mx_print_spaces(sp - 8 - (mx_strlen(key) - mx_strlen(tmp)));
         write(1, tmp, mx_strlen(tmp));
         write (1, " ", 1);
-        keylen = strlen(key) + 1;
+        keylen = mx_strlen(key) + 1;
         buflen -= keylen;
         key += keylen;
         free(tmp);

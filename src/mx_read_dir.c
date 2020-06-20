@@ -15,19 +15,20 @@ void mx_read_dir(t_elem **dir_args, const char *str, e_flg *flag) {
     DIR *ddir;
     int i = 0;
 
-    ddir = opendir(str);
-    while((dirptr = readdir(ddir)) != NULL) {
-        if (flag[a])
-            dir_args[i++] = mx_getstats(dirptr->d_name, str, flag);
-        else if (flag[a_big]) {
-            if (comparator(dirptr->d_name) == 0)
+    if ((ddir = opendir(str)) != NULL) {
+        while((dirptr = readdir(ddir)) != NULL) {
+            if (flag[a])
                 dir_args[i++] = mx_getstats(dirptr->d_name, str, flag);
+            else if (flag[a_big]) {
+                if (comparator(dirptr->d_name) == 0)
+                    dir_args[i++] = mx_getstats(dirptr->d_name, str, flag);
+            }
+            else {
+                if (dirptr->d_name[0] != '.'
+                    && comparator(dirptr->d_name) == 0)
+                    dir_args[i++] = mx_getstats(dirptr->d_name, str, flag);
+            }
         }
-        else { 
-            if (dirptr->d_name[0] != '.'
-                && comparator(dirptr->d_name) == 0)
-                dir_args[i++] = mx_getstats(dirptr->d_name, str, flag);
-        }
+        closedir(ddir);
     }
-    closedir(ddir);
 }

@@ -14,7 +14,7 @@ void mx_output_x(t_elem **dir_args, t_all *ptr, e_flg *flag, int cur) {
             }
             if (limit + ptr->cols < ptr->count)
                 limit += ptr->cols;
-            else 
+            else
                 limit = ptr->count;
         }
     }

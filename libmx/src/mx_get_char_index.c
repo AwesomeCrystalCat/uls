@@ -11,5 +11,5 @@ int mx_get_char_index(const char *str, char c) {
         }
         return -1;
     }
-    return -2; 
+    return -2;
 }

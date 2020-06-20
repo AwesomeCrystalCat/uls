@@ -3,6 +3,9 @@
 
 #define MX_TAB 8
 
+#define MX_MAJOR(x) ((int32_t)(((u_int32_t)(x) >> 24) & 0xff))
+#define MX_MINOR(x) ((int32_t)((x) & 0xffffff))
+
 #define MX_IFMT 0170000
 #define MX_ISUID 0004000
 #define MX_ISGID 0002000
@@ -96,7 +99,7 @@ typedef struct s_elem {
     char *link;
     char *uid;
     char *gid;
-    int size_i;
+    unsigned int size_i;
     char *size;
     unsigned int b;
     char *bsize;
@@ -147,7 +150,7 @@ char *mx_setgrp(struct stat *buff, e_flg *flag);
 char *mx_set_bsize(struct stat *buff, const char *str);
 void mx_set_time(struct stat *buff, t_elem *ptr, e_flg *flag);
 t_elem *mx_getstats(const char *file, const char *dir, e_flg *flag);
-int mx_files_count(const char *name, e_flg *flag);
+int mx_files_count(const char *name, e_flg *flag, t_data *data);
 void mx_set_stats(t_all *ptr, t_elem **arr);
 void mx_find_name_len(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_read_dir(t_elem **dir_args, const char *str, e_flg *flag);
@@ -196,5 +199,6 @@ void mx_set_prior_1(e_flg *fl, int *value);
 void mx_big_destroyer(t_elem **arr, int n);
 void mx_write_total(t_elem **arr, t_all *ptr, e_flg *flag);
 void mx_check_perm(t_elem **arr, int i, e_flg *flag, t_data *data);
+char *mx_get_real_size(struct stat *buff, char *mode, int l_min, int l_maj);
 
 #endif
